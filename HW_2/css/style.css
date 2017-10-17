@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h4, p, ul.team-list li span {
+	font: 1em Raleway, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	/* color: #fff; */
+}
+
+h3, p.upper-title {
+	font: 2em Raleway, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+span.fa-times {
+	color: #3498db;
+	text-shadow: 1px 3px 1px #ccc;
+}
+
+div.photo-title {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px #ccc;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.header-content {background: #3498db;}
+
+header {padding: 48px 0;}
+
+h1, header span {
+	text-align: center;
+	font: bold 6em Raleway, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+span.tagline {
+	display: block;	
+	font-size: 4em;
+}
+
+.tagline span.volkswagen {
+	display: inline-block;
+	margin-right: 26px;
+	font-size: 1em;
+	letter-spacing: -25px;
+}
+
+.overflow {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+
+	margin-bottom: 100px;
+}
+
+div.overflow span {
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #1e445d;
+	color: #fff;}
+
+a.btn-blue {
+	display: inline-block;
+	padding: 15px 55px;
+	border-radius: 100px;
+	background: #3498db;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 1em Raleway, sans-serif;
+	color: #fff;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------ABOUT US-------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+section.about-us {
+	background: #ecf0f1;
+}
+
+.white-box {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 40px;
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #d0d4d4;
+	color: #6a747e;
+}
+
+.white-box h3 {
+	padding: 30px 0 20px 0;
+}
+
+
+.white-box p {
+	margin: 30px 100px 40px;
+}
+
+.about-us_list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 40px 0 70px;
+	width: 866px;
+	margin: 0 auto;
+}
+
+.about-us_list h4, .about-us_list p {
+	padding-top: 20px;
+	color: #727c86;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------recent-projects----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+section.recent-projects {
+	padding: 70px 0;
+	background: #27ae60;
+	text-align: center;
+	color: #fff;
+}
+
+section.recent-projects p {
+	padding: 20px 0 40px;
+}
+
+section.recent-projects img {
+	display: block;
+	width: 80%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------minim-veniam-------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+section.minim-veniam {
+	background: #ecf0f1;
+	text-align: center;
+}
+
+section.minim-veniam p {
+	padding: 40px 0;
+}
+
+ul.minim-veniam_list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+ul.minim-veniam_list li {
+	width: 350px;
+	margin: 0 10px;
+	padding-bottom: 50px;
+	background: #fff;
+	box-shadow: 2px 2px 2px #d0d4d4;
+	text-align: center;
+	border-radius: 10px;
+	
+}
+
+ul.minim-veniam_list li h4 {
+	color: #586470;
+	padding: 40px 0 20px;
+	
+}
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------our-clients-------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+section.our-clients {
+	background: #9b59b6;
+}
+
+section.our-clients h3 {
+	padding: 50px;
+	color: #fff;
+}
+
+ul.clients_list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: center;
+	padding-bottom: 50px;
+}
+ul.clients_list li {text-align: center;}
+
+ul.clients_list li img {
+	width: 70%;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------our-clients-------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+section.team {
+	background: #ecf0f1;
+	padding: 60px;
+}
+
+section.team h3 {
+	padding-bottom: 20px;
+	color: #2c3e50;
+}
+
+ul.team-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	flex-flow: row wrap;
+	justify-content: center;
+	
+	margin-top: 50px;
+}
+
+ul.team-list li {
+	max-width: 252px;
+	margin: 0 10px 0;
+	text-align: center;
+}
+
+ul.team-list li span {
+	display: inline-block;
+	padding: 20px 0;
+	font-weight: bold;
+}
+
+ul.team-list li p {
+	text-transform: none;
+}
+
+section.team ul.team-list_social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------FOOTER-------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+footer {
+	background: #2c3e50;
+}
+
+div.footer-info {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 40px 0 30px;
+}
+
+nav ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+ul.footer-info_list a {
+	font: 1em Raleway, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 10px;
+	color: #fff;
+	padding-left: 10px;
+}
+
+ul.footer-info_list span.volkswagen {
+	display: inline-block;
+	margin: 0 11px 0 5px;
+	font-size: 1em;
+	letter-spacing: -15px;
+}
