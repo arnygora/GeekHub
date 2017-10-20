@@ -189,21 +189,32 @@ a.btn-link, .btn-send {
 	padding: 90px 0;
 }
 
-.about-us header {    border-left: 2px solid #e8bf5d;}
+
+.about-us header {
+	margin-bottom: 50px;
+	padding-left: 15px;
+	border-left: 2px solid #e8bf5d;
+	line-height: 25px;
+}
 
 .about-us header h3 {
-   font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    margin-left: 10px;}
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
 
-    .about-us dl {
-    	display: -webkit-flex;
-    	display: -moz-flex;
-    	display: -ms-flex;
-    	display: -o-flex;
-    	display: flex;
-    }
+
+.expertise-block, .history-block {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	line-height: 25px;
+}
+
+.expertise-block span, .history-block span {
+	display: inline-block;
+	padding-bottom: 30px;
+}
 .about-us dt {font: bold 1em "Open Sans, sans-serif";}
 
 
