@@ -80,7 +80,11 @@ body {
 /************************************************************
 ******************welcome-section****************************
 *************************************************************/
-
+.fixed-header {
+	position: fixed;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.18);
+}
 .welcome-section {
 	height: 100vh; 
 	background: #ccc url(../img/hero-image.png)	50% 76px no-repeat;
@@ -89,8 +93,16 @@ body {
 }
 
 .gradient {
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
 	height: 100%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.81), rgba(255, 255, 255, 0));
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
 }
 
 .main-nav {
@@ -103,9 +115,8 @@ body {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-	background: #fff;
 
-	}
+}
 
 .main-nav h1 {
 	font-family: "Playfair black";
@@ -125,6 +136,7 @@ body {
 	display: flex;
 
 	padding: 30px 0;
+	
 }
 
 .header-list li {padding-right: 20px;}
@@ -135,7 +147,7 @@ body {
 	font: .8em "Open Sans", sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: all .2s ease-in;
+	transition: all .11s ease-in;
 	color: #000;
 }
 
@@ -143,12 +155,7 @@ body {
 	border-color: #e8bf5d;
 }
 
-.hero {
-	position: absolute;
-	bottom: 142px;
-	left: 20%;
-	width: 800px;
-}
+.hero {margin-bottom: 100px;}
 
 .main-lawyer {
 	display: -webkit-flex;
@@ -156,9 +163,9 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	width: 800px;
 	justify-content: space-between;
 	align-items: center;
-
 	font-size: 3em;
 	color: #fff;
 }
@@ -215,7 +222,21 @@ a.btn-link, .btn-send {
 	display: inline-block;
 	padding-bottom: 30px;
 }
-.about-us dt {font: bold 1em "Open Sans, sans-serif";}
 
+.about-us dl {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
 
+.about-us dt {
+	width: 70px;
+	font: bold 1em "Open Sans, sans-serif";
+}
+
+.about-us dd {width: calc(100% - 70px);}
 
