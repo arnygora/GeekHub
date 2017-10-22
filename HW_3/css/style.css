@@ -79,6 +79,7 @@ body {
 .about-us header, .practise-block header, .faq-block header,
 .attorney-block header, .feedback-block header,
 .publications-block header, .contact-block header {
+	position: relative;
 	margin-bottom: 50px;
 	padding-left: 15px;
 	border-left: 2px solid #e8bf5d;
@@ -177,17 +178,20 @@ a {
 	border-color: #e8bf5d;
 }
 
-.hero {margin-bottom: 100px;}
-
-.main-lawyer {
+.hero {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	width: 800px;
-	justify-content: space-between;
+	width: calc(100% - 400px);margin-bottom: 100px;
+	margin-bottom: 100px;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	align-items: center;
+}
+
+.main-lawyer {
 	font-size: 3em;
 	color: #fff;
 }
@@ -199,15 +203,14 @@ h2 {
 }
 
 a.btn-link {
-	text-decoration: none;
-	color: #000;
-	font-size: .4em;
-	background: #e8bf5d;
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
 	padding: 0 36px;
 	border-radius: 50px;
+	line-height: 30px;
+	color: #000;
+	background: #e8bf5d;
 }
+
 
 /************************************************************
 ******************about us***********************************
@@ -215,6 +218,17 @@ a.btn-link {
 
 .about-us {
 	background: #fff;
+	background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px);
+}
+
+.about-us header:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "01";
+    font: bold 6em "Open Sans", sans-serif;
+    color: rgba(204, 204, 204, 0.37);
+    /* z-index: -1; */
 }
 
 .expertise-block, .history-block {
@@ -252,7 +266,18 @@ a.btn-link {
 
 .practise-block {
 	background: #111;
+	background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px);
 	color: #fff;
+}
+
+.practise-block header:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "02";
+    font: bold 6em "Open Sans", sans-serif;
+    color: rgba(204, 204, 204, 0.37);
+    /* z-index: -1; */
 }
 
 .practise-block ul {
@@ -267,8 +292,9 @@ a.btn-link {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	max-width: 450px;
+	width: 450px;
 	flex-flow: row wrap;
+	margin-bottom: 20px;
 	/* margin-left: 100px; */
 	/* align-items: flex-start; */
 }
@@ -277,12 +303,33 @@ a.btn-link {
 	color: #e8bf5d;
 	width: 70px;
 }
-h6.uppercase-text {text-transform: uppercase;}
+
+.practis-article {width: calc(100% - 70px);}
+.practis-article p {
+	padding: 20px 0;
+	line-height: 20px;
+}
+
+h6.uppercase-text {
+	padding-bottom: 20px;
+	text-transform: uppercase;}
+
 /************************************************************
 ******************attorney-block*****************************
 *************************************************************/
 .attorney-block {
 	background: #fff;
+	background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px);
+}
+
+.attorney-block header:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "03";
+    font: bold 6em "Open Sans", sans-serif;
+    color: rgba(204, 204, 204, 0.37);
+    /* z-index: -1; */
 }
 
 .attorney-block ul {
@@ -316,11 +363,23 @@ h6.uppercase-text {text-transform: uppercase;}
 *************************************************************/
 
 .feedback-block {
-	background: #ccc url(../img/04bground.png) 50% 0 no-repeat;
+	background:  repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px),
+	url(../img/04bground.png) 50% 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
+	/* background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px); */
 	color: #fff;
+}
+
+.feedback-block header:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "04";
+    font: bold 6em "Open Sans", sans-serif;
+    color: rgba(204, 204, 204, 0.37);
+    /* z-index: -1; */
 }
 
 .feedback-block p.grey-color,
@@ -366,6 +425,21 @@ article .client-photo {
 ******************publications-block*************************
 *************************************************************/
 
+.publications-block {
+	background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px);
+}
+
+.publications-block header:before {
+    position: absolute;
+	top: 0;
+	left: 0;
+	content: "05";
+	font: bold 6em "Open Sans", sans-serif;
+	color: rgba(204, 204, 204, 0.37);
+	z-index: -1;
+}
+
+
 ul.publications {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -402,6 +476,17 @@ data.article-author, span.fa-share {float: right;}
 
 .faq-block {
 	background: #111;
+	background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px);
+}
+
+.faq-block header:before {
+    position: absolute;
+	top: 0;
+	left: 0;
+	content: "06";
+	font: bold 6em "Open Sans", sans-serif;
+	color: rgba(204, 204, 204, 0.37);
+	/* z-index: -1; */
 }
 
 .faq-block h3 {color: #fff;}
@@ -416,6 +501,19 @@ data.article-author, span.fa-share {float: right;}
 /************************************************************
 ******************contact-block******************************
 *************************************************************/
+.contact-block {
+	background-image: repeating-linear-gradient(to right, transparent, transparent 232px,#828282 233px, #676464 233px, transparent 233px, transparent 228px,#969696 70px, #929191 71px);
+}
+
+.contact-block header:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "07";
+	font: bold 6em "Open Sans", sans-serif;
+	color: #ccc;
+	z-index: -1;
+}
 
 .contact-form {
 	max-width: 800px;
