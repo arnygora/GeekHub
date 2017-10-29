@@ -69,8 +69,24 @@ li > a {
 
 .container {
 	max-width: 1170px;
+	margin: 0 auto;
 }
 
+section {
+	padding-top: 65px;
+}
+
+span.ubuntu-serif {
+	display: inline-block;
+	padding-bottom: 30px;
+	font-family: Ubuntu, sans-serif;
+	text-transform: uppercase;
+	color: #7d7d7d;
+}
+
+h3, h4, section.sign-up p {
+	font-size: 2em;
+}
 /* ///////////////////////////////////////////////////// */
 /* /////////////welcome-section//////////////////////////*/
 /* ///////////////////////////////////////////////////// */
@@ -79,4 +95,131 @@ li > a {
 	background: #fff url(../img/hero-img.jpg) 50% 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	height: 550px;
+}
+
+.welcome-section header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.main-nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+ul.main-nav li {margin-left: 110px;}
+
+/* ///////////////////////////////////////////////////// */
+/* /////////////description//////////////////////////////*/
+/* ///////////////////////////////////////////////////// */
+
+.description article {padding: 0 80px;}
+
+.description article p {padding: 30px 0;}
+
+/* ///////////////////////////////////////////////////// */
+/* /////////////our-work section////////////////////*/
+/* ///////////////other-info section//////////////////// */
+
+ul.portfolio {
+	padding: 0 80px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+ul.portfolio li {
+	max-width: 420px;
+	margin-top: 40px;
+}
+
+ul.portfolio li img {margin-bottom: 40px;}
+
+ul.portfolio li p {padding: 40px 0;}
+
+.load-more {
+	padding: 120px 0 30px;
+	text-align: center;
+}
+
+.load-more a {
+	padding: 10px 25px;
+	border: 1px solid #000;
+	text-decoration: none;
+	color: #7d7d7d;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* /////////////sign-up section////////////////////////*/
+/* ///////////////////////////////////////////////////// */
+
+section.sign-up {
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+section.sign-up form {
+	padding: 50px;
+}
+
+input[type="email"] {
+	/* width: 250px; */
+	background-color: #f0f0f0;
+	border: none;
+	border-bottom: 1px solid #000;	
+}
+
+input[value] {
+	padding: 0 150px 10px 0;
+	font-family: "Playfair Display", serif;
+	color: #7d7d7d;	
+}
+
+button[type="submit"] {
+	border: none;
+	background-color: #f0f0f0;
+	transform-origin: 0 -60px;
+	transform: rotate(30deg);
+}
+
+/* ///////////////////////////////////////////////////// */
+/* /////////////footer/////////////////////////////*/
+/* ///////////////////////////////////////////////////// */
+footer {
+	padding: 25px 0;
+	background-color: #f0f0f0;
+}
+
+footer .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex; 
+
+	justify-content: space-between;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+footer .container ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+footer .container ul li {
+	margin-right: 20px;
 }
