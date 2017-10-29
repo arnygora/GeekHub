@@ -70,3 +70,13 @@ li > a {
 .container {
 	max-width: 1170px;
 }
+
+/* ///////////////////////////////////////////////////// */
+/* /////////////welcome-section//////////////////////////*/
+/* ///////////////////////////////////////////////////// */
+
+.welcome-section .container {
+	background: #fff url(../img/hero-img.jpg) 50% 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
