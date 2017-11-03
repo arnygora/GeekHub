@@ -1,0 +1,31 @@
+.our-works-section {
+	padding-bottom: 40px;
+	text-align: center;
+	
+	div.our-works {
+		display: flex;
+		padding: 40px;
+		justify-content: space-around;
+		align-items: center;
+	}
+	a.dribbble {
+		text-decoration: none;
+		color: #66636d;
+	}
+	.our-works-list {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	li:nth-child(even){
+		/* width: 200px; */
+		height: 200px;
+		flex: 1 205px;
+		border: 1px solid #000;
+		background: #faf;
+		box-sizing: border-box;
+	}
+	li:nth-child(odd) {
+		@extend li:nth-child(even);
+		background: #548;
+	}
+}

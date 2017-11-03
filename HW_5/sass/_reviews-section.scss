@@ -1,0 +1,34 @@
+.reviews-section {
+	height: 100vh;
+	background: #fff url(../img/testimonials-bg.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.transparent-layer {
+		height: calc(100% - 100px);
+		padding: 50px;
+		background-color: rgba(58, 33, 123, 0.77);
+		text-align: center;	
+		
+		.review-text  {
+		max-width: 900px;
+		margin: 0 auto;
+		color: #f0f0f2;
+		p {
+			padding: 40px 0;
+			font-family: "Playfair Regular";
+			line-height: 1.5em;
+		}
+		p.author-name {
+			padding: 0 0 10px;
+			font-family: "Roboto Black";
+			text-transform: uppercase;
+			}
+		}
+		span.tengkuper {
+			text-transform: uppercase;
+			font-family: "Roboto Light"
+		}
+	}
+}	
+
