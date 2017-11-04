@@ -176,7 +176,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 35, ../sass/_welcome-section.scss */
 .welcome-section .hero {
   margin: auto;
-  width: calc(100% - 700px);
+/*   width: calc(100% - 700px); */
+  max-width: 700px;
   text-align: center;
 }
 /* line 41, ../sass/_welcome-section.scss */
