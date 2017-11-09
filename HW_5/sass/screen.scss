@@ -1,0 +1,100 @@
+
+@font-face {
+	font-family: "Playfair Regular";
+	src: url('../fonts/Playfair_display/PlayfairDisplay-Regular.ttf'); 
+}
+
+@font-face {
+	font-family: "Playfair Bold";
+	src: url('../fonts/Playfair_display/PlayfairDisplay-Bold.ttf'); 
+}
+
+@font-face {
+	font-family: "Playfair Black";
+	src: url('../fonts/Playfair_display/PlayfairDisplay-Black.ttf'); 
+}
+
+@font-face {
+	font-family: "Roboto Thin";
+	src: url('../fonts/Roboto/Roboto-Thin.ttf'); 
+}
+
+@font-face {
+	font-family: "Roboto Black";
+	src: url('../fonts/Roboto/Roboto-Black.ttf'); 
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	src: url('../fonts/Roboto/Roboto-Light.ttf'); 
+}
+// body {
+// 	font-family: "Playfair Regular";
+// }
+
+nav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 2px solid transparent;
+	font-family: "Roboto Black";
+	color: #fff;
+	transition: all .11s ease-in;
+	&:hover{
+		border-color: #00e0d0;
+		color: #00e0d0;
+	}
+}
+a.link-btn {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: aqua;
+	font-family: "Roboto Black";
+	display: inline-block;
+	border: 1px solid aqua;
+	padding: 10px;
+	margin-top: 40px;
+}
+.container {
+	padding: 40px 0;
+	text-align: center;
+}
+
+h3, p.clients-list {
+	text-transform: uppercase;
+	font-family: "Playfair Bold";
+	color: #66636d;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+$white-color: #fff;
+
+	.aContainer {
+		min-width: 1200px;
+		margin: 0 auto;
+	}
+	.display-flex-row {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		flex-flow: row wrap;
+	}
+
+@import "compass/reset";
+@import "welcome-section";
+@import "ourStory-section";
+@import "watchStory-section";
+@import "expertise-section";
+@import "ourTeam-section";
+@import "ourWorks-section";
+@import "reviews-section";
+@import "contact-section";
+@import "footer";

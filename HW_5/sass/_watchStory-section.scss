@@ -1,0 +1,20 @@
+.watch-story {
+	height: 100vh;
+	background: $white-color url(../img/ourstory-bg.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	.transparent-layer {
+		display: flex;	
+		height: 100%;
+		background-color: rgba(58, 33, 123, 0.77);
+	}
+	h3 {
+		margin: auto;
+		color: $white-color;
+		& span {
+			display: block;
+			text-align: center;
+			padding-bottom: 25px;
+		}
+	}
+}

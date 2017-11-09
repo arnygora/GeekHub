@@ -1,0 +1,51 @@
+.our-team-section {
+	// height: 100vh;
+	background: $white-color url(../img/team-bg.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	.transparent-layer {	
+		height: 100%;
+		background-color: rgba(58, 33, 123, 0.77);
+	}
+	h3 {
+		font-family: "Playfair Bold";
+		color: $white-color;
+	}
+	p {
+		padding-top: 15px;
+		font-family: "Playfair Regular";
+		color: $white-color;
+	&:after {
+			display: block;
+			width: 45px;
+			margin: 15px auto;
+			border-bottom: 1px solid #848484;
+			content: "";
+		}
+	}
+	.team-list {
+		display: flex;
+		max-width: 900px;
+		margin: 10px auto;
+		justify-content: center;
+		flex-flow: row wrap;
+		/* flex: 1 250px; */
+	}
+	li {
+		border: 1px solid #ccc;
+		margin: 5px;
+		h5 {
+			padding: 5px;
+			font-family: "Roboto Black";
+			text-transform: uppercase;
+			color: $white-color;
+		}
+		span {
+			display: inline-block;
+			
+			margin-bottom: 5px;
+			font-family: "Roboto Light";
+			color: $white-color;
+			}
+	}	
+}

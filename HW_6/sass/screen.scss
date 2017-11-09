@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Roboto Regular";
+	src: url('../fonts/Roboto_Slab/RobotoSlab-Regular.ttf'); 
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	src: url('../fonts/Roboto_Slab/RobotoSlab-Light.ttf'); 
+}
+
+@font-face {
+	font-family: "Roboto Bold";
+	src: url('../fonts/Roboto_Slab/RobotoSlab-Bold.ttf'); 
+}
+
+body {
+	font-family: "Roboto Regular";
+}
+
+ul li {
+	list-style: none;
+}
+
+ a {
+	text-decoration: none;
+}
+
+// не працює якшо ставити перед @import
+
+h3 {
+	font-family: "Roboto Bold";
+	font-size: 2.5em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import "welcome-section";
+@import "news-section";
+@import "mailing-section";
+@import "info-section";
+@import "services-section";
+@import "footer";
+

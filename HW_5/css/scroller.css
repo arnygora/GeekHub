@@ -1,0 +1,10 @@
+#scroller {
+    position: fixed;    
+    bottom: 30px;
+    right: 50px;
+    background: transparent url(../img/arrow.png) no-repeat left top;  
+    width: 39px;
+    height: 42px;
+    cursor: pointer;
+    display:none;
+}

@@ -1,0 +1,56 @@
+.expertise-section {
+	display: flex;
+	justify-content: center;
+	.paragraph {
+		padding-top: 15px;
+		font-family: "Playfair Regular";
+		color: #848484;
+		&:after{
+			display: block;
+			width: 45px;
+			margin: 30px auto;
+			border-bottom: 1px solid #848484;
+			content: "";
+		}
+	}
+	.services {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: stretch;
+		max-width: 1000px;
+		
+		li {
+			flex: 1 250px;
+			padding: 30px;
+		}
+
+		li.border-list {
+			border-bottom: 1px solid #ccc;
+		}
+
+		li:nth-child(3n+2) {
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+
+		span {
+			color: #00e0d0;
+			transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+			&:hover {
+				transform: scale(2.5);
+			}
+		}
+		h4 {
+			padding: 15px 0;
+			font-family: "Roboto Black";
+		}
+		p {
+			font-family: "Roboto Light";
+			line-height: 1.2em;
+		}
+	}
+}
+
+
+

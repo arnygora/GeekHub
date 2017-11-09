@@ -1,0 +1,27 @@
+.our-story-section {
+	.container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	.logo-img {
+	width: 230px;
+	height: 300px;
+	margin-right: 50px;
+	transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	background: url(../img/tajam-figure.jpg) 50% 0 no-repeat;
+		&:hover {
+		    filter: saturate(43)
+		}
+	}
+	.story-content {
+		text-align: left;
+		/* flex-grow: 2; */
+		width: 30%;
+		color: #66636d;
+		p {
+			padding-top: 30px;
+			font: 1em/1.2em "Roboto Light";
+		}
+	}
+}
