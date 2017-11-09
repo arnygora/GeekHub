@@ -5,37 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HW_5</title>
 	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/scroller.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<section class="welcome-section">
 			<div class="transparent-layer">
 				<header>
-				<div class="logo">
-					<img src="img/logo.png" alt="tajam">
-					<h1 class="tajam-text">tajam</h1>
+					<div class="aContainer display-flex-row">
+						<div class="logo">
+							<img src="img/logo.png" alt="tajam">
+							<h1 class="tajam-text">tajam</h1>
+						</div>
+						<nav class="main-nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#expertise">Expertise</a></li>
+								<li><a href="#team">Teams</a></li>
+								<li><a href="#works">Works</a></li>
+								<li><a href="#reviews">People say</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+				<div class="hero">
+					<h2>We are awesome creative agency</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam magni perferendis architecto nobis reiciendis, animi? Numquam, similique. Perferendis odit animi quibusdam voluptas vero nam alias illum debitis doloremque obcaecati</p>
+					<a class="link-btn" href="javascript:void(0);">learn more</a>
 				</div>
-				<nav>
-					<ul class="main-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Expertise</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Works</a></li>
-						<li><a href="#">People say</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div class="hero">
-				<h2>We are awesome creative agency</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam magni perferendis architecto nobis reiciendis, animi? Numquam, similique. Perferendis odit animi quibusdam voluptas vero nam alias illum debitis doloremque obcaecati</p>
-				<a class="link-btn" href="javascript:void(0);">learn more</a>
-			</div>
 			</div>
 		</section>
-		<section class="our-story-section">
+		<section id="about" class="our-story-section">
 			<div class="container">
 			<div class="logo-img"></div>
 			<div class="story-content">
@@ -51,22 +57,22 @@
 				<h3><span class="fa fa-play-circle-o fa-5x"></span> Watch our story</h3>
 			</div>
 		</section>
-		<section class="expertise-section">
+		<section id="expertise" class="expertise-section">
 			<div class="container">
 				<h3>Expertise</h3>
 				<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, consequatur.</p>
 				<ul class="services">
-					<li>
+					<li class="border-list">
 						<span class="fa fa-desktop fa-3x"></span>
 						<h4>Web design &amp; development</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus rerum, a obcaecati ducimus nostrum qui repudiandae</p>
 					</li>
-					<li>
+					<li class="border-list">
 						<span  class="fa fa-paint-brush fa-3x"></span>
 						<h4>Branding identity</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus rerum, a obcaecati ducimus nostrum qui repudiandae</p>
 					</li>
-					<li>
+					<li class="border-list">
 						<span class="fa fa-mobile fa-3x"></span>
 						<h4>Mobile app</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus rerum, a obcaecati ducimus nostrum qui repudiandae</p>
@@ -89,7 +95,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="our-team-section">
+		<section id="team" class="our-team-section">
 			<div class="transparent-layer">
 				<div class="container">
 					<h3>Meet our amazing team</h3>
@@ -121,7 +127,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="our-works-section">
+		<section id="works" class="our-works-section">
 			<div class="our-works">
 				<h3>Our works</h3>
 			<a class="dribbble" href="javascript:void(0);">See All Projects in dribbble <span>&gt;</span></a>
@@ -151,7 +157,7 @@
 			</ul>
 			<a href="javascript:void(0);" class="link-btn">Load more</a>
 		</section>
-		<section class="reviews-section">
+		<section id="reviews" class="reviews-section">
 			<div class="transparent-layer">
 				<div class="review-text">
 					<span class="fa fa-quote-left fa-5x"></span>
@@ -160,7 +166,7 @@
 					<span class="tengkuper">ceo tengkuper</span>
 				</div>
 		</section>
-		<section class="contact-section">
+		<section id="contact" class="contact-section">
 			<div class="container">		
 				<form action="get">
 					<p>Give us a good news</p>
@@ -228,5 +234,8 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/main.js"></script>
+	<script src="js/scroller.js"></script>
+	<div id="scroller"></div>
 </body>
 </html>

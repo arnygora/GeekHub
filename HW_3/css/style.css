@@ -71,6 +71,10 @@ body {
 	font-family: "Regular";
 }
 
+h3 {
+	font-family: "Playfair bold";
+}
+
 .attorney-block, .practise-block, .about-us, .faq-block,
 .feedback-block, .publications-block, .contact-block {
 	padding: 90px 30px;
@@ -131,7 +135,7 @@ a {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
 }
 
-.main-nav {
+.aContainer {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -143,12 +147,12 @@ a {
 	align-items: center;
 }
 
-.main-nav h1 {
+.aContainer h1 {
 	font-family: "Playfair black";
 	text-transform: uppercase;
 }
 
-.main-nav h1 span {
+.aContainer h1 span {
 	color: #e8bf5d;
 }
 

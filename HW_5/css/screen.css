@@ -22,11 +22,6 @@
   font-family: "Roboto Light";
   src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
-/* line 31, ../sass/screen.scss */
-body {
-  font-family: "Playfair Regular";
-}
-
 /* line 35, ../sass/screen.scss */
 nav li a {
   text-decoration: none;
@@ -65,6 +60,30 @@ h3, p.clients-list {
   text-transform: uppercase;
   font-family: "Playfair Bold";
   color: #66636d;
+}
+
+/* line 68, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 77, ../sass/screen.scss */
+.aContainer {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 81, ../sass/screen.scss */
+.display-flex-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
@@ -148,45 +167,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: rgba(58, 33, 123, 0.77);
 }
 /* line 14, ../sass/_welcome-section.scss */
+.welcome-section .aContainer {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+/* line 18, ../sass/_welcome-section.scss */
+.welcome-section .display-flex-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+/* line 28, ../sass/_welcome-section.scss */
 .welcome-section header {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 18, ../sass/_welcome-section.scss */
+/* line 32, ../sass/_welcome-section.scss */
+.welcome-section header .aContainer {
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 36, ../sass/_welcome-section.scss */
 .welcome-section header .logo {
   display: flex;
   align-items: center;
 }
-/* line 21, ../sass/_welcome-section.scss */
+/* line 39, ../sass/_welcome-section.scss */
 .welcome-section header .logo h1 {
   padding-left: 10px;
   font-family: "Roboto Thin", sans-serif;
   font-size: 2.5em;
   color: #00e0d0;
 }
-/* line 29, ../sass/_welcome-section.scss */
+/* line 47, ../sass/_welcome-section.scss */
 .welcome-section .main-nav {
   display: flex;
+  align-items: center;
 }
-/* line 31, ../sass/_welcome-section.scss */
+/* line 50, ../sass/_welcome-section.scss */
 .welcome-section .main-nav li {
   padding-right: 20px;
+  display: inline-block;
 }
-/* line 35, ../sass/_welcome-section.scss */
+/* line 56, ../sass/_welcome-section.scss */
 .welcome-section .hero {
   margin: auto;
-/*   width: calc(100% - 700px); */
   max-width: 700px;
   text-align: center;
 }
-/* line 41, ../sass/_welcome-section.scss */
+/* line 63, ../sass/_welcome-section.scss */
 .welcome-section .hero h2 {
   font-family: "Playfair Black";
   font-size: 2.6em;
   color: #fff;
 }
-/* line 46, ../sass/_welcome-section.scss */
+/* line 68, ../sass/_welcome-section.scss */
 .welcome-section .hero h2:after {
   display: block;
   width: 45px;
@@ -195,12 +234,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "";
 }
 @media screen and (max-width: 700px) {
-  /* line 53, ../sass/_welcome-section.scss */
+  /* line 75, ../sass/_welcome-section.scss */
   .welcome-section .hero h2 .hero {
     overflow: hidden;
   }
 }
-/* line 56, ../sass/_welcome-section.scss */
+/* line 78, ../sass/_welcome-section.scss */
 .welcome-section .hero p {
   font-family: "Roboto Light";
   line-height: 1.6em;
@@ -290,26 +329,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-content: stretch;
   max-width: 1000px;
 }
-/* line 23, ../sass/_expertise-section.scss */
+/* line 24, ../sass/_expertise-section.scss */
 .expertise-section .services li {
   flex: 1 250px;
   padding: 30px;
 }
-/* line 27, ../sass/_expertise-section.scss */
+/* line 29, ../sass/_expertise-section.scss */
+.expertise-section .services li.border-list {
+  border-bottom: 1px solid #ccc;
+}
+/* line 32, ../sass/_expertise-section.scss */
+.expertise-section .services li:nth-child(3n+2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+/* line 37, ../sass/_expertise-section.scss */
 .expertise-section .services span {
   color: #00e0d0;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-/* line 30, ../sass/_expertise-section.scss */
+/* line 40, ../sass/_expertise-section.scss */
 .expertise-section .services span:hover {
   transform: scale(2.5);
 }
-/* line 34, ../sass/_expertise-section.scss */
+/* line 44, ../sass/_expertise-section.scss */
 .expertise-section .services h4 {
   padding: 15px 0;
   font-family: "Roboto Black";
 }
-/* line 38, ../sass/_expertise-section.scss */
+/* line 48, ../sass/_expertise-section.scss */
 .expertise-section .services p {
   font-family: "Roboto Light";
   line-height: 1.2em;

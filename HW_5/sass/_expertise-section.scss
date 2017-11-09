@@ -24,6 +24,16 @@
 			flex: 1 250px;
 			padding: 30px;
 		}
+
+		li.border-list {
+			border-bottom: 1px solid #ccc;
+		}
+
+		li:nth-child(3n+2) {
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+
 		span {
 			color: #00e0d0;
 			transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);

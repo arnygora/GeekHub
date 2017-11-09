@@ -28,9 +28,9 @@
 	font-family: "Roboto Light";
 	src: url('../fonts/Roboto/Roboto-Light.ttf'); 
 }
-body {
-	font-family: "Playfair Regular";
-}
+// body {
+// 	font-family: "Playfair Regular";
+// }
 
 nav li a {
 	text-decoration: none;
@@ -65,8 +65,28 @@ h3, p.clients-list {
 	color: #66636d;
 }
 
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 $white-color: #fff;
 
+	.aContainer {
+		min-width: 1200px;
+		margin: 0 auto;
+	}
+	.display-flex-row {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		flex-flow: row wrap;
+	}
 
 @import "compass/reset";
 @import "welcome-section";

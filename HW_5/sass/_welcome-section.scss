@@ -11,10 +11,28 @@
 		padding-top: 15px;
 		background-color: rgba(58, 33, 123, 0.77);
 	}
+	.aContainer {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.display-flex-row {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		flex-flow: row wrap;
+	}
+
 	header {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		.aContainer {
+			justify-content: space-between;
+			align-items: center;
+		}
 		.logo {
 			display: flex;
 			align-items: center;
@@ -28,15 +46,19 @@
 	}
 	.main-nav {
 		display: flex;
+		align-items: center;
 		li {
 			padding-right: 20px;
+			display: inline-block;
+			
 		}
 	}
 	.hero {
 		// position: relative;
 		// bottom: -300px;
 		margin: auto;
-		width: calc(100% - 700px);
+		max-width: 700px;
+		// width: calc(100% - 700px);
 		text-align: center;
 		h2 {
 			font-family: "Playfair Black";
