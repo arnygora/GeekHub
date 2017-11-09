@@ -168,7 +168,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 14, ../sass/_welcome-section.scss */
 .welcome-section .aContainer {
-  min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /* line 18, ../sass/_welcome-section.scss */
@@ -329,12 +329,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-content: stretch;
   max-width: 1000px;
 }
-/* line 24, ../sass/_expertise-section.scss */
+/* line 23, ../sass/_expertise-section.scss */
 .expertise-section .services li {
   flex: 1 250px;
   padding: 30px;
 }
-/* line 29, ../sass/_expertise-section.scss */
+/* line 28, ../sass/_expertise-section.scss */
 .expertise-section .services li.border-list {
   border-bottom: 1px solid #ccc;
 }
@@ -545,73 +545,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/_footer.scss */
 footer {
   background: #fff url(../img/footer-bg.jpg) 50% 50% no-repeat;
+  height: 400px;
   background-size: cover;
 }
-/* line 4, ../sass/_footer.scss */
+/* line 6, ../sass/_footer.scss */
 footer .transparent-layer {
   height: 100%;
   padding: 50px 0;
   background-color: rgba(58, 33, 123, 0.77);
 }
-/* line 9, ../sass/_footer.scss */
-footer .top-foot {
+
+/* line 12, ../sass/_footer.scss */
+.top-footer {
   display: flex;
-  /* flex: 1 300px; */
   justify-content: space-between;
   align-items: baseline;
   color: #fff;
 }
-/* line 15, ../sass/_footer.scss */
-footer .top-foot li {
-  flex: 1 200px;
-  margin-left: 20px;
+/* line 18, ../sass/_footer.scss */
+.top-footer .col {
+  flex: 1 150px;
   text-align: left;
 }
-/* line 19, ../sass/_footer.scss */
-footer .top-foot li address {
+/* line 22, ../sass/_footer.scss */
+.top-footer .col address {
   display: inline;
   padding-left: 10px;
 }
-/* line 25, ../sass/_footer.scss */
-footer p.upper {
+
+/* line 28, ../sass/_footer.scss */
+p.upper {
   padding-bottom: 30px;
   font-family: "Roboto Black";
   text-transform: uppercase;
 }
-/* line 31, ../sass/_footer.scss */
-footer li.address {
+
+/* line 34, ../sass/_footer.scss */
+li.address {
   width: 200px;
 }
-/* line 35, ../sass/_footer.scss */
-footer .tajam-text {
+
+/* line 38, ../sass/_footer.scss */
+.tajam-text {
   padding-left: 10px;
   font-family: "Roboto Thin", sans-serif;
   font-size: 2em;
   color: #00e0d0;
 }
-/* line 41, ../sass/_footer.scss */
-footer ul.social-list {
+
+/* line 44, ../sass/_footer.scss */
+ul.social-list {
   display: flex;
   justify-content: space-between;
 }
-/* line 45, ../sass/_footer.scss */
-footer .bottom-footer {
+
+/* line 48, ../sass/_footer.scss */
+.bottom-footer {
   display: flex;
   justify-content: space-around;
   margin-top: 45px;
   color: #fff;
 }
-/* line 50, ../sass/_footer.scss */
-footer .bottom-footer ul {
+/* line 53, ../sass/_footer.scss */
+.bottom-footer ul {
   display: flex;
   flex-flow: row wrap;
 }
-/* line 54, ../sass/_footer.scss */
-footer .bottom-footer li {
+/* line 57, ../sass/_footer.scss */
+.bottom-footer li {
   margin-left: 30px;
 }
-/* line 56, ../sass/_footer.scss */
-footer .bottom-footer li a {
+/* line 59, ../sass/_footer.scss */
+.bottom-footer li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;

@@ -1,20 +1,23 @@
 footer {
 	background: $white-color url(../img/footer-bg.jpg) 50% 50% no-repeat;
+	//width: 1600px;
+	height: 400px;
 	background-size: cover;
 	.transparent-layer {	
 		height: 100%;
 		padding: 50px 0;
 		background-color: rgba(58, 33, 123, 0.77);
 	}
-	.top-foot {
+}
+	.top-footer {
 		display: flex;
-		/* flex: 1 300px; */
+		///* flex: 1 300px; */
 		justify-content: space-between;
 		align-items: baseline;
 		color: $white-color;
-		li {
-		flex: 1 200px;
-		margin-left: 20px;
+		.col {
+		flex: 1 150px;
+		//margin-left: 20px;
 		text-align: left;
 		address {
 			display: inline;
@@ -59,5 +62,4 @@ footer {
 			color: $white-color;
 		}
 	}
-}
 }
