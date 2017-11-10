@@ -11,20 +11,19 @@ footer {
 }
 	.top-footer {
 		display: flex;
-		///* flex: 1 300px; */
-		justify-content: space-between;
-		align-items: baseline;
+		max-width: 1200px;
+		margin: 0 auto;
+		justify-content: space-evenly;
+		flex-flow: row wrap;
 		color: $white-color;
 		.col {
-		flex: 1 150px;
-		//margin-left: 20px;
-		text-align: left;
+			width: 300px;
 		address {
 			display: inline;
 			padding-left: 10px;
 			}
 		}
-	}
+
 	p.upper {
 		padding-bottom: 30px;
 		font-family: "Roboto Black";
@@ -37,14 +36,28 @@ footer {
 
 	.tajam-text {
 		padding-left: 10px;
+		vertical-align: top;
 		font-family: "Roboto Thin", sans-serif;
 		font-size: 2em;
 		color: #00e0d0;
 	}
+
+	input[type="email"] {
+		background-color: rgba(255,255,255, .2);
+		border: 1px solid #a29ab4;
+	}
+	[placeholder] {
+		padding: 10px;
+		font-family: "Roboto Light";
+		color: #a29ab4;
+
+	}
+
 	ul.social-list {
 		display: flex;
-		justify-content: space-between;
+		//color: $white-color;
 	}
+
 .bottom-footer {
 	display: flex;
 	justify-content: space-around;
@@ -62,4 +75,5 @@ footer {
 			color: $white-color;
 		}
 	}
-}
+	}
+	}
