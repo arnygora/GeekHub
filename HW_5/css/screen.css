@@ -554,76 +554,116 @@ footer .transparent-layer {
   padding: 50px 0;
   background-color: rgba(58, 33, 123, 0.77);
 }
-
 /* line 12, ../sass/_footer.scss */
-.top-footer {
+footer .top-footer {
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: row wrap;
+  font-family: "Roboto Light";
+  line-height: 1.75em;
   color: #fff;
 }
-/* line 19, ../sass/_footer.scss */
-.top-footer .col {
+/* line 21, ../sass/_footer.scss */
+footer .top-footer .col {
   width: 300px;
 }
-/* line 21, ../sass/_footer.scss */
-.top-footer .col address {
+/* line 23, ../sass/_footer.scss */
+footer .top-footer .col address {
   display: inline;
   padding-left: 10px;
 }
-/* line 27, ../sass/_footer.scss */
-.top-footer p.upper {
+/* line 28, ../sass/_footer.scss */
+footer .top-footer .phone-number {
+  margin-top: 30px;
+}
+/* line 30, ../sass/_footer.scss */
+footer .top-footer .phone-number .phone {
+  display: inline-block;
+  padding-left: 20px;
+}
+/* line 36, ../sass/_footer.scss */
+footer .top-footer p.upper {
   padding-bottom: 30px;
   font-family: "Roboto Black";
   text-transform: uppercase;
 }
-/* line 33, ../sass/_footer.scss */
-.top-footer li.address {
+/* line 41, ../sass/_footer.scss */
+footer .top-footer li.address {
   width: 200px;
 }
-/* line 37, ../sass/_footer.scss */
-.top-footer .tajam-text {
+/* line 45, ../sass/_footer.scss */
+footer .top-footer .tajam-text {
   padding-left: 10px;
   vertical-align: top;
   font-family: "Roboto Thin", sans-serif;
   font-size: 2em;
   color: #00e0d0;
 }
-/* line 45, ../sass/_footer.scss */
-.top-footer input[type="email"] {
+/* line 52, ../sass/_footer.scss */
+footer .top-footer input[type="email"] {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #a29ab4;
 }
-/* line 49, ../sass/_footer.scss */
-.top-footer [placeholder] {
-  padding: 10px 15px 10px 10px;
+/* line 56, ../sass/_footer.scss */
+footer .top-footer [placeholder] {
+  padding: 10px 30px 10px 10px;
   font-family: "Roboto Light";
   color: #fff;
 }
-/* line 56, ../sass/_footer.scss */
-.top-footer ul.social-list {
-  display: flex;
-}
 /* line 61, ../sass/_footer.scss */
-.top-footer .bottom-footer {
+footer .top-footer button {
+  margin-left: 10px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.32);
+}
+/* line 65, ../sass/_footer.scss */
+footer .top-footer button span {
+  padding: 1px 15px 8px;
+}
+/* line 69, ../sass/_footer.scss */
+footer .top-footer ul.social-list {
   display: flex;
-  justify-content: space-around;
-  margin-top: 45px;
+  margin-top: 20px;
+}
+/* line 72, ../sass/_footer.scss */
+footer .top-footer ul.social-list li {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 81, ../sass/_footer.scss */
+footer .top-footer ul.social-list li span {
+  line-height: 1.75em;
   color: #fff;
 }
-/* line 66, ../sass/_footer.scss */
-.top-footer .bottom-footer ul {
+/* line 88, ../sass/_footer.scss */
+footer .bottom-footer {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 45px;
+  justify-content: space-between;
+  font-family: "Roboto Light";
+  color: #fff;
+}
+/* line 96, ../sass/_footer.scss */
+footer .bottom-footer ul {
   display: flex;
   flex-flow: row wrap;
 }
-/* line 70, ../sass/_footer.scss */
-.top-footer .bottom-footer li {
-  margin-left: 30px;
+/* line 99, ../sass/_footer.scss */
+footer .bottom-footer ul li {
+  margin-right: 30px;
 }
-/* line 72, ../sass/_footer.scss */
-.top-footer .bottom-footer li a {
+/* line 101, ../sass/_footer.scss */
+footer .bottom-footer ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
