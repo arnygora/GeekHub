@@ -152,13 +152,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/_welcome-section.scss */
+h3, p.clients-list {
+  text-transform: uppercase;
+  font-family: "Playfair Bold";
+  color: #66636d;
+}
+
+/* line 7, ../sass/_welcome-section.scss */
 .welcome-section {
   height: 100vh;
   background: #fff url(../img/hero-img.jpg) 50% 0 no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-/* line 6, ../sass/_welcome-section.scss */
+/* line 12, ../sass/_welcome-section.scss */
 .welcome-section .transparent-layer {
   display: flex;
   flex-direction: column;
@@ -166,12 +173,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 15px;
   background-color: rgba(58, 33, 123, 0.77);
 }
-/* line 14, ../sass/_welcome-section.scss */
+/* line 20, ../sass/_welcome-section.scss */
 .welcome-section .aContainer {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* line 18, ../sass/_welcome-section.scss */
+/* line 24, ../sass/_welcome-section.scss */
 .welcome-section .display-flex-row {
   display: -webkit-flex;
   display: -moz-flex;
@@ -180,52 +187,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: flex;
   flex-flow: row wrap;
 }
-/* line 28, ../sass/_welcome-section.scss */
+/* line 34, ../sass/_welcome-section.scss */
 .welcome-section header {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 32, ../sass/_welcome-section.scss */
+/* line 38, ../sass/_welcome-section.scss */
 .welcome-section header .aContainer {
   justify-content: space-between;
   align-items: center;
 }
-/* line 36, ../sass/_welcome-section.scss */
+/* line 42, ../sass/_welcome-section.scss */
 .welcome-section header .logo {
   display: flex;
   align-items: center;
 }
-/* line 39, ../sass/_welcome-section.scss */
+/* line 45, ../sass/_welcome-section.scss */
 .welcome-section header .logo h1 {
   padding-left: 10px;
   font-family: "Roboto Thin", sans-serif;
   font-size: 2.5em;
   color: #00e0d0;
 }
-/* line 47, ../sass/_welcome-section.scss */
+/* line 53, ../sass/_welcome-section.scss */
 .welcome-section .main-nav {
   display: flex;
   align-items: center;
 }
-/* line 50, ../sass/_welcome-section.scss */
+/* line 56, ../sass/_welcome-section.scss */
 .welcome-section .main-nav li {
   padding-right: 20px;
   display: inline-block;
 }
-/* line 56, ../sass/_welcome-section.scss */
+/* line 62, ../sass/_welcome-section.scss */
 .welcome-section .hero {
   margin: auto;
   max-width: 700px;
   text-align: center;
 }
-/* line 63, ../sass/_welcome-section.scss */
+/* line 69, ../sass/_welcome-section.scss */
 .welcome-section .hero h2 {
   font-family: "Playfair Black";
   font-size: 2.6em;
   color: #fff;
 }
-/* line 68, ../sass/_welcome-section.scss */
+/* line 74, ../sass/_welcome-section.scss */
 .welcome-section .hero h2:after {
   display: block;
   width: 45px;
@@ -234,12 +241,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "";
 }
 @media screen and (max-width: 700px) {
-  /* line 75, ../sass/_welcome-section.scss */
+  /* line 81, ../sass/_welcome-section.scss */
   .welcome-section .hero h2 .hero {
     overflow: hidden;
   }
 }
-/* line 78, ../sass/_welcome-section.scss */
+/* line 84, ../sass/_welcome-section.scss */
 .welcome-section .hero p {
   font-family: "Roboto Light";
   line-height: 1.6em;
