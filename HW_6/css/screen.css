@@ -25,13 +25,13 @@ a {
   text-decoration: none;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 h3 {
   font-family: "Roboto Bold";
   font-size: 2.5em;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -79,7 +79,6 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   height: 100vh;
   background: #ccc url(../img/hero-image.jpg) 50% 105px no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 /* line 38, ../sass/_welcome-section.scss */
 .welcome-section header {
@@ -123,43 +122,38 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
 }
 /* line 64, ../sass/_welcome-section.scss */
 .welcome-section header ul li a {
-  display: inline-block;
   padding: 15px;
   border-radius: 15px;
   color: #31353e;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
-/* line 71, ../sass/_welcome-section.scss */
-.welcome-section header ul li a:hover {
-  background-color: #dd4b2b;
+/* line 75, ../sass/_welcome-section.scss */
+.welcome-section h2 {
+  padding: 70px 0;
+  font-family: "Roboto Light";
+  font-size: 3em;
   color: #fff;
 }
 /* line 80, ../sass/_welcome-section.scss */
-.welcome-section h2 {
-  font-family: "Roboto Light";
-  font-size: 4em;
-  color: #fff;
-}
-/* line 84, ../sass/_welcome-section.scss */
 .welcome-section h2 span {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: "Roboto Bold";
   font-size: .5em;
 }
-/* line 91, ../sass/_welcome-section.scss */
+/* line 87, ../sass/_welcome-section.scss */
 .welcome-section .menu-list li img {
+  width: 120px;
   border: 7px solid #edeff1;
   border-radius: 50%;
 }
-/* line 95, ../sass/_welcome-section.scss */
+/* line 92, ../sass/_welcome-section.scss */
 .welcome-section h4 {
+  padding-top: 10px;
   font-family: "Roboto Bold";
-  font-size: 2.5em;
+  font-size: 1em;
   color: #edeff1;
 }
-/* line 100, ../sass/_welcome-section.scss */
+/* line 98, ../sass/_welcome-section.scss */
 .welcome-section p {
   font-family: "Roboto Light";
   font-size: .8em;
@@ -177,11 +171,13 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
 /* line 10, ../sass/_news-section.scss */
 .news-section .news-list img {
   border-radius: 5px;
+  max-width: 260px;
 }
-/* line 13, ../sass/_news-section.scss */
+/* line 14, ../sass/_news-section.scss */
 .news-section .news-list h4 {
+  padding-top: 15px;
   font-family: "Roboto Bold";
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /* line 1, ../sass/_mailing-section.scss */
@@ -228,7 +224,7 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   text-align: center;
   background-color: #fff;
   color: brown;
-  font-family: 'Roboto Regular';
+  font-family: "Roboto Regular";
   color: #fff;
 }
 

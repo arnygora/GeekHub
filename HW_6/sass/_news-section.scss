@@ -9,10 +9,12 @@
 	
 		img {
 			border-radius: 5px;
+			max-width: 260px;
 		}
 		h4 {
+			padding-top: 15px;
 			font-family: "Roboto Bold";
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 		a {
 			@extend a.link-btn;
