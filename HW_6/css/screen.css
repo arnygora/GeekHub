@@ -51,12 +51,135 @@ section {
 }
 
 /* line 10, ../sass/_welcome-section.scss */
+#nav-icon {
+  display: none;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  /* line 10, ../sass/_welcome-section.scss */
+  #nav-icon {
+    display: block;
+  }
+}
+
+/* Icon 2 */
+/* line 37, ../sass/_welcome-section.scss */
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 50%;
+  background: #d3531a;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* line 54, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+/* line 59, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+
+/* line 64, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(1), #nav-icon span:nth-child(2) {
+  top: 0px;
+}
+
+/* line 68, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(3), #nav-icon span:nth-child(4) {
+  top: 18px;
+}
+
+/* line 72, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(5), #nav-icon span:nth-child(6) {
+  top: 36px;
+}
+
+/* line 76, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(1), #nav-icon.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 83, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(2), #nav-icon.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 90, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+/* line 95, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+/* line 100, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+/* line 105, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+/* line 110, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+/* line 115, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
+}
+
+/* line 120, ../sass/_welcome-section.scss */
 h3 {
   font-family: "Roboto Bold";
   font-size: 2.5em;
 }
 
-/* line 16, ../sass/_welcome-section.scss */
+/* line 125, ../sass/_welcome-section.scss */
 a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blue {
   display: inline-block;
   margin-top: 30px;
@@ -66,21 +189,27 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   color: #612316;
 }
 
-/* line 25, ../sass/_welcome-section.scss */
+/* line 134, ../sass/_welcome-section.scss */
 .gradient {
-  height: calc(100% + 35px);
+  height: 100%;
   background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
   background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
 }
 
-/* line 32, ../sass/_welcome-section.scss */
+/* line 142, ../sass/_welcome-section.scss */
 .welcome-section {
   height: 100vh;
   background: #ccc url(../img/hero-image.jpg) 50% 105px no-repeat;
   background-size: cover;
 }
-/* line 38, ../sass/_welcome-section.scss */
+@media screen and (max-width: 1200px) {
+  /* line 142, ../sass/_welcome-section.scss */
+  .welcome-section {
+    height: auto;
+  }
+}
+/* line 152, ../sass/_welcome-section.scss */
 .welcome-section header {
   display: flex;
   flex-flow: row wrap;
@@ -89,71 +218,71 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   padding-bottom: 28px;
 }
 @media only screen and (max-width: 900px) {
-  /* line 38, ../sass/_welcome-section.scss */
+  /* line 152, ../sass/_welcome-section.scss */
   .welcome-section header {
     justify-content: space-between;
   }
 }
-/* line 46, ../sass/_welcome-section.scss */
+/* line 160, ../sass/_welcome-section.scss */
 .welcome-section header h1 {
   font-family: "Roboto Bold";
   font-size: 2em;
 }
-/* line 49, ../sass/_welcome-section.scss */
+/* line 163, ../sass/_welcome-section.scss */
 .welcome-section header h1 span {
   display: block;
   font-family: "Roboto Regular";
   font-size: 0.5em;
   color: #dd4b2b;
 }
-/* line 56, ../sass/_welcome-section.scss */
+/* line 170, ../sass/_welcome-section.scss */
 .welcome-section header ul {
   display: flex;
 }
-/* line 58, ../sass/_welcome-section.scss */
+/* line 172, ../sass/_welcome-section.scss */
 .welcome-section header ul li {
   margin-right: 40px;
 }
 @media only screen and (max-width: 900px) {
-  /* line 58, ../sass/_welcome-section.scss */
+  /* line 172, ../sass/_welcome-section.scss */
   .welcome-section header ul li {
     margin-right: 10px;
   }
 }
-/* line 64, ../sass/_welcome-section.scss */
+/* line 178, ../sass/_welcome-section.scss */
 .welcome-section header ul li a {
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 15px;
   color: #31353e;
 }
-/* line 75, ../sass/_welcome-section.scss */
+/* line 189, ../sass/_welcome-section.scss */
 .welcome-section h2 {
   padding: 70px 0;
   font-family: "Roboto Light";
   font-size: 3em;
   color: #fff;
 }
-/* line 80, ../sass/_welcome-section.scss */
+/* line 194, ../sass/_welcome-section.scss */
 .welcome-section h2 span {
   display: block;
   margin-top: 10px;
   font-family: "Roboto Bold";
   font-size: .5em;
 }
-/* line 87, ../sass/_welcome-section.scss */
+/* line 201, ../sass/_welcome-section.scss */
 .welcome-section .menu-list li img {
   width: 120px;
   border: 7px solid #edeff1;
   border-radius: 50%;
 }
-/* line 92, ../sass/_welcome-section.scss */
+/* line 206, ../sass/_welcome-section.scss */
 .welcome-section h4 {
   padding-top: 10px;
   font-family: "Roboto Bold";
   font-size: 1em;
   color: #edeff1;
 }
-/* line 98, ../sass/_welcome-section.scss */
+/* line 212, ../sass/_welcome-section.scss */
 .welcome-section p {
   font-family: "Roboto Light";
   font-size: .8em;
@@ -209,7 +338,7 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
 }
 /* line 21, ../sass/_mailing-section.scss */
 .mailing-section form input[placeholder] {
-  padding: 15px 80px 15px 40px;
+  padding: 14px 80px 14px 40px;
   border: 1px solid #fff;
   border-radius: 25px 0 0 25px;
   font-family: "Roboto Regular";
@@ -221,11 +350,11 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   transform: translate(-25%, 0);
   padding: 15px 50px;
   border-radius: 25px;
+  border: none;
   text-align: center;
   background-color: #fff;
   color: brown;
   font-family: "Roboto Regular";
-  color: #fff;
 }
 
 /* line 1, ../sass/_info-section.scss */
@@ -258,6 +387,7 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   width: 400px;
   height: 400px;
   outline: 1px solid #ccc;
+  background-color: #ccc;
 }
 
 /* line 1, ../sass/_services-section.scss */

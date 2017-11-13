@@ -6,40 +6,48 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/screen.css">
 	<link rel="stylesheet" href="css/hover.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+	<script src="js/icon.js"></script>
 	<title>HW_6</title>
 </head>
 <body>
 	<div class="wrapper">
-		<section class="welcome-section">
-			<div class="container">
-				<header>
-					<h1>Panakeia<span>Free PSD template</span></h1>
-					<nav>
-						<ul>
-							<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Fusce at</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Facilisis</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Ante donec</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Blandit rhoncus</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Placerat</a></li>
-						</ul>
-					</nav>
-				</header>
-			</div>
+		<section class="welcome-section container-fluid">
+			<header>
+				<h1>Panakeia<span>Free PSD template</span></h1>
+				<nav>
+					<ul>
+						<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Fusce at</a></li>
+						<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Facilisis</a></li>
+						<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Ante donec</a></li>
+						<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Blandit rhoncus</a></li>
+						<li><a class="hvr-bounce-to-bottom" href="javascript:void(0)">Placerat</a></li>
+					</ul>
+				</nav>
+				<div id="nav-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</header>
 			<div class="gradient">
 			<h2>Lorem ipsum dolor sit<span>Lorem ipsum dolor sit amet</span></h2>	
 			<div class="menu container">
-				<ul class="menu-list row justify-content-md-center">
-					<li class="menu-list-item col-md-3">
+				<ul class="menu-list row justify-content-center">
+					<li class="menu-list-item col-sm-12 col-md-6 col-xl-3">
 						<img src="img/tincidunt.png" alt="tincidunt">
 						<h4>Tincidunt</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus natus similique excepturi nostrum, sunt odit!</p>
 					</li>
-					<li class="menu-list-item col-md-3">
+					<li class="menu-list-item col-sm-12 col-md-6 col-xl-3">
 						<img src="img/bibendum.png" alt="bibendum">
 						<h4>Duis bibendum</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, tenetur numquam! Dolorum itaque, velit magnam!</p>
 					</li>
-					<li class="menu-list-item col-md-3">
+					<li class="menu-list-item col-sm-12 col-md-6 col-xl-3">
 						<img src="img/ligula.png" alt="ligula">
 						<h4>Donec ligula</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, facere omnis ullam vitae nobis!</p>
@@ -51,26 +59,30 @@
 		</section>
 		<section class="news-section">
 			<h3>Our news</h3>
-			<ul class="news-list row justify-content-md-center">
-				<li class="col-6 col-md-3">
-					<img src="img/newspic1.jpg" alt="coffee">
-					<h4>Lorem ipsum</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam similique ratione est!</p>
-					<a href="javascript:void(0)">read more</a>
-				</li>
-				<li class="col-6 col-md-3 align-self-stretch">
-					<img src="img/newspic2.jpg" alt="cake">
-					<h4>Lorem ipsum</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia soluta eum quo?</p>
-					<a href="javascript:void(0)">read more</a>
-				</li>
-				<li class="col-6 col-md-3">
-					<img src="img/newspic3.jpg" alt="burger">
-					<h4>Lorem ipsum</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ducimus maiores rem.</p>
-					<a href="javascript:void(0)">read more</a>
-				</li>
-			</ul>
+			<div class="container">
+				<div class="">
+					<ul class="news-list row justify-content-center">
+						<li class="col-sm-12 col-md-6 col-xl-3">
+							<img src="img/newspic1.jpg" alt="coffee">
+							<h4>Lorem ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam similique ratione est!</p>
+							<a href="javascript:void(0)">read more</a>
+						</li>
+						<li class="col-sm-12 col-md-6 col-xl-3">
+							<img src="img/newspic2.jpg" alt="cake">
+							<h4>Lorem ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia soluta eum quo?</p>
+							<a href="javascript:void(0)">read more</a>
+						</li>
+						<li class="col-sm-12 col-md-6 col-xl-3">
+							<img src="img/newspic3.jpg" alt="burger">
+							<h4>Lorem ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ducimus maiores rem.</p>
+							<a href="javascript:void(0)">read more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<section class="mailing-section">
 			<div class="transparent-block">
@@ -99,30 +111,34 @@
 			</div>
 		</section>
 		<section class="services-section">
-			<ul class="services-firstlist services-list">
-				<li><a href="javascript:void(0)">inu ipsum dolor</a></li>
-				<li><a href="javascript:void(0)">consectetur</a></li>
-				<li><a href="javascript:void(0)">dolor sit</a></li>
-				<li><a href="javascript:void(0)">adipisicing elit</a></li>
-				<li><a href="javascript:void(0)">adipisicing elit</a></li>
-				<li><a href="javascript:void(0)">consectetur adipisicing</a></li>
-			</ul>
-			<ul class="services-secondlist services-list">
-				<li><a href="javascript:void(0)">inu ipsum dolor</a></li>
-				<li><a href="javascript:void(0)">consectetur</a></li>
-				<li><a href="javascript:void(0)">dolor sit</a></li>
-				<li><a href="javascript:void(0)">adipisicing elit</a></li>
-				<li><a href="javascript:void(0)">adipisicing elit</a></li>
-				<li><a href="javascript:void(0)">consectetur adipisicing</a></li>
-			</ul>
-			<ul class="services-thirdlist services-list">
-				<li><a href="javascript:void(0)">inu ipsum dolor</a></li>
-				<li><a href="javascript:void(0)">consectetur</a></li>
-				<li><a href="javascript:void(0)">dolor sit</a></li>
-				<li><a href="javascript:void(0)">adipisicing elit</a></li>
-				<li><a href="javascript:void(0)">adipisicing elit</a></li>
-				<li><a href="javascript:void(0)">consectetur adipisicing</a></li>
-			</ul>
+			<div class="container">
+				<div class="row justify-content-center">
+					<ul class="services-firstlist services-list col-lg-3">
+						<li><a href="javascript:void(0)">inu ipsum dolor</a></li>
+						<li><a href="javascript:void(0)">consectetur</a></li>
+						<li><a href="javascript:void(0)">dolor sit</a></li>
+						<li><a href="javascript:void(0)">adipisicing elit</a></li>
+						<li><a href="javascript:void(0)">adipisicing elit</a></li>
+						<li><a href="javascript:void(0)">consectetur adipisicing</a></li>
+					</ul>
+					<ul class="services-secondlist services-list col-lg-3">
+						<li><a href="javascript:void(0)">inu ipsum dolor</a></li>
+						<li><a href="javascript:void(0)">consectetur</a></li>
+						<li><a href="javascript:void(0)">dolor sit</a></li>
+						<li><a href="javascript:void(0)">adipisicing elit</a></li>
+						<li><a href="javascript:void(0)">adipisicing elit</a></li>
+						<li><a href="javascript:void(0)">consectetur adipisicing</a></li>
+					</ul>
+					<ul class="services-thirdlist services-list col-lg-3">
+						<li><a href="javascript:void(0)">inu ipsum dolor</a></li>
+						<li><a href="javascript:void(0)">consectetur</a></li>
+						<li><a href="javascript:void(0)">dolor sit</a></li>
+						<li><a href="javascript:void(0)">adipisicing elit</a></li>
+						<li><a href="javascript:void(0)">adipisicing elit</a></li>
+						<li><a href="javascript:void(0)">consectetur adipisicing</a></li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<footer>
 			<div class="transparent-block">
