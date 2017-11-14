@@ -26,6 +26,12 @@
 			font-family: "Roboto Regular";
 			color: #fff;
 			background-color: rgba(237, 237, 237, 0.36);
+			@media only screen and (max-width: 500px){
+				padding: 10px 20px;
+				border-radius: 15px;
+				margin-bottom: 15px;
+				text-align: center;
+			}
 			
 		}
 		input[type="submit"] {
@@ -38,6 +44,15 @@
 			background-color: #fff;
 			color: brown;
 			font-family: "Roboto Regular";
+			@media only screen and (max-width: 500px){
+				display: block;
+				margin: 0 auto;
+				transform: translate(0);
+				padding: 10px 15px;
+				border-radius: 15px;
+				color: #1f80a5;
+				font-weight: 800;
+			}
 
 		}
 	}

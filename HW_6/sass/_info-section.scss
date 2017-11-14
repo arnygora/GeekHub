@@ -1,36 +1,50 @@
 .info-section {
-
-
-
-	// TODO: with Bootstrap
-
-	
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
+	padding: 40px;
+}
+.first-block {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
 	flex-flow: row wrap;
+	margin-bottom: 50px;
 	a.red {
 		@extend a.link-btn;
+		margin-bottom: 30px;
 		background-color: #dd4b2b;
 		color: #fff;
 	}
-	a.blue {
-		@extend a.link-btn;
-		background-color: #4b4e73;
-		color: #fff;
+}
+.container-block-one {
+	order: 1;
+	/* width: 500px; */
+	flex-basis: 500px;
+	flex-shrink: 3;
+	height: 400px;
+	//padding-top: 20px;
+	margin-left: 50px;
+	outline: 1px solid #ccc;
+	background-color: #ccc;
 	}
-	.container-block {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex: 1 300px 2;
-		width: 400px;
-		height: 400px;
-		outline: 1px solid #ccc;
-		background-color: #ccc;
+	.content-block {
+		max-width: 560px;
 	}
+
+
+a.blue {
+		 @extend a.link-btn;
+		 background-color: #4b4e73;
+		 color: #fff;
+ }
+
+.container-block-two {
+	@extend .container-block-one;
+	order: 0;
+	margin-right: 50px;
+	margin-left: 0;
+}
+
+.second-block {
+	@extend .first-block;
+	margin-bottom: 0;
 }
