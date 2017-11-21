@@ -1,0 +1,23 @@
+.blog-section {
+  padding: 3rem 0;
+  h3 {
+    @extend .section-caption;
+    margin: 0 auto;
+  }
+  h4 {
+    font-family: "Oxygen Bold";
+    color: $mint-color;
+  }
+  .card-body {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    a {
+      color: $mint-color;
+    }
+    span {
+      color: $mint-color;
+    }
+  }
+
+
+}

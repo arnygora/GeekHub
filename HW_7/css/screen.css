@@ -1,0 +1,556 @@
+@font-face {
+  font-family: "Oxygen Light";
+  src: url("../fonts/Oxygen/Oxygen-Light.ttf");
+}
+@font-face {
+  font-family: "Oxygen Regular";
+  src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
+}
+@font-face {
+  font-family: "Oxygen Bold";
+  src: url("../fonts/Oxygen/Oxygen-Bold.ttf");
+}
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_welcome-section.scss */
+body {
+  font-family: "Oxygen Regular";
+}
+
+/* line 4, ../sass/_welcome-section.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/_welcome-section.scss */
+.main-header {
+  position: relative;
+  background: #474747;
+  z-index: 3;
+}
+/* line 12, ../sass/_welcome-section.scss */
+.main-header form {
+  border: 1px solid #fff;
+}
+/* line 15, ../sass/_welcome-section.scss */
+.main-header form input {
+  padding: 4px 0 4px 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+/* line 23, ../sass/_welcome-section.scss */
+.main-header li {
+  padding-top: 0;
+}
+/* line 25, ../sass/_welcome-section.scss */
+.main-header li a {
+  margin-top: 10px;
+}
+/* line 29, ../sass/_welcome-section.scss */
+.main-header li:nth-child(1) {
+  border-top: 10px inset #ffae00;
+}
+/* line 34, ../sass/_welcome-section.scss */
+.main-header li:nth-child(2) {
+  border-top: 10px solid #fc7100;
+}
+/* line 38, ../sass/_welcome-section.scss */
+.main-header li:nth-child(3) {
+  border-top: 10px solid #e51c5e;
+}
+/* line 42, ../sass/_welcome-section.scss */
+.main-header li:nth-child(4) {
+  border-top: 10px solid #ae0f8d;
+}
+/* line 46, ../sass/_welcome-section.scss */
+.main-header li:nth-child(5) {
+  border-top: 10px solid #6d0fae;
+}
+/* line 50, ../sass/_welcome-section.scss */
+.main-header li:nth-child(6) {
+  border-top: 10px solid #33227a;
+}
+/* line 54, ../sass/_welcome-section.scss */
+.main-header li:nth-child(7) {
+  border-top: 10px solid #0c8fcc;
+}
+
+/* line 59, ../sass/_welcome-section.scss */
+.slider {
+  margin-top: -67px;
+  display: flex;
+}
+
+/* line 64, ../sass/_welcome-section.scss */
+.carousel-item img {
+  height: 100vh;
+}
+
+/* line 68, ../sass/_welcome-section.scss */
+.hero {
+  margin-bottom: 100px;
+}
+/* line 72, ../sass/_welcome-section.scss */
+.hero h2 {
+  font-size: 5em;
+  color: #02baab;
+}
+/* line 76, ../sass/_welcome-section.scss */
+.hero p {
+  font-size: 5em;
+}
+/* line 79, ../sass/_welcome-section.scss */
+.hero a {
+  display: inline-block;
+  margin-top: 5em;
+  padding: 1em;
+  font-family: "Oxygen Bold";
+  text-transform: uppercase;
+}
+/* line 85, ../sass/_welcome-section.scss */
+.hero a.btn-features {
+  color: #fff;
+  background: #02baab;
+  border: 2px solid #02baab;
+}
+
+/* line 97, ../sass/_welcome-section.scss */
+a.btn-purchase, .description-section a, .card-deck-foo a.btn-purchase, .card-deck-foo footer .copyright a, footer .copyright .card-deck-foo a, footer .copyright a {
+  display: inline-block;
+  margin-top: 5em;
+  margin-left: 20px;
+  padding: 1em;
+  font-family: "Oxygen Bold";
+  text-transform: uppercase;
+  border: 2px solid #02baab;
+  color: #02baab;
+}
+
+/* line 3, ../sass/_description-section.scss */
+.description-section p {
+  text-align: center;
+  font: 1.5rem/1.5 "Oxygen Light", sans-serif;
+}
+/* line 7, ../sass/_description-section.scss */
+.description-section a {
+  margin: 2rem 0 3rem;
+}
+
+/* line 13, ../sass/_description-section.scss */
+h3.section-caption, .portfolio-section h3, .features-section .superb h3, .blog-section h3, .experience-section h3, .team-section h3 {
+  margin-top: 4rem;
+  color: #3b4954;
+}
+/* line 16, ../sass/_description-section.scss */
+h3.section-caption:after, .portfolio-section h3:after, .features-section .superb h3:after, .blog-section h3:after, .experience-section h3:after, .team-section h3:after {
+  display: block;
+  width: 5rem;
+  margin: 1rem auto 3rem;
+  content: '';
+  border: 3px solid #eee;
+}
+
+/* line 1, ../sass/_portfolio-section.scss */
+.portfolio-section {
+  background: #525252;
+}
+/* line 3, ../sass/_portfolio-section.scss */
+.portfolio-section h3 {
+  color: #fff;
+}
+/* line 7, ../sass/_portfolio-section.scss */
+.portfolio-section p {
+  margin-bottom: 50px;
+  text-align: center;
+  font: 1.5rem/1.5 "Oxygen Light", sans-serif;
+  color: #eee;
+}
+/* line 13, ../sass/_portfolio-section.scss */
+.portfolio-section .card-text {
+  text-align: left;
+  font-size: 1rem;
+  color: #02baab;
+}
+
+/* line 19, ../sass/_portfolio-section.scss */
+.card-hover {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: background .3s ease-in-out;
+}
+/* line 32, ../sass/_portfolio-section.scss */
+.card-hover:hover {
+  opacity: 1;
+  background: rgba(200, 200, 200, 0.5);
+  height: 100%;
+  width: 100%;
+}
+/* line 38, ../sass/_portfolio-section.scss */
+.card-hover span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+  background: #02baab;
+  color: #fff;
+  line-height: 2rem;
+}
+
+/* line 50, ../sass/_portfolio-section.scss */
+.card-deck-foo {
+  background-color: #02baab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+/* line 56, ../sass/_portfolio-section.scss */
+.card-deck-foo .description-section a, .description-section .card-deck-foo a, .card-deck-foo a.btn-purchase, .card-deck-foo footer .copyright a, footer .copyright .card-deck-foo a {
+  margin: 0 0 0 20px;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 1, ../sass/_features-section.scss */
+.features-section {
+  text-align: center;
+}
+/* line 3, ../sass/_features-section.scss */
+.features-section .superb {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 50px;
+}
+/* line 7, ../sass/_features-section.scss */
+.features-section .superb h3 {
+  margin: 2rem auto;
+}
+/* line 11, ../sass/_features-section.scss */
+.features-section .superb h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+/* line 15, ../sass/_features-section.scss */
+.features-section .superb span {
+  margin-right: 30px;
+  color: #02baab;
+}
+/* line 19, ../sass/_features-section.scss */
+.features-section .superb p {
+  font: .9rem/1.5rem "Oxygen Light", sans-serif;
+}
+
+/* line 1, ../sass/_cite-section.scss */
+.cite-section {
+  background: #666;
+  padding: 3rem;
+}
+/* line 4, ../sass/_cite-section.scss */
+.cite-section span {
+  color: #02baab;
+}
+/* line 7, ../sass/_cite-section.scss */
+.cite-section p {
+  padding: 30px 0 20px;
+  line-height: 2rem;
+}
+/* line 11, ../sass/_cite-section.scss */
+.cite-section footer {
+  font-family: "Oxygen Bold";
+  background: transparent;
+  color: #02baab;
+}
+
+/* line 1, ../sass/_blog-section.scss */
+.blog-section {
+  padding: 3rem 0;
+}
+/* line 3, ../sass/_blog-section.scss */
+.blog-section h3 {
+  margin: 0 auto;
+}
+/* line 7, ../sass/_blog-section.scss */
+.blog-section h4 {
+  font-family: "Oxygen Bold";
+  color: #02baab;
+}
+/* line 11, ../sass/_blog-section.scss */
+.blog-section .card-body {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+/* line 14, ../sass/_blog-section.scss */
+.blog-section .card-body a {
+  color: #02baab;
+}
+/* line 17, ../sass/_blog-section.scss */
+.blog-section .card-body span {
+  color: #02baab;
+}
+
+/* line 1, ../sass/_experience-section.scss */
+.experience-section {
+  padding: 1rem 0;
+  text-align: center;
+  background: #02baab;
+}
+/* line 5, ../sass/_experience-section.scss */
+.experience-section h3 {
+  color: #fff;
+}
+/* line 9, ../sass/_experience-section.scss */
+.experience-section .counter {
+  padding-top: 20px;
+  font-size: 4rem;
+}
+/* line 14, ../sass/_experience-section.scss */
+.experience-section div.col-3:after {
+  content: "...";
+  /* display: block; */
+  font-size: 4rem;
+  color: #fff;
+  /* float: right; */
+  position: absolute;
+  top: 47px;
+  left: 263px;
+}
+/* line 24, ../sass/_experience-section.scss */
+.experience-section div.col-3:last-child {
+  content: "";
+}
+/* line 28, ../sass/_experience-section.scss */
+.experience-section .rounded-circle {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  align-items: center;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+/* line 38, ../sass/_experience-section.scss */
+.experience-section span {
+  font-size: 4em;
+  /* display: block; */
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
+}
+
+/* line 1, ../sass/_team-section.scss */
+.team-section {
+  text-align: center;
+}
+/* line 6, ../sass/_team-section.scss */
+.team-section img {
+  filter: grayscale(100%);
+}
+/* line 8, ../sass/_team-section.scss */
+.team-section img:hover {
+  filter: grayscale(0);
+}
+/* line 12, ../sass/_team-section.scss */
+.team-section .card-title {
+  position: relative;
+  margin: -65px auto 10px;
+  width: 10rem;
+  padding: 1rem;
+  background: #fff;
+  border: 2px solid #ccc;
+  /* z-index: 21333; */
+}
+/* line 23, ../sass/_team-section.scss */
+.team-section .card-body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+}
+/* line 28, ../sass/_team-section.scss */
+.team-section .card-body .btn-purchase, .team-section .card-body footer .copyright a, footer .copyright .team-section .card-body a {
+  margin-top: 20px;
+}
+/* line 30, ../sass/_team-section.scss */
+.team-section .card-body .btn-purchase:hover, .team-section .card-body footer .copyright a:hover, footer .copyright .team-section .card-body a:hover {
+  color: #fff;
+  background: #02baab;
+  border: 2px solid #02baab;
+}
+/* line 37, ../sass/_team-section.scss */
+.team-section h4 {
+  font-family: "Oxygen Bold";
+  color: #02baab;
+}
+/* line 40, ../sass/_team-section.scss */
+.team-section h4 span {
+  font-family: "Oxygen Light";
+  color: #ccc;
+}
+/* line 45, ../sass/_team-section.scss */
+.team-section p {
+  line-height: 1.5;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  background: #1f2a32;
+  color: #fff;
+  line-height: 1.5;
+}
+/* line 6, ../sass/_footer.scss */
+footer .rainbow .puprle-line, footer .rainbow .blue-line, footer .rainbow .red-line, footer .rainbow .yellow-line {
+  width: 25%;
+  height: 16px;
+  background: #7827a9;
+}
+/* line 11, ../sass/_footer.scss */
+footer .rainbow .blue-line {
+  background: #0c8fcc;
+}
+/* line 15, ../sass/_footer.scss */
+footer .rainbow .red-line {
+  background: #de1c5c;
+}
+/* line 19, ../sass/_footer.scss */
+footer .rainbow .yellow-line {
+  background: #ffae00;
+}
+/* line 24, ../sass/_footer.scss */
+footer h5 {
+  font-size: 1.5rem;
+}
+/* line 27, ../sass/_footer.scss */
+footer li {
+  margin-bottom: 1.5rem;
+}
+/* line 29, ../sass/_footer.scss */
+footer li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 32, ../sass/_footer.scss */
+footer li a:hover {
+  color: #02baab;
+}
+/* line 37, ../sass/_footer.scss */
+footer .mint-color {
+  color: #02baab;
+}
+/* line 40, ../sass/_footer.scss */
+footer span.social-icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 1.5;
+}
+/* line 45, ../sass/_footer.scss */
+footer span.social-icon.fa-facebook {
+  background: #3b5998;
+}
+/* line 48, ../sass/_footer.scss */
+footer span.social-icon.fa-twitter {
+  background: #00a0d1;
+}
+/* line 51, ../sass/_footer.scss */
+footer span.social-icon.fa-youtube {
+  background: #c4302b;
+}
+/* line 54, ../sass/_footer.scss */
+footer span.social-icon.fa-instagram {
+  background: #825c48;
+}
+/* line 57, ../sass/_footer.scss */
+footer span.social-icon.fa-pinterest-p {
+  background: #a30834;
+}
+/* line 61, ../sass/_footer.scss */
+footer .copyright {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 66, ../sass/_footer.scss */
+footer .copyright a {
+  margin-top: 0;
+  text-transform: inherit;
+  color: #fff;
+}

@@ -1,0 +1,25 @@
+.features-section {
+  text-align: center;
+  .superb {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 50px;
+    h3 {
+      @extend .section-caption;
+      margin: 2rem auto;
+    }
+    h4 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    span {
+      margin-right: 30px;
+      color: $mint-color;
+    }
+    p {
+      font: .9rem/1.5rem "Oxygen Light", sans-serif;
+
+    }
+  }
+}
+

@@ -1,0 +1,24 @@
+.description-section {
+
+  p {
+    text-align: center;
+    font: 1.5rem/1.5 "Oxygen Light", sans-serif;
+  }
+  a {
+    @extend a.btn-purchase;
+    margin: 2rem 0 3rem;
+  }
+}
+
+h3.section-caption {
+  margin-top: 4rem;
+  color: #3b4954;
+  &:after {
+    display: block;
+    width: 5rem;
+    margin: 1rem auto 3rem;
+    content: '';
+    border: 3px solid #eee;
+  }
+}
+
