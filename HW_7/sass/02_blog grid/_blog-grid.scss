@@ -1,7 +1,6 @@
 .view-section {
   background: #666;
   color: #85939f;
-  padding: 0 16rem;
   @media only screen and (max-width: 1240px) {
     padding: 0 50px;
   }
@@ -45,6 +44,9 @@
       }
 }
 
+.column-card {
+  flex-direction: column;
+}
 
 
 .blog-pagination {

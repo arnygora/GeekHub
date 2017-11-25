@@ -16,15 +16,17 @@
 $mint-color: #02baab;
 
 @import "compass/reset";
-@import "welcome-section";
-@import "description-section";
-@import "portfolio-section";
-@import "features-section";
-@import "cite-section";
-@import "blog-section";
-@import "experience-section";
-@import "team-section";
+@import "01_index/welcome-section";
+@import "01_index/description-section";
+@import "01_index/portfolio-section";
+@import "01_index/features-section";
+@import "01_index/cite-section";
+@import "02_blog grid/blog-section";
+@import "01_index/experience-section";
+@import "01_index/team-section";
 @import "footer";
-@import "blog-grid";
+@import "02_blog grid/blog-grid";
+@import "04_blog single/main-content";
+
 
 

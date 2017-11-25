@@ -75,95 +75,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/_welcome-section.scss */
+/* line 1, ../sass/01_index/_welcome-section.scss */
 body {
   font-family: "Oxygen Regular";
 }
 
-/* line 4, ../sass/_welcome-section.scss */
+/* line 4, ../sass/01_index/_welcome-section.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 7, ../sass/_welcome-section.scss */
+/* line 7, ../sass/01_index/_welcome-section.scss */
 .main-header {
   position: relative;
   background: #474747;
   z-index: 3;
 }
-/* line 12, ../sass/_welcome-section.scss */
+/* line 12, ../sass/01_index/_welcome-section.scss */
 .main-header form {
   border: 1px solid #fff;
 }
-/* line 15, ../sass/_welcome-section.scss */
+/* line 15, ../sass/01_index/_welcome-section.scss */
 .main-header form input {
   padding: 4px 0 4px 10px;
   border: none;
   background: transparent;
   color: #fff;
 }
-/* line 23, ../sass/_welcome-section.scss */
+/* line 23, ../sass/01_index/_welcome-section.scss */
 .main-header li {
   padding-top: 0;
 }
-/* line 25, ../sass/_welcome-section.scss */
+/* line 25, ../sass/01_index/_welcome-section.scss */
 .main-header li a {
   margin-top: 10px;
 }
-/* line 29, ../sass/_welcome-section.scss */
+/* line 29, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(1) {
   border-top: 10px inset #ffae00;
 }
-/* line 34, ../sass/_welcome-section.scss */
+/* line 34, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(2) {
   border-top: 10px solid #fc7100;
 }
-/* line 38, ../sass/_welcome-section.scss */
+/* line 38, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(3) {
   border-top: 10px solid #e51c5e;
 }
-/* line 42, ../sass/_welcome-section.scss */
+/* line 42, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(4) {
   border-top: 10px solid #ae0f8d;
 }
-/* line 46, ../sass/_welcome-section.scss */
+/* line 46, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(5) {
   border-top: 10px solid #6d0fae;
 }
-/* line 50, ../sass/_welcome-section.scss */
+/* line 50, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(6) {
   border-top: 10px solid #33227a;
 }
-/* line 54, ../sass/_welcome-section.scss */
+/* line 54, ../sass/01_index/_welcome-section.scss */
 .main-header li:nth-child(7) {
   border-top: 10px solid #0c8fcc;
 }
 
-/* line 59, ../sass/_welcome-section.scss */
+/* line 59, ../sass/01_index/_welcome-section.scss */
 .slider {
   margin-top: -67px;
   display: flex;
 }
 
-/* line 64, ../sass/_welcome-section.scss */
+/* line 64, ../sass/01_index/_welcome-section.scss */
 .carousel-item img {
   height: 100vh;
 }
 
-/* line 68, ../sass/_welcome-section.scss */
+/* line 68, ../sass/01_index/_welcome-section.scss */
 .hero {
   margin-bottom: 100px;
 }
-/* line 72, ../sass/_welcome-section.scss */
+/* line 72, ../sass/01_index/_welcome-section.scss */
 .hero h2 {
   font-size: 5em;
   color: #02baab;
 }
-/* line 76, ../sass/_welcome-section.scss */
+/* line 76, ../sass/01_index/_welcome-section.scss */
 .hero p {
   font-size: 5em;
 }
-/* line 79, ../sass/_welcome-section.scss */
+/* line 79, ../sass/01_index/_welcome-section.scss */
 .hero a {
   display: inline-block;
   margin-top: 5em;
@@ -171,14 +171,14 @@ body {
   font-family: "Oxygen Bold";
   text-transform: uppercase;
 }
-/* line 85, ../sass/_welcome-section.scss */
+/* line 85, ../sass/01_index/_welcome-section.scss */
 .hero a.btn-features {
   color: #fff;
   background: #02baab;
   border: 2px solid #02baab;
 }
 
-/* line 97, ../sass/_welcome-section.scss */
+/* line 97, ../sass/01_index/_welcome-section.scss */
 a.btn-purchase, .description-section a, .card-deck-foo a.btn-purchase, .card-deck-foo footer .copyright a, footer .copyright .card-deck-foo a, footer .copyright a {
   display: inline-block;
   margin-top: 5em;
@@ -190,22 +190,22 @@ a.btn-purchase, .description-section a, .card-deck-foo a.btn-purchase, .card-dec
   color: #02baab;
 }
 
-/* line 3, ../sass/_description-section.scss */
+/* line 3, ../sass/01_index/_description-section.scss */
 .description-section p {
   text-align: center;
   font: 1.5rem/1.5 "Oxygen Light", sans-serif;
 }
-/* line 7, ../sass/_description-section.scss */
+/* line 7, ../sass/01_index/_description-section.scss */
 .description-section a {
   margin: 2rem 0 3rem;
 }
 
-/* line 13, ../sass/_description-section.scss */
+/* line 13, ../sass/01_index/_description-section.scss */
 h3.section-caption, .portfolio-section h3, .features-section .superb h3, .blog-section h3, .experience-section h3, .team-section h3 {
   margin-top: 4rem;
   color: #3b4954;
 }
-/* line 16, ../sass/_description-section.scss */
+/* line 16, ../sass/01_index/_description-section.scss */
 h3.section-caption:after, .portfolio-section h3:after, .features-section .superb h3:after, .blog-section h3:after, .experience-section h3:after, .team-section h3:after {
   display: block;
   width: 5rem;
@@ -214,29 +214,29 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   border: 3px solid #eee;
 }
 
-/* line 1, ../sass/_portfolio-section.scss */
+/* line 1, ../sass/01_index/_portfolio-section.scss */
 .portfolio-section {
   background: #525252;
 }
-/* line 3, ../sass/_portfolio-section.scss */
+/* line 3, ../sass/01_index/_portfolio-section.scss */
 .portfolio-section h3 {
   color: #fff;
 }
-/* line 7, ../sass/_portfolio-section.scss */
+/* line 7, ../sass/01_index/_portfolio-section.scss */
 .portfolio-section p {
   margin-bottom: 50px;
   text-align: center;
   font: 1.5rem/1.5 "Oxygen Light", sans-serif;
   color: #eee;
 }
-/* line 13, ../sass/_portfolio-section.scss */
+/* line 13, ../sass/01_index/_portfolio-section.scss */
 .portfolio-section .card-text {
   text-align: left;
   font-size: 1rem;
   color: #02baab;
 }
 
-/* line 19, ../sass/_portfolio-section.scss */
+/* line 19, ../sass/01_index/_portfolio-section.scss */
 .card-hover {
   display: flex;
   flex-flow: column wrap;
@@ -249,14 +249,14 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   opacity: 0;
   transition: background .3s ease-in-out;
 }
-/* line 32, ../sass/_portfolio-section.scss */
+/* line 32, ../sass/01_index/_portfolio-section.scss */
 .card-hover:hover {
   opacity: 1;
   background: rgba(200, 200, 200, 0.5);
   height: 100%;
   width: 100%;
 }
-/* line 38, ../sass/_portfolio-section.scss */
+/* line 38, ../sass/01_index/_portfolio-section.scss */
 .card-hover span {
   display: block;
   width: 40px;
@@ -270,7 +270,7 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   line-height: 2rem;
 }
 
-/* line 50, ../sass/_portfolio-section.scss */
+/* line 50, ../sass/01_index/_portfolio-section.scss */
 .card-deck-foo {
   background-color: #02baab;
   display: flex;
@@ -278,106 +278,106 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   align-items: center;
   padding: 2rem;
 }
-/* line 56, ../sass/_portfolio-section.scss */
+/* line 56, ../sass/01_index/_portfolio-section.scss */
 .card-deck-foo .description-section a, .description-section .card-deck-foo a, .card-deck-foo a.btn-purchase, .card-deck-foo footer .copyright a, footer .copyright .card-deck-foo a {
   margin: 0 0 0 20px;
   color: #fff;
   border-color: #fff;
 }
 
-/* line 1, ../sass/_features-section.scss */
+/* line 1, ../sass/01_index/_features-section.scss */
 .features-section {
   text-align: center;
 }
-/* line 3, ../sass/_features-section.scss */
+/* line 3, ../sass/01_index/_features-section.scss */
 .features-section .superb {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 50px;
 }
-/* line 7, ../sass/_features-section.scss */
+/* line 7, ../sass/01_index/_features-section.scss */
 .features-section .superb h3 {
   margin: 2rem auto;
 }
-/* line 11, ../sass/_features-section.scss */
+/* line 11, ../sass/01_index/_features-section.scss */
 .features-section .superb h4 {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
-/* line 15, ../sass/_features-section.scss */
+/* line 15, ../sass/01_index/_features-section.scss */
 .features-section .superb span {
   margin-right: 30px;
   color: #02baab;
 }
-/* line 19, ../sass/_features-section.scss */
+/* line 19, ../sass/01_index/_features-section.scss */
 .features-section .superb p {
   font: .9rem/1.5rem "Oxygen Light", sans-serif;
 }
 
-/* line 1, ../sass/_cite-section.scss */
+/* line 1, ../sass/01_index/_cite-section.scss */
 .cite-section {
   background: #666;
   padding: 3rem;
 }
-/* line 4, ../sass/_cite-section.scss */
+/* line 4, ../sass/01_index/_cite-section.scss */
 .cite-section span {
   color: #02baab;
 }
-/* line 7, ../sass/_cite-section.scss */
+/* line 7, ../sass/01_index/_cite-section.scss */
 .cite-section p {
   padding: 30px 0 20px;
   line-height: 2rem;
 }
-/* line 11, ../sass/_cite-section.scss */
+/* line 11, ../sass/01_index/_cite-section.scss */
 .cite-section footer {
   font-family: "Oxygen Bold";
   background: transparent;
   color: #02baab;
 }
 
-/* line 1, ../sass/_blog-section.scss */
+/* line 1, ../sass/02_blog grid/_blog-section.scss */
 .blog-section {
   padding: 3rem 0;
 }
-/* line 3, ../sass/_blog-section.scss */
+/* line 3, ../sass/02_blog grid/_blog-section.scss */
 .blog-section h3 {
   margin: 0 auto;
 }
-/* line 7, ../sass/_blog-section.scss */
+/* line 7, ../sass/02_blog grid/_blog-section.scss */
 .blog-section h4 {
   font-family: "Oxygen Bold";
   color: #02baab;
 }
-/* line 11, ../sass/_blog-section.scss */
+/* line 11, ../sass/02_blog grid/_blog-section.scss */
 .blog-section .card-body {
   padding: 15px 0;
   border-bottom: 1px solid #ccc;
 }
-/* line 14, ../sass/_blog-section.scss */
+/* line 14, ../sass/02_blog grid/_blog-section.scss */
 .blog-section .card-body a {
   color: #02baab;
 }
-/* line 17, ../sass/_blog-section.scss */
+/* line 17, ../sass/02_blog grid/_blog-section.scss */
 .blog-section .card-body span {
   color: #02baab;
 }
 
-/* line 1, ../sass/_experience-section.scss */
+/* line 1, ../sass/01_index/_experience-section.scss */
 .experience-section {
   padding: 1rem 0;
   text-align: center;
   background: #02baab;
 }
-/* line 5, ../sass/_experience-section.scss */
+/* line 5, ../sass/01_index/_experience-section.scss */
 .experience-section h3 {
   color: #fff;
 }
-/* line 9, ../sass/_experience-section.scss */
+/* line 9, ../sass/01_index/_experience-section.scss */
 .experience-section .counter {
   padding-top: 20px;
   font-size: 4rem;
 }
-/* line 14, ../sass/_experience-section.scss */
+/* line 14, ../sass/01_index/_experience-section.scss */
 .experience-section div.col-3:after {
   content: "...";
   /* display: block; */
@@ -388,11 +388,11 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   top: 47px;
   left: 263px;
 }
-/* line 24, ../sass/_experience-section.scss */
+/* line 24, ../sass/01_index/_experience-section.scss */
 .experience-section div.col-3:last-child {
   content: "";
 }
-/* line 28, ../sass/_experience-section.scss */
+/* line 28, ../sass/01_index/_experience-section.scss */
 .experience-section .rounded-circle {
   display: flex;
   width: 200px;
@@ -402,7 +402,7 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   border: 5px solid #fff;
   border-radius: 50%;
 }
-/* line 38, ../sass/_experience-section.scss */
+/* line 38, ../sass/01_index/_experience-section.scss */
 .experience-section span {
   font-size: 4em;
   /* display: block; */
@@ -415,19 +415,19 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   border-radius: 50%;
 }
 
-/* line 1, ../sass/_team-section.scss */
+/* line 1, ../sass/01_index/_team-section.scss */
 .team-section {
   text-align: center;
 }
-/* line 6, ../sass/_team-section.scss */
+/* line 6, ../sass/01_index/_team-section.scss */
 .team-section img {
   filter: grayscale(100%);
 }
-/* line 8, ../sass/_team-section.scss */
+/* line 8, ../sass/01_index/_team-section.scss */
 .team-section img:hover {
   filter: grayscale(0);
 }
-/* line 12, ../sass/_team-section.scss */
+/* line 12, ../sass/01_index/_team-section.scss */
 .team-section .card-title {
   position: relative;
   margin: -65px auto 10px;
@@ -435,36 +435,36 @@ h3.section-caption:after, .portfolio-section h3:after, .features-section .superb
   padding: 1rem;
   background: #fff;
   border: 2px solid #ccc;
-  /* z-index: 21333; */
+  /* z-01_index: 21333; */
 }
-/* line 23, ../sass/_team-section.scss */
+/* line 23, ../sass/01_index/_team-section.scss */
 .team-section .card-body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   border: 1px solid #ccc;
 }
-/* line 28, ../sass/_team-section.scss */
+/* line 28, ../sass/01_index/_team-section.scss */
 .team-section .card-body .btn-purchase, .team-section .card-body footer .copyright a, footer .copyright .team-section .card-body a {
   margin-top: 20px;
 }
-/* line 30, ../sass/_team-section.scss */
+/* line 30, ../sass/01_index/_team-section.scss */
 .team-section .card-body .btn-purchase:hover, .team-section .card-body footer .copyright a:hover, footer .copyright .team-section .card-body a:hover {
   color: #fff;
   background: #02baab;
   border: 2px solid #02baab;
 }
-/* line 37, ../sass/_team-section.scss */
+/* line 37, ../sass/01_index/_team-section.scss */
 .team-section h4 {
   font-family: "Oxygen Bold";
   color: #02baab;
 }
-/* line 40, ../sass/_team-section.scss */
+/* line 40, ../sass/01_index/_team-section.scss */
 .team-section h4 span {
   font-family: "Oxygen Light";
   color: #ccc;
 }
-/* line 45, ../sass/_team-section.scss */
+/* line 45, ../sass/01_index/_team-section.scss */
 .team-section p {
   line-height: 1.5;
 }
@@ -555,42 +555,41 @@ footer .copyright a {
   color: #fff;
 }
 
-/* line 1, ../sass/_blog-grid.scss */
+/* line 1, ../sass/02_blog grid/_blog-grid.scss */
 .view-section {
   background: #666;
   color: #85939f;
-  padding: 0 16rem;
 }
 @media only screen and (max-width: 1240px) {
-  /* line 1, ../sass/_blog-grid.scss */
+  /* line 1, ../sass/02_blog grid/_blog-grid.scss */
   .view-section {
     padding: 0 50px;
   }
 }
-/* line 8, ../sass/_blog-grid.scss */
+/* line 7, ../sass/02_blog grid/_blog-grid.scss */
 .view-section h3 {
   width: 100%;
   margin: 4rem 0 3rem;
   font-size: 3rem;
   color: #fff;
 }
-/* line 14, ../sass/_blog-grid.scss */
+/* line 13, ../sass/02_blog grid/_blog-grid.scss */
 .view-section .navy {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-/* line 19, ../sass/_blog-grid.scss */
+/* line 18, ../sass/02_blog grid/_blog-grid.scss */
 .view-section .navy ul {
   display: flex;
   margin-bottom: 50px;
 }
-/* line 22, ../sass/_blog-grid.scss */
+/* line 21, ../sass/02_blog grid/_blog-grid.scss */
 .view-section .navy ul li {
   margin-right: 20px;
 }
-/* line 26, ../sass/_blog-grid.scss */
+/* line 25, ../sass/02_blog grid/_blog-grid.scss */
 .view-section .navy span {
   display: inline-block;
   width: 25px;
@@ -602,7 +601,7 @@ footer .copyright a {
   background: #3c4954;
   color: #fff;
 }
-/* line 37, ../sass/_blog-grid.scss */
+/* line 36, ../sass/02_blog grid/_blog-grid.scss */
 .view-section a {
   color: #85939f;
   display: inline-block;
@@ -610,11 +609,16 @@ footer .copyright a {
   border-right: 1px solid #85939f;
 }
 
-/* line 50, ../sass/_blog-grid.scss */
+/* line 47, ../sass/02_blog grid/_blog-grid.scss */
+.column-card {
+  flex-direction: column;
+}
+
+/* line 52, ../sass/02_blog grid/_blog-grid.scss */
 .blog-pagination {
   margin: 0 auto;
 }
-/* line 52, ../sass/_blog-grid.scss */
+/* line 54, ../sass/02_blog grid/_blog-grid.scss */
 .blog-pagination a {
   border: 0;
   color: #02baab;
