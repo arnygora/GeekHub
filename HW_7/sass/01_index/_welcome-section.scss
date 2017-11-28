@@ -94,7 +94,7 @@ li:nth-child(7) {
     //}
   }
 }
-a.btn-purchase {
+.btn-purchase {
   display: inline-block;
   margin-top: 5em;
   margin-left: 20px;
@@ -105,3 +105,9 @@ a.btn-purchase {
   color: $mint-color;
 }
 
+.mint-color {
+  color: $mint-color;
+}
+//a:hover {
+//  text-decoration: none;
+//}

@@ -179,7 +179,7 @@ body {
 }
 
 /* line 97, ../sass/01_index/_welcome-section.scss */
-a.btn-purchase, .description-section a, .card-deck-foo a.btn-purchase, .card-deck-foo footer .copyright a, footer .copyright .card-deck-foo a, footer .copyright a {
+.btn-purchase, footer .copyright a {
   display: inline-block;
   margin-top: 5em;
   margin-left: 20px;
@@ -187,6 +187,11 @@ a.btn-purchase, .description-section a, .card-deck-foo a.btn-purchase, .card-dec
   font-family: "Oxygen Bold";
   text-transform: uppercase;
   border: 2px solid #02baab;
+  color: #02baab;
+}
+
+/* line 108, ../sass/01_index/_welcome-section.scss */
+.mint-color {
   color: #02baab;
 }
 
@@ -601,25 +606,225 @@ footer .copyright a {
   background: #3c4954;
   color: #fff;
 }
-/* line 36, ../sass/02_blog grid/_blog-grid.scss */
+/* line 37, ../sass/02_blog grid/_blog-grid.scss */
 .view-section a {
   color: #85939f;
   display: inline-block;
-  padding-right: 10px;
-  border-right: 1px solid #85939f;
+  padding-left: 10px;
 }
 
-/* line 47, ../sass/02_blog grid/_blog-grid.scss */
+/* line 42, ../sass/02_blog grid/_blog-grid.scss */
+.secondary-headNav li ~ li {
+  border-left: 1px solid #85939f;
+}
+
+/* line 49, ../sass/02_blog grid/_blog-grid.scss */
 .column-card {
   flex-direction: column;
 }
 
-/* line 52, ../sass/02_blog grid/_blog-grid.scss */
+/* line 54, ../sass/02_blog grid/_blog-grid.scss */
 .blog-pagination {
   margin: 0 auto;
 }
-/* line 54, ../sass/02_blog grid/_blog-grid.scss */
+/* line 56, ../sass/02_blog grid/_blog-grid.scss */
 .blog-pagination a {
   border: 0;
   color: #02baab;
+}
+
+/* line 1, ../sass/04_blog single/_main-content.scss */
+.main-content {
+  padding: 40px 15px 50px 0;
+}
+/* line 4, ../sass/04_blog single/_main-content.scss */
+.main-content main h4 {
+  margin-top: 30px;
+  font-family: "Oxygen Bold";
+  font-size: 2rem;
+}
+/* line 9, ../sass/04_blog single/_main-content.scss */
+.main-content main p {
+  font-family: "Oxygen Light";
+  line-height: 1.5;
+}
+/* line 13, ../sass/04_blog single/_main-content.scss */
+.main-content main .cite-block {
+  margin: 40px 0 40px 25px;
+  padding-left: 10px;
+  border-left: 4px solid #eee;
+  font-family: "Oxygen Light";
+  color: #d8882e;
+}
+/* line 19, ../sass/04_blog single/_main-content.scss */
+.main-content main .cite-block span {
+  font-size: 1rem;
+  font-style: italic;
+}
+/* line 26, ../sass/04_blog single/_main-content.scss */
+.main-content .tags a {
+  color: #02baab;
+}
+/* line 28, ../sass/04_blog single/_main-content.scss */
+.main-content .tags a:hover {
+  color: #6d0fae;
+}
+/* line 33, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list li {
+  display: inline-block;
+}
+/* line 36, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list span {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 2;
+  color: #fff;
+}
+/* line 42, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list span.fa-facebook {
+  background: #305891;
+}
+/* line 45, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list span.fa-twitter {
+  background: #2ca8d2;
+}
+/* line 48, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list span.fa-envelope {
+  background: #738a8d;
+}
+/* line 51, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list span.fa-print {
+  background: #738a8d;
+}
+/* line 54, ../sass/04_blog single/_main-content.scss */
+.main-content .social-list span.fa-plus {
+  background: #f8694d;
+}
+/* line 58, ../sass/04_blog single/_main-content.scss */
+.main-content h5 {
+  margin: 30px 0 30px 15px;
+  font-family: "Oxygen Bold";
+}
+/* line 62, ../sass/04_blog single/_main-content.scss */
+.main-content .posts-item {
+  display: flex;
+}
+@media only screen and (max-width: 968px) {
+  /* line 62, ../sass/04_blog single/_main-content.scss */
+  .main-content .posts-item {
+    display: block;
+  }
+}
+/* line 68, ../sass/04_blog single/_main-content.scss */
+.main-content .posts-item p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #02baab;
+}
+
+/* line 77, ../sass/04_blog single/_main-content.scss */
+aside.blog-post h4 {
+  margin-top: 30px;
+  font-family: "Oxygen Bold";
+  font-size: 1.5rem;
+}
+/* line 82, ../sass/04_blog single/_main-content.scss */
+aside.blog-post .categories li {
+  padding: 12px 0;
+}
+/* line 84, ../sass/04_blog single/_main-content.scss */
+aside.blog-post .categories li span {
+  padding-right: 8px;
+}
+@media only screen and (max-width: 968px) {
+  /* line 84, ../sass/04_blog single/_main-content.scss */
+  aside.blog-post .categories li span {
+    display: none;
+    padding: 0;
+  }
+}
+/* line 91, ../sass/04_blog single/_main-content.scss */
+aside.blog-post .categories li p {
+  padding-left: 24px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 968px) {
+  /* line 91, ../sass/04_blog single/_main-content.scss */
+  aside.blog-post .categories li p {
+    padding: 0;
+  }
+}
+/* line 99, ../sass/04_blog single/_main-content.scss */
+aside.blog-post .categories li ~ li {
+  border-top: 1px solid #ccc;
+}
+/* line 102, ../sass/04_blog single/_main-content.scss */
+aside.blog-post .block-tags a {
+  display: inline-block;
+  padding: 7px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  color: #02baab;
+}
+/* line 108, ../sass/04_blog single/_main-content.scss */
+aside.blog-post .block-tags a:hover {
+  color: #fff;
+  background-color: #02baab;
+  border: 1px solid #02baab;
+}
+
+/* line 1, ../sass/04_blog single/_form-section.scss */
+.form-section {
+  padding: 20px 0;
+  background: #ebf0f3;
+}
+/* line 4, ../sass/04_blog single/_form-section.scss */
+.form-section label {
+  font-weight: bold;
+}
+/* line 7, ../sass/04_blog single/_form-section.scss */
+.form-section input, .form-section textarea {
+  margin: 10px 0;
+  width: 100%;
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.9);
+  resize: none;
+}
+/* line 13, ../sass/04_blog single/_form-section.scss */
+.form-section h4 {
+  margin: 0 0 20px -15px;
+  font-family: "Oxygen Bold";
+  font-size: 1.5rem;
+}
+/* line 18, ../sass/04_blog single/_form-section.scss */
+.form-section button {
+  margin-top: 20px;
+  background: #fff;
+  float: right;
+}
+
+/* line 1, ../sass/05_portfolio grid/_portfolio-grid.scss */
+.portfolio-grid {
+  padding: 3rem 0;
+  background: #fff;
+}
+/* line 4, ../sass/05_portfolio grid/_portfolio-grid.scss */
+.portfolio-grid .card-deck p {
+  color: #02baab;
+}
+/* line 7, ../sass/05_portfolio grid/_portfolio-grid.scss */
+.portfolio-grid a.more-pictures {
+  text-align: center;
+  color: #02baab;
+}
+/* line 10, ../sass/05_portfolio grid/_portfolio-grid.scss */
+.portfolio-grid a.more-pictures:after {
+  display: block;
+  margin: 5px auto;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #02baab;
 }

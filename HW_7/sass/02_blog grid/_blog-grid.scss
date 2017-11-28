@@ -33,16 +33,18 @@
        background: #3c4954;
        color: #fff;
      }
-  } a {
+  }
+  a {
         color: #85939f;
         display: inline-block;
-        padding-right: 10px;
-        border-right: 1px solid #85939f;
-        //&:last-child {
-        //   border: none;
-        // }
+        padding-left: 10px;
       }
-}
+} .secondary-headNav li ~ li {
+    border-left: 1px solid #85939f;
+    //-webkit-transform: rotate(36deg);
+    //-ms-transform: rotate(36deg);
+    //transform: rotate(36deg);
+  }
 
 .column-card {
   flex-direction: column;

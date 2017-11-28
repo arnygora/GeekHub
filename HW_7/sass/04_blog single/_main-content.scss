@@ -1,3 +1,116 @@
-main {
+.main-content {
+  padding: 40px 15px 50px 0;
+  main {
+    h4 {
+      margin-top: 30px;
+      font-family: "Oxygen Bold";
+      font-size: 2rem;
+    }
+    p {
+      font-family:"Oxygen Light";
+      line-height: 1.5;
+    }
+    .cite-block {
+      margin: 40px 0 40px 25px;
+      padding-left: 10px;
+      border-left: 4px solid #eee;
+      font-family: "Oxygen Light";
+      color: #d8882e;
+      span {
+        font-size: 1rem;
+        font-style: italic;
+      }
+    }
+  }
+  .tags {
+    a {
+      color: $mint-color;
+      &:hover {
+        color: #6d0fae;
+      }
+    }
+  }
+  .social-list li {
+    display: inline-block;
+  }
+  .social-list span {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+      &.fa-facebook {
+        background: #305891;
+      }
+      &.fa-twitter {
+        background: #2ca8d2;
+      }
+      &.fa-envelope {
+        background: #738a8d;
+      }
+      &.fa-print {
+        background: #738a8d;
+      }
+      &.fa-plus {
+        background: #f8694d;
+      }
+    }
+  h5 {
+    margin: 30px 0 30px 15px;
+    font-family: "Oxygen Bold";
+  }
+  .posts-item {
+    display: flex;
+    @media only screen and (max-width: 968px) {
+      display: block;
+    }
+  }
+  .posts-item p{
 
+    margin: 10px 0;
+    line-height: 1.5;
+    color: $mint-color;
+
+  }
 }
+aside.blog-post {
+  h4 {
+    margin-top: 30px;
+    font-family: "Oxygen Bold";
+    font-size: 1.5rem;
+  }
+  .categories li {
+    padding: 12px 0;
+    span {
+      padding-right: 8px;
+      @media only screen and (max-width: 968px) {
+        display: none;
+        padding: 0;
+      }
+    }
+    p {
+      padding-left: 24px;
+      line-height: 1.5;
+      @media only screen and (max-width: 968px) {
+        padding: 0;
+      }
+    }
+  }
+  .categories li ~ li {
+    border-top: 1px solid #ccc;
+  }
+  .block-tags a {
+    display: inline-block;
+    padding: 7px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    color: $mint-color;
+    &:hover {
+      color: #fff;
+      background-color: $mint-color;
+      border: 1px solid $mint-color;
+    }
+  }
+}
+
+

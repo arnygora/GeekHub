@@ -9,22 +9,21 @@
     <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/hover.css">
-
 </head>
 <body>
-<header class="main-header">
-    <div class="bg-dark">
-        <div class="container p-2 d-flex justify-content-lg-between align-items-center text-light">
-            <form class="form-inline">
-                <input type="search" placeholder="Search" aria-label="Search">
-                <span class="fa fa-search text-light pr-2"></span>
-            </form>
-            <div class="register-block">
-                <span class="fa fa-user-circle-o ml-5"> Log in</span>
-                <span class="fa fa-pencil ml-5"> Register</span>
+    <header class="main-header">
+        <div class="bg-dark">
+            <div class="container p-2 d-flex justify-content-lg-between align-items-center text-light">
+                <form class="form-inline">
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <span class="fa fa-search text-light pr-2"></span>
+                </form>
+                <div class="register-block">
+                    <span class="fa fa-user-circle-o ml-5"> Log in</span>
+                    <span class="fa fa-pencil ml-5"> Register</span>
+                </div>
             </div>
         </div>
-    </div>
     <nav>
         <div class="container">
             <div class="row justify-content-between">
@@ -55,18 +54,18 @@
             </div>
         </div>
     </nav>
-</header>
-<section class="view-section">
+    </header>
+    <section class="view-section">
     <div class="container">
         <div class="row">
-            <h3>Blog grid view</h3>
+            <h3>Blog posts title goes here</h3>
             <div class="navy">
                 <ul class="info-list">
                     <li><span class="fa fa-user-o"></span>by Alex Poushkin</li>
                     <li><span class="fa fa-clock-o"></span>September 31</li>
                     <li><span class="fa fa-quote-left"></span>12 Comments</li>
                 </ul>
-                <ul>
+                <ul class="secondary-headNav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shortcodes</a></li>
                     <li><a href="#">Typography</a></li>
@@ -75,50 +74,227 @@
             </div>
         </div><!--row-->
     </div><!--container-fluid-->
-</section>
-
+    </section>
     <div class="container">
         <div class="row">
-            <div class="col-9">
-                <img src="img/main-image.jpg" alt="my dream">
-            </div>
-            <div class="col-9">
+            <div class="col-11 col-md-12 col-lg-9 main-content">
+                <div class="row">
+                    <div class="col-12 main-img">
+                        <img class="img-fluid" src="img/main-image.jpg" alt="my dream">
+                    </div>
+                </div>
                 <main>
                     <h4>Lorem ipsum dolor sit amet.</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fuga non nostrum temporibus vitae voluptates, voluptatibus! Asperiores aut autem beatae consectetur cumque dolorum earum eligendi facilis fuga, harum, maiores mollitia nisi qui quia quo, tempora tempore voluptates voluptatibus. Ab animi dolores eos et eum illo, sint. Accusantium ea eos exercitationem.</p>
-                    <p class="cite-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab, aut corporis deleniti dignissimos distinctio dolore eligendi itaque minima nam nisi odit officia perferendis placeat quas quo reprehenderit. Id, nam.</p>
+                    <p class="cite-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab, aut corporis deleniti dignissimos distinctio dolore eligendi itaque minima nam nisi odit officia perferendis placeat quas quo reprehenderit. Id, nam.<br><span>&mdash; Arnygora, Anton Rozdobudko</span></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam cum dolore ea eius et eum illum incidunt natus, omnis repudiandae, sapiente similique tenetur. Adipisci atque fugiat labore obcaecati provident!</p>
                     <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquid autem consectetur deserunt facere iure molestias, nobis perferendis possimus quaerat quam voluptatibus. Delectus magni nobis repellat! Eveniet modi nemo officiis rerum voluptates. Accusantium animi commodi deserunt doloremque doloribus eos explicabo fuga laborum molestias, neque officia officiis omnis vitae? Autem distinctio esse explicabo impedit omnis quia reprehenderit rerum saepe.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis dolor ducimus, eum ipsa magnam non officiis provident quia? Ad illo iste, minus numquam quaerat quas quidem tempora ullam veniam!</p>
+                    <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquid autem consectetur deserunt facere iure molestias, nobis perferendis possimus quaerat quam voluptatibus. Delectus magni nobis repellat! Eveniet modi nemo officiis rerum voluptates. Accusantium animi commodi deserunt doloremque doloribus eos explicabo fuga laborum molestias, neque officia officiis omnis vitae? Autem distinctio esse explicabo impedit omnis quia reprehenderit rerum saepe.</p>
+                    <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis dolor ducimus, eum ipsa magnam non officiis provident quia? Ad illo iste, minus numquam quaerat quas quidem tempora ullam veniam!</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/team-photo1.jpg" alt="fb">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/team-photo2.jpg" alt="fb">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/team-photo4.jpg" alt="fb">
+                        </div>
+                    </div>
+                    <p class="pb-4 pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet animi, cupiditate dicta eligendi fugiat fugit inventore itaque molestiae natus officia reiciendis! Asperiores est impedit ipsam maxime neque, quas quisquam. Alias aliquam dolorum earum est eveniet explicabo facere facilis, inventore ipsa iusto laboriosam, modi obcaecati possimus quae, quo sint voluptates? Accusantium dolores doloribus expedita incidunt laudantium, quas quisquam rerum voluptatem.</p>
+                    <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto culpa dolores, dolorum earum eligendi error ipsum optio reprehenderit vero.</p>
+                    <hr>
+                </main>
+                <div class="tags">
+                    <span class="fa fa-tags mint-color"></span>Tags: <a href="#">amber, </a><a href="#">dance, </a><a href="#">fashion, </a><a href="#">sultan</a><a href="#"></a>
                 </div>
-                <div class="col-9">
-                    <ul class="media-list d-flex">
+                <ul class="social-list mt-4">
+                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                    <li><a href=""><span class="fa fa-envelope"></span></a></li>
+                    <li><a href=""><span class="fa fa-print"></span></a></li>
+                    <li><a href=""><span class="fa fa-plus"></span></a></li>
+                </ul>
+                <div class="row">
+                    <h5>Related posts</h5>
+                    <div class="posts-item">
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <span class="fa fa-keyboard-o d-block mb-3"></span>
+                            <span>June 24</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <span class="fa fa-keyboard-o d-block mb-3"></span>
+                            <span>August 8</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <span class="fa fa-keyboard-o d-block mb-3"></span>
+                            <span>August 13</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem illo laudantium nam odio omnis sit!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-lg-3">
+               <aside class="blog-post">
+                   <h4>Categories</h4>
+                   <ul class="categories">
+                       <li><span class="fa fa-filter"></span><a class="mint-color pl-2" href="#">Creative portfolio</a></li>
+                       <li><span class="fa fa-filter"></span><a class="mint-color pl-2" href="#">Lorem ipsum</a></li>
+                       <li><span class="fa fa-filter"></span><a class="mint-color pl-2" href="#">Amber golden</a></li>
+                       <li><span class="fa fa-filter"></span><a class="mint-color pl-2" href="#">Amsterdam fight gear</a></li>
+                       <li><span class="fa fa-filter"></span><a class="mint-color pl-2" href="#">Creamy cucumer</a></li>
+                   </ul>
+                   <h4>Recent comments</h4>
+                   <div>
+                       <ul class="categories">
+                           <li class=""><span class="fa fa-quote-left float-left"></span>
+                               <h5>Igor Ligay on</h5>
+                               <p class="mint-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quasi.</p>
+                           </li>
+                           <li><span class="fa fa-quote-left float-left"></span>
+                               <h5>Farhad Yusupov on</h5>
+                               <p class="mint-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           </li>
+                           <li><span class="fa fa-quote-left float-left"></span>
+                               <h5>John Doe on</h5>
+                               <p class="mint-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi distinctio in ipsum labore laudantium nobis non perferendis quibusdam quod!</p>
+                           </li>
+                       </ul>
+                   </div>
+                   <div>
+                       <h4 class="mb-3">Latest works</h4>
+                       <img src="img/team-photo3.jpg" alt="uyj">
+                   </div>
+                   <h4 class="mb-3">Tags cloud</h4>
+                   <div class="block-tags">
+                       <a href="#">bad boy</a>
+                       <a href="#">winter</a>
+                       <a href="#">is coming</a>
+                       <a href="#">south</a>
+                       <a href="#">asia</a>
+                       <a href="#">this is</a>
+                       <a href="#">sparta</a>
+                       <a href="#">daytona</a>
+                       <a href="#">kevlar</a>
+                       <a href="#">antananarivu</a>
+                   </div>
+               </aside>
+            </div><!--col-3-->
+        </div><!--row-->
+    </div><!--container-->
+    <section class="form-section">
+        <div class="container">
+            <h4>Add comment</h4>
+            <div class="row">
+
+                <div class="col-9 p-0">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-10 col-md-6 col-lg-4 form">
+                                <label for="name">Name</label>
+                                <p><input type="text" id="name"></p>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 form">
+                                <label for="emailfield">Email</label>
+                                <p><input type="email" id="emailfield"></p>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 form">
+                                <label for="yoursite">Website (optional)</label>
+                                <p><input type="text" id="yoursite"></p>
+                            </div>
+                            <div class="col-12 form">
+                                <label for="comment">Message</label><p><textarea name="addComment" id="comment" cols="30" rows="10"></textarea></p>
+                            </div>
+                            <button class="btn-purchase">ADD COMMENT</button>
+                        </div><!--row-->
+                    </form>
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+    </section>
+    <footer>
+        <div class="container"><!--rainbow-container-->
+            <div class="row no-gutters rainbow"><!--rainbow-row-->
+                <div class="puprle-line"></div>
+                <div class="blue-line"></div>
+                <div class="red-line"></div>
+                <div class="yellow-line"></div>
+            </div><!--rainbow-row-->
+        </div><!--rainbow-container-->
+        <div class="container">
+            <div class="row pb-5 pt-5">
+                <div class="col-10 col-sm-6 col-lg-3"><!--Get in touch block-->
+                    <h5>Get in touch</h5>
+                    <ul class="contact-list">
                         <li>
-                            <img src="img/team-photo4.jpg" alt="yh">
+                            <address class="text-secondary"><span class="fa fa-flag mint-color pr-2"></span><span class="text-light">Address: </span>321 Street Name, United<br>Kingdom, London</address>
                         </li>
                         <li>
-                            <img src="img/team-photo3.jpg" alt="yh">
+                            <span class="fa fa-phone mint-color pr-2"></span>
+                            <span class="text-light">Phone: </span><span class="text-secondary font-weight-bold">+7 998 71150 30 20</span>
                         </li>
                         <li>
-                            <img src="img/team-photo2.jpg" alt="yh">
+                            <span class="fa fa-envelope mint-color pr-2"></span>
+                            <span class="text-light">Email: </span><span class="text-secondary">info@ambertheme.com</span>
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8609.796189636192!2d32.07905595!3d49.4362624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1511211084737" width="255" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </li>
+                    </ul><!--contact-list-->
+                </div><!--Get in touch block-->
+                <div class="col-10 col-sm-6 col-lg-3"><!--Latest tweets-->
+                    <h5>Latest tweets</h5>
+                    <ul>
+                        <li>
+                            <p><span class="fa fa-twitter mint-color pr-2"></span>CMS Masters And Their Best Web Design Tools <span class="mint-color">#bestwebdesigntools #webdesign<br><span class="text-secondary">- about 12 min ago</span></span></p>
+                        </li>
+                        <li>
+                            <p><span class="fa fa-twitter mint-color pr-2"></span>WOOCOMERCE functionality added!!! See Industrial theme become even powerful!-<span class="mint-color">bit.ly/industrial-wp</span><br><span class="text-secondary">-about 47 days ago</span></p>
+                        </li>
+                        <li>
+                            <p><span class="fa fa-twitter mint-color pr-2"></span>CMS Masters And Their Best Web Design tools <span class="mint-color">#bestwebdesigntools #webdesign</span></p>
+                        </li>
+                    </ul>
+                </div><!--Latest tweets-->
+                <div class="col-10 col-sm-6 col-lg-3">
+                    <h5>Follow us</h5>
+                    <ul>
+                        <li><a href="#"><span class="social-icon mr-3 fa fa-facebook fa-2x"></span>Like us on Facebook</a></li>
+                        <li><a href="#"><span class="social-icon mr-3 fa fa-twitter fa-2x"></span>Follow us on Twitter</a></li>
+                        <li><a href="#"><span class="social-icon mr-3 fa fa-youtube fa-2x"></span>Watch us on YouTube</a></li>
+                        <li><a href="#"><span class="social-icon mr-3 fa fa-instagram fa-2x"></span>Friend on Instagram</a></li>
+                        <li><a href="#"><span class="social-icon mr-3 fa fa-pinterest-p fa-2x"></span>Repin on Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-3">
+                    <h5>Popular posts</h5>
+                    <ul>
+                        <li>
+                            <p>September, 30</p>
+                            <p class="mint-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia!</p>
+                        </li>
+                        <li>
+                            <p>April, 20</p>
+                            <p class="mint-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea.</p>
+                        </li>
+                        <li>
+                            <p>May, 20</p>
+                            <p class="mint-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deserunt earum ipsum?</p>
                         </li>
                     </ul>
                 </div>
-                <div class="col-9">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet animi, cupiditate dicta eligendi fugiat fugit inventore itaque molestiae natus officia reiciendis! Asperiores est impedit ipsam maxime neque, quas quisquam. Alias aliquam dolorum earum est eveniet explicabo facere facilis, inventore ipsa iusto laboriosam, modi obcaecati possimus quae, quo sint voluptates? Accusantium dolores doloribus expedita incidunt laudantium, quas quisquam rerum voluptatem.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto culpa dolores, dolorum earum eligendi error ipsum optio reprehenderit vero.</p>
+                <div class="copyright container">
+                    <div>
+                        <p>&copy; 2014 StylemixThemes. All rihts reserved</p>
+                        <p>Powered by WordPress.</p>
+                    </div>
+                    <a href="#">Back to top page <span class="mint-color fa fa-angle-up"></span></a>
                 </div>
-            </main>
-            <div class="tags">
-            <span>Tags: </span><a href="#">amber, </a><a href="#">dance, </a><a href="#">fashion, </a><a href="#">sultan</a><a href="#"></a>
-            </div>
-            <ul class="social-list">
-                <li><span></span><a href=""></a></li>
-                <li><span></span><a href=""></a></li>
-                <li><span></span><a href=""></a></li>
-                <li><span></span><a href=""></a></li>
-                <li><span></span><a href=""></a></li>
-            </ul>
-        </div><!--row-->
-    </div><!--container-->
+            </div><!--row-->
+        </div><!--container-->
+    </footer>
+</body>
+</html>
