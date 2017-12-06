@@ -79,7 +79,20 @@ function handlerEvent(elementId) {
         break;
     }
     case 'data': {
-        console.log(arguments);
+
+        let attr = document.getElementById('data').attributes;
+        console.log(attr);
+
+        let dataVar = $('#data');
+        console.log('height= ' + dataVar.outerHeight() + 'px');
+        console.log('width= ' + dataVar.outerWidth() + 'px');
+        let position = dataVar.position();
+        console.log(position);
+        console.log(dataVar.parent());
+        console.log(dataVar.prev());
+        console.log(dataVar.next());
+        console.log('button text= ' + $(dataVar).text());
+
         break;
     }
   default:

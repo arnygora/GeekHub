@@ -13,6 +13,7 @@ body {
 
 .wrapper {
 	padding: 0 50px;
+	user-select: none;
 }
 
 .flex-container {
@@ -84,7 +85,6 @@ ul li {
 	background: -o-linear-gradient(90deg, rgba(252,245,255,1) 0%, rgba(135,135,135,1) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(90deg, rgba(252,245,255,1) 0%, rgba(135,135,135,1) 100%); /* ie10+ */
 	background: linear-gradient(0deg, rgba(252,245,255,1) 0%, rgba(135,135,135,1) 100%); /* w3c */
-	user-select: none;
 }
 
 .buttons button:hover {
@@ -107,4 +107,9 @@ ul li {
 
 .fadein-text, .show-text {
     display: none;
+}
+
+input[type="submit"] {
+	margin-top: 10px;
+
 }
