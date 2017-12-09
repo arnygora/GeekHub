@@ -13,3 +13,11 @@ $('select').change(function(){
     });
     console.log('you choose ' + $(this).val());
 });
+
+(function() {
+    $('form').submit (function (event) {
+        event.preventDefault();
+
+        console.log( $(this).serialize());
+    });
+})();
