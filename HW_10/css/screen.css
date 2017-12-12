@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "Regular";
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Light";
+  src: url("../fonts/Raleway/Raleway-Light.ttf");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Italic";
+  src: url("../fonts/Raleway/Raleway-Italic.ttf");
+}
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_welcome-section.scss */
+.welcome-section {
+  background: url("../img/hero-bg.jpg") 50% 0 no-repeat;
+}
+/* line 3, ../sass/_welcome-section.scss */
+.welcome-section .transparent-layer {
+  display: flex;
+  height: 100%;
+  background-color: rgba(43, 59, 117, 0.77);
+}
+/* line 9, ../sass/_welcome-section.scss */
+.welcome-section header {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(158, 159, 160, 0.19);
+}
+/* line 17, ../sass/_welcome-section.scss */
+.welcome-section ul.main-nav {
+  display: flex;
+}
+/* line 19, ../sass/_welcome-section.scss */
+.welcome-section ul.main-nav li a {
+  text-transform: uppercase;
+  font-family: Bold;
+  color: #fff;
+}
+/* line 25, ../sass/_welcome-section.scss */
+.welcome-section li ~ li {
+  margin-left: 3rem;
+}
+/* line 28, ../sass/_welcome-section.scss */
+.welcome-section .welcome-block {
+  margin: 6rem 0;
+  text-align: center;
+  color: #fff;
+}
+/* line 32, ../sass/_welcome-section.scss */
+.welcome-section .welcome-block h2 {
+  font-size: 4rem;
+  font-family: Bold;
+}
+/* line 36, ../sass/_welcome-section.scss */
+.welcome-section .welcome-block p {
+  font-size: 1.8rem;
+}
+
+/* line 1, ../sass/_expertise-section.scss */
+.expertise-section {
+  padding: 50px 0;
+  text-align: center;
+}
+/* line 4, ../sass/_expertise-section.scss */
+.expertise-section .expertise-item {
+  margin-top: 50px;
+  padding: 0 30px;
+  line-height: 1.2;
+}
+/* line 10, ../sass/_expertise-section.scss */
+.expertise-section span {
+  color: #e84545;
+}
+/* line 13, ../sass/_expertise-section.scss */
+.expertise-section h4 {
+  padding: 20px 0;
+  font-family: Bold;
+}
+/* line 17, ../sass/_expertise-section.scss */
+.expertise-section p {
+  color: #737373;
+}
+
+/* line 2, ../sass/_works-section.scss */
+.works-section .row > div {
+  padding: 0;
+  margin: 0;
+}
+/* line 5, ../sass/_works-section.scss */
+.works-section .row > div img {
+  width: 100%;
+}
+/* line 9, ../sass/_works-section.scss */
+.works-section p {
+  font-family: Bold;
+  color: #fff;
+}
+/* line 12, ../sass/_works-section.scss */
+.works-section p ~ p {
+  font-family: Light;
+}
+/* line 16, ../sass/_works-section.scss */
+.works-section .hidden-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: background .3s ease-in-out;
+}
+/* line 28, ../sass/_works-section.scss */
+.works-section .hidden-div:hover {
+  opacity: 1;
+  background: rgba(255, 57, 45, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+/* line 2, ../sass/_team-section.scss */
+.team-section .card {
+  margin: 50px 0;
+}
+/* line 5, ../sass/_team-section.scss */
+.team-section h4 {
+  padding: 10px 0;
+  font-family: Bold;
+}
+/* line 9, ../sass/_team-section.scss */
+.team-section div > span {
+  font-size: .8rem;
+  color: #e84545;
+}
+/* line 13, ../sass/_team-section.scss */
+.team-section .card-text {
+  padding: 10px 0;
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+/* line 1, ../sass/_carousel-section.scss */
+.slider-block {
+  height: 350px;
+}
+/* line 3, ../sass/_carousel-section.scss */
+.slider-block img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 9, ../sass/_carousel-section.scss */
+.cite-block {
+  height: 350px;
+  padding: 10% 8%;
+  background: #53354a;
+}
+/* line 13, ../sass/_carousel-section.scss */
+.cite-block p {
+  font-size: 2rem;
+  font-family: Italic;
+  color: #fff;
+}
+/* line 17, ../sass/_carousel-section.scss */
+.cite-block p ~ p {
+  padding-top: 20px;
+  font-family: Bold;
+  font-size: 1rem;
+}
+
+/* line 1, ../sass/_download-now-section.scss */
+.download-now-section {
+  padding: 40px 0;
+  text-align: center;
+}
+/* line 4, ../sass/_download-now-section.scss */
+.download-now-section p {
+  font-size: 2rem;
+}
+/* line 6, ../sass/_download-now-section.scss */
+.download-now-section p ~ p {
+  padding-top: 10px;
+  font-size: 1rem;
+  font-family: Bold;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  text-align: center;
+  color: #fff;
+  background: #3a3e64;
+}
+/* line 5, ../sass/_footer.scss */
+footer h4 {
+  margin-top: 40px;
+  font-family: Bold;
+  margin-bottom: 15px;
+}
+/* line 10, ../sass/_footer.scss */
+footer ul.social-list {
+  justify-content: center;
+}
+/* line 13, ../sass/_footer.scss */
+footer .copyright-block {
+  margin-top: 40px;
+  padding: 20px 0;
+  background: #313454;
+  color: #ccc;
+}
+/* line 19, ../sass/_footer.scss */
+footer span {
+  color: #e84545;
+}
+/* line 22, ../sass/_footer.scss */
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 25, ../sass/_footer.scss */
+footer a:hover {
+  text-decoration: none;
+  color: #ff5a29;
+}
+
+/* line 30, ../sass/screen.scss */
+body {
+  font-family: Regular;
+}
+
+/* line 34, ../sass/screen.scss */
+.upper-text {
+  text-transform: uppercase;
+}
+
+/* line 38, ../sass/screen.scss */
+.btn-style {
+  display: inline-block;
+  margin-top: 50px;
+  padding: .8rem 2rem;
+  background: #e84545;
+  font-family: Bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 46, ../sass/screen.scss */
+.btn-style:hover {
+  text-decoration: none;
+}
+
+/* line 51, ../sass/screen.scss */
+.social-list {
+  display: flex;
+}
+/* line 53, ../sass/screen.scss */
+.social-list li span {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  margin-right: 3px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+/* line 61, ../sass/screen.scss */
+.social-list li span:hover {
+  color: #e84545;
+  border: 1px solid #e84545;
+}

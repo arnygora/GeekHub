@@ -1,0 +1,43 @@
+.welcome-section {
+  background: url("../img/hero-bg.jpg") 50% 0 no-repeat;
+  .transparent-layer {
+    display: flex;
+    //flex-direction: column;
+    height: 100%;
+    background-color: rgba(43, 59, 117, 0.77);
+  }
+  header {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(158, 159, 160, 0.19);
+  }
+  ul.main-nav {
+    display: flex;
+    li a {
+      text-transform: uppercase;
+      font-family: Bold;
+      color: #fff;
+    }
+  }
+  li ~ li {
+    margin-left: 3rem;
+  }
+  .welcome-block {
+    margin: 6rem 0;
+    text-align: center;
+    color: #fff;
+    h2 {
+      font-size: 4rem;
+      font-family: Bold;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+

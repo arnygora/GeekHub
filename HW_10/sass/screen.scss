@@ -1,6 +1,66 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "Regular";
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Light";
+  src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url('../fonts/Raleway/Raleway-Italic.ttf');
+}
 
 @import "compass/reset";
+@import "welcome-section";
+@import "expertise-section";
+@import "works-section";
+@import "team-section";
+@import "carousel-section";
+@import "download-now-section";
+@import "footer";
+
+body {
+  font-family: Regular;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.btn-style {
+  display: inline-block;
+  margin-top: 50px;
+  padding: .8rem 2rem;
+  background: #e84545;
+  font-family: Bold;
+  text-transform: uppercase;
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.social-list {
+  display: flex;
+  li span {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin-right: 3px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #ccc;
+    &:hover {
+      color: #e84545;
+      border: 1px solid #e84545;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+footer {
+  text-align: center;
+  color: #fff;
+  background: #3a3e64;
+  h4 {
+    margin-top: 40px;
+    font-family: Bold;
+    margin-bottom: 15px;
+  }
+  ul.social-list {
+    justify-content: center;
+  }
+  .copyright-block {
+    margin-top: 40px;
+    padding: 20px 0;
+    background: #313454;
+    color: #ccc;
+  }
+  span {
+    color: #e84545;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+      color: #ff5a29;
+    }
+  }
+}
