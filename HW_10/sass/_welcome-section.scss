@@ -16,6 +16,9 @@
   }
   ul.main-nav {
     display: flex;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
     li a {
       text-transform: uppercase;
       font-family: Bold;
@@ -32,9 +35,15 @@
     h2 {
       font-size: 4rem;
       font-family: Bold;
+      @media only screen and (max-width: 768px) {
+        font-size: 3rem;
+      }
     }
     p {
       font-size: 1.8rem;
+      @media only screen and (max-width: 1240px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
