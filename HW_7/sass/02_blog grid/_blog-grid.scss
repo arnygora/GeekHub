@@ -1,0 +1,60 @@
+.view-section {
+  background: #666;
+  color: #85939f;
+  @media only screen and (max-width: 1240px) {
+    padding: 0 50px;
+  }
+  h3 {
+    width: 100%;
+    margin: 4rem 0 3rem;
+    font-size: 3rem;
+    color: #fff;
+  }
+  .navy {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      margin-bottom: 50px;
+      li {
+        margin-right: 20px;
+      }
+    }
+    span {
+       display: inline-block;
+       width: 25px;
+       height: 25px;
+       margin-right: 5px;
+       text-align: center;
+       line-height: 1.5;
+       border-radius: 50%;
+       background: #3c4954;
+       color: #fff;
+     }
+  }
+  a {
+        color: #85939f;
+        display: inline-block;
+        padding-left: 10px;
+      }
+} .secondary-headNav li ~ li {
+    border-left: 1px solid #85939f;
+    //-webkit-transform: rotate(36deg);
+    //-ms-transform: rotate(36deg);
+    //transform: rotate(36deg);
+  }
+
+.column-card {
+  flex-direction: column;
+}
+
+
+.blog-pagination {
+  margin: 0 auto;
+  a {
+    border: 0;
+    color: $mint-color;
+  }
+}

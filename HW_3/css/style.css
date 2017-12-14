@@ -232,7 +232,7 @@ a.btn-link {
     content: "01";
     font: bold 6em "Open Sans", sans-serif;
     color: rgba(204, 204, 204, 0.37);
-    /* z-index: -1; */
+    /* z-01_index: -1; */
 }
 
 .expertise-block, .history-block {
@@ -281,7 +281,7 @@ a.btn-link {
     content: "02";
     font: bold 6em "Open Sans", sans-serif;
     color: rgba(204, 204, 204, 0.37);
-    /* z-index: -1; */
+    /* z-01_index: -1; */
 }
 
 .practise-block ul {
@@ -333,7 +333,7 @@ h6.uppercase-text {
     content: "03";
     font: bold 6em "Open Sans", sans-serif;
     color: rgba(204, 204, 204, 0.37);
-    /* z-index: -1; */
+    /* z-01_index: -1; */
 }
 
 .attorney-block ul {
@@ -383,7 +383,7 @@ h6.uppercase-text {
     content: "04";
     font: bold 6em "Open Sans", sans-serif;
     color: rgba(204, 204, 204, 0.37);
-    /* z-index: -1; */
+    /* z-01_index: -1; */
 }
 
 .feedback-block p.grey-color,
@@ -490,7 +490,7 @@ data.article-author, span.fa-share {float: right;}
 	content: "06";
 	font: bold 6em "Open Sans", sans-serif;
 	color: rgba(204, 204, 204, 0.37);
-	/* z-index: -1; */
+	/* z-01_index: -1; */
 }
 
 .faq-block h3 {color: #fff;}

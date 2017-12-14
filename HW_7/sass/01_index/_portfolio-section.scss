@@ -1,0 +1,64 @@
+.portfolio-section {
+  background: #525252;
+  h3 {
+    @extend .section-caption;
+    color: #fff;
+  }
+  p {
+    margin-bottom: 50px;
+    text-align: center;
+    font: 1.5rem/1.5 "Oxygen Light", sans-serif;
+    color: #eee;
+  }
+  .card-text {
+    text-align: left;
+    font-size: 1rem;
+    color: $mint-color;
+  }
+
+} .card-hover {
+    display: flex;
+    flex-flow: column wrap;
+    //align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: background .3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      background: rgba(200, 200, 200, .5);
+      height: 100%;
+      width: 100%;
+    }
+    span {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 5px auto;
+      padding: 5px;
+      border-radius: 50%;
+      text-align: center;
+      background: $mint-color;
+      color: #fff;
+      line-height: 2rem;
+    }
+  }.card-deck-foo {
+       background-color: $mint-color;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 2rem;
+       a.btn-purchase {
+         @extend a.btn-purchase;
+         margin: 0 0 0 20px;
+         color: #fff;
+         border-color: #fff;
+       }
+     }
+
+

@@ -1,0 +1,48 @@
+.team-section {
+  text-align: center;
+  h3 {
+    @extend .section-caption;
+  }
+  img {
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .card-title {
+    position: relative;
+    //margin-bottom: .75rem;
+    margin: -65px auto 10px;
+    //margin-top: -65px;
+    width: 10rem;
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #ccc;
+    /* z-01_index: 21333; */
+  }
+  .card-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    .btn-purchase {
+      margin-top: 20px;
+      &:hover {
+        color: #fff;
+        background: #02baab;
+        border: 2px solid #02baab;
+      }
+    }
+  }
+  h4 {
+    font-family: "Oxygen Bold";
+    color: $mint-color;
+    span {
+      font-family: "Oxygen Light";
+      color: #ccc;
+    }
+  }
+  p {
+    line-height: 1.5;
+  }
+}

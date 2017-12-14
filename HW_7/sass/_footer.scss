@@ -1,0 +1,74 @@
+footer {
+  background: #1f2a32;
+  color: #fff;
+  line-height: 1.5;
+  .rainbow {
+    .puprle-line {
+      width: 25%;
+      height: 16px;
+      background: #7827a9;
+    }
+    .blue-line {
+      @extend .puprle-line;
+      background: #0c8fcc;
+    }
+    .red-line {
+      @extend .puprle-line;
+      background: #de1c5c;
+    }
+    .yellow-line {
+      @extend .puprle-line;
+      background: #ffae00;
+    }
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  li {
+    margin-bottom: 1.5rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: $mint-color;
+      }
+    }
+  }
+  .mint-color {
+    color: $mint-color;
+  }
+  span.social-icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.5;
+    &.fa-facebook {
+      background: #3b5998;
+    }
+    &.fa-twitter {
+      background: #00a0d1;
+    }
+    &.fa-youtube {
+      background: #c4302b;
+    }
+    &.fa-instagram {
+      background: #825c48;
+    }
+    &.fa-pinterest-p {
+      background: #a30834;
+    }
+  }
+  .copyright {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      @extend .btn-purchase;
+      margin-top: 0;
+      text-transform: inherit;
+      color: #fff;
+    }
+  }
+
+} 

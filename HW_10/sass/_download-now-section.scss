@@ -1,0 +1,12 @@
+.download-now-section {
+  padding: 40px 0;
+  text-align: center;
+  p {
+    font-size: 2rem;
+  ~ p {
+    padding-top: 10px;
+    font-size: 1rem;
+    font-family: Bold;
+    }
+  }
+}

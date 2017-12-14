@@ -1,0 +1,21 @@
+.portfolio-grid {
+  padding: 3rem 0;
+  background: #fff;
+  .card-deck p {
+    color: $mint-color;
+  }
+  a.more-pictures {
+    text-align: center;
+    color: $mint-color;
+    &:after {
+      display: block;
+      margin: 5px auto;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 8px solid $mint-color;
+    }
+  }
+}

@@ -51,36 +51,166 @@ section {
 }
 
 /* line 10, ../sass/_welcome-section.scss */
+#nav-icon {
+  display: none;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  top: 0;
+  right: 2em;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  /* line 10, ../sass/_welcome-section.scss */
+  #nav-icon {
+    display: block;
+  }
+}
+
+/* Icon 2 */
+/* line 37, ../sass/_welcome-section.scss */
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 50%;
+  background: #dd4b2b;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* line 54, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+/* line 59, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+
+/* line 64, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(1), #nav-icon span:nth-child(2) {
+  top: 0px;
+}
+
+/* line 68, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(3), #nav-icon span:nth-child(4) {
+  top: 18px;
+}
+
+/* line 72, ../sass/_welcome-section.scss */
+#nav-icon span:nth-child(5), #nav-icon span:nth-child(6) {
+  top: 36px;
+}
+
+/* line 76, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(1), #nav-icon.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 83, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(2), #nav-icon.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 90, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+/* line 95, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+/* line 100, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+/* line 105, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+/* line 110, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+/* line 115, ../sass/_welcome-section.scss */
+#nav-icon.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
+}
+
+/* line 120, ../sass/_welcome-section.scss */
 h3 {
   font-family: "Roboto Bold";
   font-size: 2.5em;
 }
 
-/* line 16, ../sass/_welcome-section.scss */
-a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blue {
+/* line 125, ../sass/_welcome-section.scss */
+a.link-btn, .news-section .news-list a, .first-block a.red, .second-block a.red, a.blue {
   display: inline-block;
-  margin-top: 30px;
+  margin: 30px 0 50px;
   padding: 15px 50px;
   border-radius: 24px;
   background-color: #fff;
   color: #612316;
 }
 
-/* line 25, ../sass/_welcome-section.scss */
+/* line 134, ../sass/_welcome-section.scss */
 .gradient {
-  height: calc(100% + 35px);
+  height: 100%;
   background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
   background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(255, 255, 255, 0));
 }
 
-/* line 32, ../sass/_welcome-section.scss */
+/* line 142, ../sass/_welcome-section.scss */
 .welcome-section {
   height: 100vh;
   background: #ccc url(../img/hero-image.jpg) 50% 105px no-repeat;
   background-size: cover;
 }
-/* line 38, ../sass/_welcome-section.scss */
+@media screen and (max-width: 1200px) {
+  /* line 142, ../sass/_welcome-section.scss */
+  .welcome-section {
+    padding: 0;
+    height: auto;
+  }
+}
+/* line 153, ../sass/_welcome-section.scss */
 .welcome-section header {
   display: flex;
   flex-flow: row wrap;
@@ -88,72 +218,78 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
   align-items: center;
   padding-bottom: 28px;
 }
-@media only screen and (max-width: 900px) {
-  /* line 38, ../sass/_welcome-section.scss */
+@media only screen and (min-width: 769px) and (max-width: 899px) {
+  /* line 153, ../sass/_welcome-section.scss */
   .welcome-section header {
-    justify-content: space-between;
+    justify-content: center;
   }
 }
-/* line 46, ../sass/_welcome-section.scss */
+/* line 165, ../sass/_welcome-section.scss */
 .welcome-section header h1 {
   font-family: "Roboto Bold";
   font-size: 2em;
 }
-/* line 49, ../sass/_welcome-section.scss */
+/* line 168, ../sass/_welcome-section.scss */
 .welcome-section header h1 span {
   display: block;
   font-family: "Roboto Regular";
   font-size: 0.5em;
   color: #dd4b2b;
 }
-/* line 56, ../sass/_welcome-section.scss */
+/* line 175, ../sass/_welcome-section.scss */
 .welcome-section header ul {
   display: flex;
 }
-/* line 58, ../sass/_welcome-section.scss */
+@media only screen and (max-width: 768px) {
+  /* line 175, ../sass/_welcome-section.scss */
+  .welcome-section header ul {
+    display: none;
+  }
+}
+/* line 179, ../sass/_welcome-section.scss */
 .welcome-section header ul li {
   margin-right: 40px;
 }
 @media only screen and (max-width: 900px) {
-  /* line 58, ../sass/_welcome-section.scss */
+  /* line 179, ../sass/_welcome-section.scss */
   .welcome-section header ul li {
     margin-right: 10px;
   }
 }
-/* line 64, ../sass/_welcome-section.scss */
+/* line 185, ../sass/_welcome-section.scss */
 .welcome-section header ul li a {
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 15px;
   color: #31353e;
 }
-/* line 75, ../sass/_welcome-section.scss */
+/* line 196, ../sass/_welcome-section.scss */
 .welcome-section h2 {
   padding: 70px 0;
   font-family: "Roboto Light";
   font-size: 3em;
   color: #fff;
 }
-/* line 80, ../sass/_welcome-section.scss */
+/* line 201, ../sass/_welcome-section.scss */
 .welcome-section h2 span {
   display: block;
   margin-top: 10px;
   font-family: "Roboto Bold";
   font-size: .5em;
 }
-/* line 87, ../sass/_welcome-section.scss */
+/* line 208, ../sass/_welcome-section.scss */
 .welcome-section .menu-list li img {
   width: 120px;
   border: 7px solid #edeff1;
   border-radius: 50%;
 }
-/* line 92, ../sass/_welcome-section.scss */
+/* line 213, ../sass/_welcome-section.scss */
 .welcome-section h4 {
   padding-top: 10px;
   font-family: "Roboto Bold";
   font-size: 1em;
   color: #edeff1;
 }
-/* line 98, ../sass/_welcome-section.scss */
+/* line 219, ../sass/_welcome-section.scss */
 .welcome-section p {
   font-family: "Roboto Light";
   font-size: .8em;
@@ -209,55 +345,100 @@ a.link-btn, .news-section .news-list a, .info-section a.red, .info-section a.blu
 }
 /* line 21, ../sass/_mailing-section.scss */
 .mailing-section form input[placeholder] {
-  padding: 15px 80px 15px 40px;
+  padding: 14px 80px 14px 40px;
   border: 1px solid #fff;
   border-radius: 25px 0 0 25px;
   font-family: "Roboto Regular";
   color: #fff;
   background-color: rgba(237, 237, 237, 0.36);
 }
-/* line 31, ../sass/_mailing-section.scss */
+@media only screen and (max-width: 500px) {
+  /* line 21, ../sass/_mailing-section.scss */
+  .mailing-section form input[placeholder] {
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+/* line 37, ../sass/_mailing-section.scss */
 .mailing-section form input[type="submit"] {
   transform: translate(-25%, 0);
   padding: 15px 50px;
   border-radius: 25px;
+  border: none;
   text-align: center;
   background-color: #fff;
   color: brown;
   font-family: "Roboto Regular";
-  color: #fff;
+}
+@media only screen and (max-width: 500px) {
+  /* line 37, ../sass/_mailing-section.scss */
+  .mailing-section form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    transform: translate(0);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #1f80a5;
+    font-weight: 800;
+  }
 }
 
 /* line 1, ../sass/_info-section.scss */
 .info-section {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-flow: row wrap;
+  padding: 40px;
 }
-/* line 14, ../sass/_info-section.scss */
-.info-section a.red {
+
+/* line 4, ../sass/_info-section.scss */
+.first-block, .second-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+/* line 11, ../sass/_info-section.scss */
+.first-block a.red, .second-block a.red {
+  margin-bottom: 30px;
   background-color: #dd4b2b;
   color: #fff;
 }
-/* line 19, ../sass/_info-section.scss */
-.info-section a.blue {
+
+/* line 18, ../sass/_info-section.scss */
+.container-block-one, .container-block-two {
+  order: 1;
+  /* width: 500px; */
+  flex-basis: 500px;
+  flex-shrink: 3;
+  height: 400px;
+  margin-left: 50px;
+  outline: 1px solid #ccc;
+  background-color: #ccc;
+}
+
+/* line 29, ../sass/_info-section.scss */
+.content-block {
+  max-width: 560px;
+}
+
+/* line 34, ../sass/_info-section.scss */
+a.blue {
   background-color: #4b4e73;
   color: #fff;
 }
-/* line 24, ../sass/_info-section.scss */
-.info-section .container-block {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex: 1 300px 2;
-  width: 400px;
-  height: 400px;
-  outline: 1px solid #ccc;
+
+/* line 40, ../sass/_info-section.scss */
+.container-block-two {
+  order: 0;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+/* line 47, ../sass/_info-section.scss */
+.second-block {
+  margin-bottom: 0;
 }
 
 /* line 1, ../sass/_services-section.scss */

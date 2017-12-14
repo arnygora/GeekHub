@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW_9</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="flex-container">
+				<h1>Third task (form)</h1>
+				<nav>
+					<ul class="nav-block">
+						<li><a href="index.html">first task</a></li>
+						<li><a href="methods.html">second task</a></li>
+						<li><a href="">third task</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<form action="#">
+			<ul>
+				<li><input type="checkbox" name="sleep[]" id="sleep" value="to sleep"/>
+					<label for="sleep">Сплю</label></li>
+				<li><input type="checkbox" name="gaming" id="gaming" value="to play games"/>
+					<label for="gaming">Гуляю с друзьями</label></li>
+				<li><input type="checkbox" name="fishing" id="fishing" value="to go fishing"/>
+					<label for="fishing">Хожу на рыбалку</label></li>
+				<li><input type="checkbox" name="guitar" id="guitar" value="to play guitar"/>
+					<label for="guitar">Играю в игры</label></li>
+			<ul>
+				<li><input type="radio" id="boy" name="girlOrBoy" value="boy">
+					<label for="boy">Молодой человек</label></li>
+				<li><input type="radio" id="girl" name="girlOrBoy" value="girl">
+					<label for="girl">Девушка</label></li>
+			</ul>
+			<ul>
+				<li><input type="text" id="birthdayData" name="birthdayData">
+					<label for="birthdayData"> Дата рождения</label></li>
+				<li><input type="text" id="familyStatus" name="familyStatus">
+					<label for="familyStatus"> Семейное положение</label></li>
+				<li><input id="social_status" type="text" name="social_status"/>
+					<label for="social_status"> Социальный статус</label></li>
+				<li><input id="home" type="text" name="home"/>
+					<label for="home"> Местожительство</label></li>
+			</ul>
+			</ul>
+			<p><select size="3" multiple name="hero[]">
+				<option disabled>Выберите героя</option>
+				<option value="Cheburashka">Чебурашка</option>
+				<option value="Gena Crocodile">Крокодил Гена</option>
+				<option value="Chopoklyak">Шапокляк</option>
+				<option value="Ret Larisa">Крыса Лариса</option>
+			</select></p>
+			<p><select name="htmlBook" id="htmlBook">
+				<option value="1">Site frequency</option>
+				<option value="2">Silicon Valley</option>
+				<option value="3">The IT Crowd</option>
+			</select></p>
+			<input type="submit">
+		</form>
+
+		<p>при изменении одного поля - дублировать значение в другое поле
+			Минимум на трех полях применить события - .keypress() .keydown() .keyup() на выше усмотрение.</p>
+	</div>
+	<script src="js/form.js"></script>
+</body>
+</html>
