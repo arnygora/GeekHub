@@ -55,24 +55,28 @@
     margin-left: 3rem;
   }
   .welcome-block {
-    margin-top: 10rem;
+    margin-top: 9rem;
     text-align: center;
     color: #fff;
-    @media screen and (max-width: 768px) {
-      margin-top: 8rem;
+    @media screen and (min-width: 376px) and (max-width: 768px) {
+      margin-top: 9rem;
       }
-    @media screen and (max-width: 375px) {
-      margin-top: 6rem;
-      }
+    //@media screen and (min-width: 769px) and (max-width: 992px){
+    //  margin-top: 9rem;
+    //}
+     @media screen and (max-width: 375px) {
+       margin-top: 7rem;
+       }
     h2 {
       font-size: 4rem;
       font-family: Bold;
-      @media screen and (max-width: 768px) {
+      @media screen and (min-width: 768px) and (max-width: 992px){
         font-size: 3rem;
+       }
+      @media screen and (min-width: 300px) and (max-width: 767px) {
+      font-size: 2rem;
       }
-      @media screen and (max-width: 375px) {
-        font-size: 2rem;
-      }
+    //  @media screen and (max-width: 375px)
     }
     p {
       padding-top: 20px;
