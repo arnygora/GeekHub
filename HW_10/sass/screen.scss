@@ -49,6 +49,14 @@ body {
   }
 }
 
+a {
+  color: #fff;
+  &:hover {
+    color: #f79922;
+    text-decoration: none;
+  }
+}
+
 .social-list {
   display: flex;
   li span {
