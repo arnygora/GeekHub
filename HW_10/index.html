@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HW_10</title>
     <link rel="stylesheet" href="css/screen.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel='stylesheet prefetch' href='css/jquery.fancybox.min.css'>
+    <script src='js/jquery.fancybox.min.js'></script>
+    <script>
+        $(function() {
+            $("img[data-fancybox]").fancybox();
+        });
+    </script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -35,7 +41,7 @@
                         </div>
                         <nav>
                             <ul class="main-nav upper-text">
-                                <li><a href="">Features</a></li>
+                                <li><a class="active" href="">Features</a></li>
                                 <li><a href="">Works</a></li>
                                 <li><a href="">Our team</a></li>
                                 <li><a href="">Testimonials</a></li>
@@ -60,7 +66,7 @@
             </div><!--container-->
         </div>
         </section><!--welcome-section-->
-        <section class="expertise-section">
+        <section class="expertise-section header-js">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 expertise-item">
@@ -99,13 +105,13 @@
         <section class="works-section">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3 header-js">
                         <figure class="effect-ruby">
                             <img src="img/work1.jpg" alt="dfg">
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work1.jpg"></a>
                                 </figcaption>
                         </figure> 
                     </div>
@@ -115,7 +121,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work2.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -125,7 +131,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work3.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -135,7 +141,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work4.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -145,7 +151,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work5.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -155,7 +161,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work6.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -165,7 +171,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work7.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -175,7 +181,7 @@
                                 <figcaption>
                                     <h5 class="upper-text">project name</h5>
                                     <p>User Interface Design</p>
-                                    <a href="#0"></a>
+                                    <a data-fancybox="images" href="img/work8.jpg"></a>
                                 </figcaption>
                         </figure>
                     </div>
@@ -185,7 +191,7 @@
         <section class="team-section">
             <div class="container">
                 <div class="row">
-                    <div class="card border-0 rounded-0 col-12 col-md-6 col-lg-3">
+                    <div class="card border-0 rounded-0 col-12 col-md-6 col-lg-3 header-js">
                         <img class="card-img-top" src="img/team1.jpg" alt="Card image cap">
                         <div class="card-body p-0">
                             <h4>Ruth Woods</h4><span class="upper-text">Founder ceo</span>
@@ -238,7 +244,7 @@
         </section><!--team-section-->
         <div class="container-fluid carousel-section">
             <div class="row p-0">
-                <div class="col-12 col-lg-6 p-0 slider-block">
+                <div class="col-12 col-lg-6 p-0 slider-block header-js">
                     <img src="img/slider-pic1.jpg" alt="">
                 </div><!--slider-block-->
                 <div class="col-12 col-lg-6 p-0">
@@ -250,7 +256,7 @@
             </div><!--row-->
         </div><!--container-->
         <div class="download-now-section">
-            <p>Are You Ready to Start? Download Now For Free!</p>
+            <p class="header-js">Are You Ready to Start? Download Now For Free!</p>
             <p class="upper-text">Lorem ipsum dolor sit amet, consectetur</p>
             <a class="btn-style" href="#0">download here</a>
         </div>
@@ -278,13 +284,14 @@
                 </div><!--row-->
             </div><!--container-->
             <div class="copyright-block">
-                <p>Copyright &copy; 2015 Template. All Rights Reserved</p>
-                <p>Made with <span class="fa fa-heart"></span><a href="https://www.facebook.com/profile.php?id=100003486848575"> by Anton Rozdobudko</a></p>
+                <p>Copyright &copy; 2017 Template. All Rights Reserved</p>
+                <p>Made with <span class="fa fa-heart"></span><a href="https://www.facebook.com/arnygora" target="_blank"> by Anton Rozdobudko</a></p>
             </div>
         </footer>
     </div><!--wrapper-->
+    <script src="js/commonJs.js"></script>
     <script src="js/icon.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+   <!--  <script src="js/bootstrap.min.js"></script> -->
 
 </body>
 </html>
