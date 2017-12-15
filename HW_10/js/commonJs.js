@@ -1,15 +1,3 @@
-/*$(function () {
-
-    $(window).on("resize", function () {
-        if ($(this).width() < 765) {
-            $('header').removeClass('shrink');
-        } else {
-            $('header').addClass('shrink');
-        }
-    }).trigger('resize');
-});*/
-
-
 $(document).ready(function() {
     const setActive = function() {
         const self = $(this);
