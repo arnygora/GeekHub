@@ -497,28 +497,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/_carousel-section.scss */
-.slider-block {
+.slideshow {
+  position: relative;
   height: 350px;
 }
-/* line 3, ../sass/_carousel-section.scss */
-.slider-block img {
+/* line 4, ../sass/_carousel-section.scss */
+.slideshow > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* line 11, ../sass/_carousel-section.scss */
+.slideshow > div img {
   width: 100%;
-  height: 100%;
 }
 
-/* line 9, ../sass/_carousel-section.scss */
+/* line 17, ../sass/_carousel-section.scss */
 .cite-block {
   height: 350px;
   padding: 10% 8%;
   background: #53354a;
 }
-/* line 13, ../sass/_carousel-section.scss */
+/* line 21, ../sass/_carousel-section.scss */
 .cite-block p {
   font-size: 2rem;
   font-family: Italic;
   color: #fff;
 }
-/* line 17, ../sass/_carousel-section.scss */
+/* line 25, ../sass/_carousel-section.scss */
 .cite-block p ~ p {
   padding-top: 20px;
   font-family: Bold;
