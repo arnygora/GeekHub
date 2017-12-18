@@ -515,23 +515,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
 }
 
-/* line 17, ../sass/_carousel-section.scss */
+/* line 16, ../sass/_carousel-section.scss */
 .cite-block {
   height: 350px;
   padding: 10% 8%;
   background: #53354a;
 }
-/* line 21, ../sass/_carousel-section.scss */
+/* line 20, ../sass/_carousel-section.scss */
 .cite-block p {
   font-size: 2rem;
   font-family: Italic;
   color: #fff;
 }
-/* line 25, ../sass/_carousel-section.scss */
+/* line 24, ../sass/_carousel-section.scss */
 .cite-block p ~ p {
   padding-top: 20px;
   font-family: Bold;
   font-size: 1rem;
+}
+
+/* line 31, ../sass/_carousel-section.scss */
+.slider-switcher {
+  margin: 10px 0;
+}
+/* line 33, ../sass/_carousel-section.scss */
+.slider-switcher li {
+  display: inline-block;
+  margin-right: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.29);
+}
+/* line 40, ../sass/_carousel-section.scss */
+.slider-switcher li:hover {
+  cursor: pointer;
 }
 
 /* line 1, ../sass/_download-now-section.scss */
