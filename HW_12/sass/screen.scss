@@ -1,0 +1,58 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$dark-color: #333;
+$grey-color: #f8f8f8;
+
+@import "compass/reset";
+@import "welcome-section";
+@import "items-section";
+@import "other-offers-section";
+@import "footer";
+
+section {
+  padding: 30px 60px;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a.btn-style {
+  display: inline-block;
+  padding: 10px 22px;
+  text-transform: uppercase;
+  border: 2px solid #575153;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #575153;
+  transition: all .1s ease-in-out;
+  &:hover {
+    background: #00c8c8;
+    border-color: #00c8c8;
+    color: #fff;
+  }
+}
+.active {
+  color: #00c8c8;
+}
+ul.nav-list {
+    display: flex;
+    font-weight: bold;
+    font-size: .8rem;
+    li {
+      margin-right: 25px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }

@@ -1,0 +1,384 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_welcome-section.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* line 4, ../sass/_welcome-section.scss */
+.register-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #333;
+  color: #777;
+}
+/* line 10, ../sass/_welcome-section.scss */
+.register-block .currency {
+  padding: 12px;
+}
+/* line 12, ../sass/_welcome-section.scss */
+.register-block .currency:before {
+  content: 'Currency: ';
+}
+/* line 16, ../sass/_welcome-section.scss */
+.register-block select {
+  display: inline-block;
+  background: #333;
+  border: none;
+  color: #777;
+}
+/* line 22, ../sass/_welcome-section.scss */
+.register-block .register-form {
+  display: flex;
+  padding: 12px;
+}
+/* line 25, ../sass/_welcome-section.scss */
+.register-block .register-form span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* line 30, ../sass/_welcome-section.scss */
+.register-block .basket {
+  margin-left: 50px;
+}
+/* line 32, ../sass/_welcome-section.scss */
+.register-block .basket:hover {
+  background: #00c8c8;
+  color: #fff;
+}
+
+/* line 38, ../sass/_welcome-section.scss */
+.welcome-section {
+  height: 100vh;
+  background: #f8f8f8 url(../img/slider-photo1.png) no-repeat;
+}
+/* line 41, ../sass/_welcome-section.scss */
+.welcome-section h1 {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+/* line 44, ../sass/_welcome-section.scss */
+.welcome-section h1:hover {
+  text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
+}
+/* line 48, ../sass/_welcome-section.scss */
+.welcome-section .main-nav {
+  float: right;
+}
+/* line 50, ../sass/_welcome-section.scss */
+.welcome-section .main-nav nav {
+  display: flex;
+  align-items: center;
+}
+/* line 55, ../sass/_welcome-section.scss */
+.welcome-section form {
+  max-width: 300px;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+}
+/* line 59, ../sass/_welcome-section.scss */
+.welcome-section form input {
+  max-width: 93px;
+  border: none;
+  background: #f8f8f8;
+}
+/* line 65, ../sass/_welcome-section.scss */
+.welcome-section h2 {
+  margin-top: 10rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17rem;
+  letter-spacing: 12rem;
+  color: #575153;
+}
+/* line 73, ../sass/_welcome-section.scss */
+.welcome-section a.btn-style {
+  float: right;
+}
+
+/* line 2, ../sass/_items-section.scss */
+.items-section .items-div {
+  border-top: 2px solid #f8f8f8;
+  border-bottom: 2px solid #f8f8f8;
+}
+/* line 6, ../sass/_items-section.scss */
+.items-section .secondary-nav {
+  padding: 30px 0 0;
+}
+/* line 9, ../sass/_items-section.scss */
+.items-section .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -20px 30px 0;
+}
+/* line 14, ../sass/_items-section.scss */
+.items-section .row .pair-item {
+  display: flex;
+  max-width: 650px;
+  width: 50%;
+  flex-wrap: wrap;
+}
+/* line 23, ../sass/_items-section.scss */
+.items-section .row .pair-item img {
+  width: 100%;
+}
+/* line 26, ../sass/_items-section.scss */
+.items-section .row .pair-item .hide-block {
+  display: none;
+}
+/* line 29, ../sass/_items-section.scss */
+.items-section .row .pair-item .item {
+  flex: 1 46%;
+  margin: 20px 20px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 36, ../sass/_items-section.scss */
+.items-section .row .pair-item .big-item {
+  flex: 2 96%;
+  margin: 20px 20px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/_other-offers-section.scss */
+.other-offers-section {
+  display: flex;
+  padding: 0;
+  text-align: right;
+}
+/* line 6, ../sass/_other-offers-section.scss */
+.other-offers-section div[class*="lookbook"] {
+  height: 456px;
+  padding: 15px;
+}
+/* line 9, ../sass/_other-offers-section.scss */
+.other-offers-section div[class*="lookbook"] h4 {
+  font-size: 2rem;
+  color: #575153;
+}
+/* line 14, ../sass/_other-offers-section.scss */
+.other-offers-section .offer-text {
+  float: right;
+  width: 50%;
+}
+/* line 17, ../sass/_other-offers-section.scss */
+.other-offers-section .offer-text p {
+  padding: 20px 0;
+}
+/* line 21, ../sass/_other-offers-section.scss */
+.other-offers-section .mens-lookbook {
+  background: #f8f8f8 url("../img/mensLook.png") 0 -15% no-repeat;
+}
+/* line 24, ../sass/_other-offers-section.scss */
+.other-offers-section .womens-lookbook {
+  margin: 0 20px;
+  background: #f8f8f8 url("../img/womensLook.png") 0 -15% no-repeat;
+}
+/* line 28, ../sass/_other-offers-section.scss */
+.other-offers-section .your-lookbook {
+  background: #f8f8f8 url("../img/yourLook.png") 0 -15% no-repeat;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background: #f8f8f8;
+}
+/* line 5, ../sass/_footer.scss */
+footer .info-section {
+  display: flex;
+  justify-content: center;
+}
+/* line 8, ../sass/_footer.scss */
+footer .info-section h5 {
+  padding-bottom: 10px;
+  color: #575153;
+}
+/* line 12, ../sass/_footer.scss */
+footer .info-section ul ~ ul {
+  margin-left: 30px;
+}
+/* line 15, ../sass/_footer.scss */
+footer .info-section li {
+  padding-bottom: 15px;
+}
+/* line 19, ../sass/_footer.scss */
+footer .awards {
+  display: flex;
+  justify-content: center;
+}
+/* line 22, ../sass/_footer.scss */
+footer .awards .award-block {
+  width: 28%;
+  padding: 2rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+/* line 28, ../sass/_footer.scss */
+footer .awards .award-block p {
+  font-size: 2rem;
+}
+/* line 32, ../sass/_footer.scss */
+footer .awards .social-list-block {
+  width: 28%;
+  margin-left: 15px;
+  padding: 2rem;
+  text-align: center;
+  background: #00c8c8;
+  color: #fff;
+}
+/* line 39, ../sass/_footer.scss */
+footer .awards .social-list-block ul {
+  display: flex;
+  align-items: center;
+}
+/* line 42, ../sass/_footer.scss */
+footer .awards .social-list-block ul li {
+  margin: auto;
+}
+
+/* line 49, ../sass/_footer.scss */
+.developinfo-block {
+  display: flex;
+  justify-content: space-around;
+  padding: 7px;
+  background: #333;
+  color: #fff;
+}
+/* line 55, ../sass/_footer.scss */
+.developinfo-block > div {
+  display: flex;
+}
+
+/* line 15, ../sass/screen.scss */
+section {
+  padding: 30px 60px;
+}
+
+/* line 19, ../sass/screen.scss */
+.upper-text {
+  text-transform: uppercase;
+}
+
+/* line 23, ../sass/screen.scss */
+.bold-text {
+  font-weight: bold;
+}
+
+/* line 26, ../sass/screen.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 30, ../sass/screen.scss */
+a.btn-style {
+  display: inline-block;
+  padding: 10px 22px;
+  text-transform: uppercase;
+  border: 2px solid #575153;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #575153;
+  transition: all .1s ease-in-out;
+}
+/* line 39, ../sass/screen.scss */
+a.btn-style:hover {
+  background: #00c8c8;
+  border-color: #00c8c8;
+  color: #fff;
+}
+
+/* line 45, ../sass/screen.scss */
+.active {
+  color: #00c8c8;
+}
+
+/* line 48, ../sass/screen.scss */
+ul.nav-list {
+  display: flex;
+  font-weight: bold;
+  font-size: .8rem;
+}
+/* line 52, ../sass/screen.scss */
+ul.nav-list li {
+  margin-right: 25px;
+}
+/* line 54, ../sass/screen.scss */
+ul.nav-list li:hover {
+  cursor: pointer;
+}

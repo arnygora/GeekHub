@@ -1,14 +1,10 @@
 $(document).ready(function() {
     const setActive = function() {
         const self = $(this);
-        const listMenu = $('.main-nav li a');
+        const listMenu = $('.main-nav li');
         let curIndex = -1;
 
-        $('.nav-header').each(function(index) {
-            if (self.scrollTop() > $(this).offset().top - 60) {
-                curIndex = index;
-            }
-        });
+
         if (curIndex === -1) {
             listMenu.removeClass('active');
         }
@@ -24,7 +20,7 @@ $(document).ready(function() {
 
     setActive();
 
-    $('.main-nav li a').on('click', function(e) {
+    $('.main-nav li').on('click', function(e) {
         e.preventDefault();
 
         const index = $(this).index();
@@ -45,8 +41,8 @@ $(document).ready(function() {
                 posDoc > topHeader &&
                 posDoc < botHeader
             ) {
-                $('.main-nav li a').removeClass('active');
-                $('.main-nav li a').eq(index).addClass('active');
+                $('.main-nav li').removeClass('active');
+                $('.main-nav li').eq(index).addClass('active');
             }
         });
     });
