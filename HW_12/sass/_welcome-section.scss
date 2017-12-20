@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+}
+.register-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $dark-color;
+  color: #777;
+  .currency {
+    padding: 12px;
+    &:before {
+      content: 'Currency: ';
+    }
+  }
+  select {
+    display: inline-block;
+    background: $dark-color;
+    border: none;
+    color: #777;
+  }
+  .register-form {
+    display: flex;
+    padding: 12px;
+    span {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+  .basket {
+    margin-left: 50px;
+    &:hover {
+      background: #00c8c8;
+      color: #fff;
+    }
+  }
+}
+.welcome-section {
+  height: 100vh;
+  background: #f8f8f8 url(../img/slider-photo1.png) no-repeat;
+  h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    &:hover {
+      text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
+    }
+  }
+  .main-nav {
+    float: right;
+    nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+  form {
+    max-width: 300px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    input {
+      max-width: 93px;
+      border: none;
+      background: $grey-color;
+    }
+  }
+  h2 {
+    margin-top: 10rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17rem;
+    letter-spacing: 12rem;
+    color: #575153;
+  }
+  a.btn-style {
+    float: right;
+  }
+}
