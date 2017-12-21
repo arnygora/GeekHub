@@ -374,9 +374,24 @@ ul.nav-list {
   font-weight: bold;
   font-size: .8rem;
 }
+.hide-list {
+    display: none;
+    position: absolute;
+    top: 11px;
+    background: #efe4e4;
+    z-index: 1000;
+    padding: 5px;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
 /* line 52, ../sass/screen.scss */
 ul.nav-list li {
+  position: relative;
   margin-right: 25px;
+}
+ul.nav-list li:hover > ul {
+  display: block;
 }
 /* line 54, ../sass/screen.scss */
 ul.nav-list li:hover {
