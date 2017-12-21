@@ -216,8 +216,8 @@ body {
 
 /* line 2, ../sass/_items-section.scss */
 .items-section .items-div {
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border-top: 2px solid #f8f8f8;
+  border-bottom: 2px solid #f8f8f8;
 }
 /* line 6, ../sass/_items-section.scss */
 .items-section .secondary-nav {
@@ -289,23 +289,23 @@ body {
 }
 /* line 21, ../sass/_other-offers-section.scss */
 .other-offers-section .mens-lookbook {
-  background: #000000 url("../img/mensLook.png") 0 -15% no-repeat;
+  background: #f8f8f8 url("../img/mensLook.png") 0 -15% no-repeat;
 }
 /* line 24, ../sass/_other-offers-section.scss */
 .other-offers-section .womens-lookbook {
   margin: 0 20px;
-  background: #000000 url("../img/womensLook.png") 0 -15% no-repeat;
+  background: #f8f8f8 url("../img/womensLook.png") 0 -15% no-repeat;
 }
 /* line 28, ../sass/_other-offers-section.scss */
 .other-offers-section .your-lookbook {
-  background: #000000 url("../img/yourLook.png") 0 -15% no-repeat;
+  background: #f8f8f8 url("../img/yourLook.png") 0 -15% no-repeat;
 }
 
 /* line 1, ../sass/_footer.scss */
 footer {
   margin-top: 50px;
   padding: 20px 0;
-  background: #000000;
+  background: #f8f8f8;
 }
 /* line 5, ../sass/_footer.scss */
 footer .info-section {
