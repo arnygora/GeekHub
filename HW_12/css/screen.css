@@ -130,44 +130,94 @@ body {
   text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
 }
 /* line 48, ../sass/_welcome-section.scss */
-.welcome-section .main-nav {
-  float: right;
-}
-/* line 50, ../sass/_welcome-section.scss */
-.welcome-section .main-nav nav {
-  display: flex;
-  align-items: center;
-}
-/* line 55, ../sass/_welcome-section.scss */
 .welcome-section form {
   max-width: 300px;
   padding: 2px 4px;
   border: 1px solid #ccc;
 }
-/* line 59, ../sass/_welcome-section.scss */
+/* line 52, ../sass/_welcome-section.scss */
 .welcome-section form input {
   max-width: 93px;
   border: none;
-  background: #f8f8f8;
 }
-/* line 65, ../sass/_welcome-section.scss */
+/* line 57, ../sass/_welcome-section.scss */
 .welcome-section h2 {
   margin-top: 10rem;
   text-align: center;
   font-weight: 700;
   font-size: 17rem;
   letter-spacing: 12rem;
-  color: #575153;
+  background-color: #000;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
-/* line 73, ../sass/_welcome-section.scss */
+/* line 70, ../sass/_welcome-section.scss */
 .welcome-section a.btn-style {
   float: right;
 }
 
+/* line 75, ../sass/_welcome-section.scss */
+.main-nav {
+  float: right;
+}
+/* line 77, ../sass/_welcome-section.scss */
+.main-nav nav {
+  display: flex;
+  align-items: center;
+}
+/* line 81, ../sass/_welcome-section.scss */
+.main-nav .hide-list {
+  display: none;
+  width: 300px;
+  position: absolute;
+  top: 12px;
+  background: #fff;
+  z-index: 1000;
+  padding: 15px;
+  left: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.47);
+}
+/* line 92, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li {
+  position: relative;
+  margin-right: 25px;
+}
+/* line 95, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li:hover > .hide-list {
+  display: block;
+}
+/* line 98, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li .flex-div {
+  display: flex;
+}
+/* line 100, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li .flex-div span {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+/* line 104, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li .flex-div li {
+  padding-bottom: 15px;
+  color: #737373;
+  text-transform: none;
+}
+/* line 110, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li p {
+  text-align: center;
+  padding: 1.5rem;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
 /* line 2, ../sass/_items-section.scss */
 .items-section .items-div {
-  border-top: 2px solid #f8f8f8;
-  border-bottom: 2px solid #f8f8f8;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 /* line 6, ../sass/_items-section.scss */
 .items-section .secondary-nav {
@@ -239,23 +289,23 @@ body {
 }
 /* line 21, ../sass/_other-offers-section.scss */
 .other-offers-section .mens-lookbook {
-  background: #f8f8f8 url("../img/mensLook.png") 0 -15% no-repeat;
+  background: #000000 url("../img/mensLook.png") 0 -15% no-repeat;
 }
 /* line 24, ../sass/_other-offers-section.scss */
 .other-offers-section .womens-lookbook {
   margin: 0 20px;
-  background: #f8f8f8 url("../img/womensLook.png") 0 -15% no-repeat;
+  background: #000000 url("../img/womensLook.png") 0 -15% no-repeat;
 }
 /* line 28, ../sass/_other-offers-section.scss */
 .other-offers-section .your-lookbook {
-  background: #f8f8f8 url("../img/yourLook.png") 0 -15% no-repeat;
+  background: #000000 url("../img/yourLook.png") 0 -15% no-repeat;
 }
 
 /* line 1, ../sass/_footer.scss */
 footer {
   margin-top: 50px;
   padding: 20px 0;
-  background: #f8f8f8;
+  background: #000000;
 }
 /* line 5, ../sass/_footer.scss */
 footer .info-section {
@@ -374,24 +424,9 @@ ul.nav-list {
   font-weight: bold;
   font-size: .8rem;
 }
-.hide-list {
-    display: none;
-    position: absolute;
-    top: 11px;
-    background: #efe4e4;
-    z-index: 1000;
-    padding: 5px;
-    left: 0;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
-}
-
 /* line 52, ../sass/screen.scss */
 ul.nav-list li {
-  position: relative;
   margin-right: 25px;
-}
-ul.nav-list li:hover > ul {
-  display: block;
 }
 /* line 54, ../sass/screen.scss */
 ul.nav-list li:hover {

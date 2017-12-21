@@ -45,13 +45,6 @@ body {
       text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
     }
   }
-  .main-nav {
-    float: right;
-    nav {
-      display: flex;
-      align-items: center;
-    }
-  }
   form {
     max-width: 300px;
     padding: 2px 4px;
@@ -59,7 +52,6 @@ body {
     input {
       max-width: 93px;
       border: none;
-      background: $grey-color;
     }
   }
   h2 {
@@ -68,9 +60,60 @@ body {
     font-weight: 700;
     font-size: 17rem;
     letter-spacing: 12rem;
-    color: #575153;
+    background-color: #000;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
   }
   a.btn-style {
     float: right;
+  }
+}
+
+.main-nav {
+  float: right;
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .hide-list {
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 12px;
+    background: #fff;
+    z-index: 1000;
+    padding: 15px;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.47);
+  }
+  ul.nav-list li {
+    position: relative;
+    margin-right: 25px;
+    &:hover > .hide-list {
+      display: block;
+    }
+    .flex-div {
+      display: flex;
+      span {
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+      li {
+        padding-bottom: 15px;
+        color: #737373;
+        text-transform: none;
+      }
+    }
+    p {
+      text-align: center;
+      padding: 1.5rem;
+      background: #000;
+      color: #fff;
+      line-height: 1.5;
+      font-size: 2rem;
+    }
   }
 }
