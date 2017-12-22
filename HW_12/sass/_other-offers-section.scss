@@ -1,31 +1,32 @@
 .other-offers-section {
-  display: flex;
-
-  padding: 0;
-  text-align: right;
-  div[class*="lookbook"] {
-    height: 456px;
-    padding: 15px;
-    h4 {
-      font-size: 2rem;
-      color: #575153;
+  .offers-wrap {
+    display: flex;
+    padding: 0;
+    text-align: right;
+    div[class*="lookbook"] {
+      height: 456px;
+      padding: 15px;
+      h4 {
+        font-size: 2rem;
+        color: #575153;
+      }
     }
-  }
-  .offer-text {
-    float: right;
-    width: 50%;
-    p {
-      padding: 20px 0;
+    .offer-text {
+      float: right;
+      width: 50%;
+      p {
+        padding: 20px 0;
+      }
     }
-  }
-  .mens-lookbook {
-    background: $grey-color url("../img/mensLook.png") 0 -15% no-repeat;
-  }
-  .womens-lookbook {
-    margin: 0 20px;
-    background: $grey-color url("../img/womensLook.png") 0 -15% no-repeat;
-  }
-  .your-lookbook {
-    background: $grey-color url("../img/yourLook.png") 0 -15% no-repeat;
+    .mens-lookbook {
+      background: $grey-color url("../img/mensLook.png") 0 -15% no-repeat;
+    }
+    .womens-lookbook {
+      margin: 0 20px;
+      background: $grey-color url("../img/womensLook.png") 0 -15% no-repeat;
+    }
+    .your-lookbook {
+      background: $grey-color url("../img/yourLook.png") 0 -15% no-repeat;
+    }
   }
 }

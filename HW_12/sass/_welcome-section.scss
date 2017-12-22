@@ -38,7 +38,7 @@ body {
   }
 }
 .welcome-section {
-  height: 100vh;
+  height: 76vh;
   background: #f8f8f8 url(../img/slider-photo1.png) no-repeat;
   h1 {
     display: inline-block;
@@ -54,15 +54,20 @@ body {
     input {
       max-width: 93px;
       border: none;
+      background: $grey-color;
     }
   }
   .ave-name {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media only screen and (max-width: 968px) {
+      display: block;
+      text-align: right;
+    }
     h2 {
       margin-top: 10rem;
-      text-align: center;
+      //text-align: center;
       font-weight: 700;
       font-size: 17rem;
       letter-spacing: 12rem;
@@ -72,13 +77,23 @@ body {
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
+      @media only screen and (max-width: 1200px) {
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: 968px) {
+        letter-spacing: 6rem;
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: 600px) {
+        letter-spacing: 2rem;
+        font-size: 5rem;
+      }
     }
     a.btn-style {
       margin-right: 13rem;
     }
   }
 }
-
 .main-nav {
   float: right;
   nav {
@@ -95,7 +110,6 @@ body {
     padding: 15px;
     left: 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.47);
-
   }
   ul.nav-list li {
     position: relative;
