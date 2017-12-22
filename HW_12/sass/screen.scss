@@ -5,6 +5,7 @@
 
 $dark-color: #333;
 $grey-color: #f8f8f8;
+$mint-color: #00c8c8;
 
 @import "compass/reset";
 @import "welcome-section";
@@ -43,7 +44,7 @@ a.btn-style {
   }
 }
 .active {
-  color: #00c8c8;
+  color: $mint-color;
 }
 ul.nav-list {
     display: flex;

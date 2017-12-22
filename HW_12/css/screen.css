@@ -115,33 +115,39 @@ body {
   color: #fff;
 }
 
-/* line 38, ../sass/_welcome-section.scss */
+/* line 40, ../sass/_welcome-section.scss */
 .welcome-section {
   height: 100vh;
   background: #f8f8f8 url(../img/slider-photo1.png) no-repeat;
 }
-/* line 41, ../sass/_welcome-section.scss */
+/* line 43, ../sass/_welcome-section.scss */
 .welcome-section h1 {
   display: inline-block;
   font-size: 1.5rem;
 }
-/* line 44, ../sass/_welcome-section.scss */
+/* line 46, ../sass/_welcome-section.scss */
 .welcome-section h1:hover {
   text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
 }
-/* line 48, ../sass/_welcome-section.scss */
+/* line 50, ../sass/_welcome-section.scss */
 .welcome-section form {
   max-width: 300px;
   padding: 2px 4px;
   border: 1px solid #ccc;
 }
-/* line 52, ../sass/_welcome-section.scss */
+/* line 54, ../sass/_welcome-section.scss */
 .welcome-section form input {
   max-width: 93px;
   border: none;
 }
-/* line 57, ../sass/_welcome-section.scss */
-.welcome-section h2 {
+/* line 59, ../sass/_welcome-section.scss */
+.welcome-section .ave-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 63, ../sass/_welcome-section.scss */
+.welcome-section .ave-name h2 {
   margin-top: 10rem;
   text-align: center;
   font-weight: 700;
@@ -154,21 +160,21 @@ body {
   -moz-background-clip: text;
   background-clip: text;
 }
-/* line 70, ../sass/_welcome-section.scss */
-.welcome-section a.btn-style {
-  float: right;
+/* line 76, ../sass/_welcome-section.scss */
+.welcome-section .ave-name a.btn-style {
+  margin-right: 13rem;
 }
 
-/* line 75, ../sass/_welcome-section.scss */
+/* line 82, ../sass/_welcome-section.scss */
 .main-nav {
   float: right;
 }
-/* line 77, ../sass/_welcome-section.scss */
+/* line 84, ../sass/_welcome-section.scss */
 .main-nav nav {
   display: flex;
   align-items: center;
 }
-/* line 81, ../sass/_welcome-section.scss */
+/* line 88, ../sass/_welcome-section.scss */
 .main-nav .hide-list {
   display: none;
   width: 300px;
@@ -180,31 +186,38 @@ body {
   left: 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.47);
 }
-/* line 92, ../sass/_welcome-section.scss */
+/* line 100, ../sass/_welcome-section.scss */
 .main-nav ul.nav-list li {
   position: relative;
   margin-right: 25px;
+  transition: all .2s ease-out;
 }
-/* line 95, ../sass/_welcome-section.scss */
+/* line 104, ../sass/_welcome-section.scss */
 .main-nav ul.nav-list li:hover > .hide-list {
   display: block;
 }
-/* line 98, ../sass/_welcome-section.scss */
+/* line 107, ../sass/_welcome-section.scss */
 .main-nav ul.nav-list li .flex-div {
   display: flex;
+  justify-content: space-around;
 }
-/* line 100, ../sass/_welcome-section.scss */
+/* line 110, ../sass/_welcome-section.scss */
 .main-nav ul.nav-list li .flex-div span {
   display: inline-block;
   padding-bottom: 10px;
 }
-/* line 104, ../sass/_welcome-section.scss */
+/* line 114, ../sass/_welcome-section.scss */
 .main-nav ul.nav-list li .flex-div li {
   padding-bottom: 15px;
   color: #737373;
   text-transform: none;
+  transition: all .2s ease-out;
 }
-/* line 110, ../sass/_welcome-section.scss */
+/* line 119, ../sass/_welcome-section.scss */
+.main-nav ul.nav-list li .flex-div li:hover {
+  text-shadow: 11px 6px 1px #b9b8bb;
+}
+/* line 124, ../sass/_welcome-section.scss */
 .main-nav ul.nav-list li p {
   text-align: center;
   padding: 1.5rem;
@@ -237,29 +250,73 @@ body {
   width: 50%;
   flex-wrap: wrap;
 }
-/* line 23, ../sass/_items-section.scss */
+/* line 19, ../sass/_items-section.scss */
+.items-section .row .pair-item .product-card {
+  position: relative;
+}
+/* line 22, ../sass/_items-section.scss */
+.items-section .row .pair-item .box-shadow {
+  -webkit-box-shadow: 0 0 16px 3px #868a8a;
+  -moz-box-shadow: 0 0 16px 3px #868a8a;
+  box-shadow: 0 0 16px 3px #868a8a;
+}
+/* line 31, ../sass/_items-section.scss */
 .items-section .row .pair-item img {
   width: 100%;
 }
-/* line 26, ../sass/_items-section.scss */
-.items-section .row .pair-item .hide-block {
+/* line 35, ../sass/_items-section.scss */
+.items-section .row .hide-block {
   display: none;
+  padding: 10px 20px;
+  text-align: center;
+  color: #727272;
+  position: absolute;
+  bottom: -100px;
+  background: #fff;
+  z-index: 100;
 }
-/* line 29, ../sass/_items-section.scss */
-.items-section .row .pair-item .item {
+/* line 44, ../sass/_items-section.scss */
+.items-section .row .hide-block h4 {
+  font-size: .8rem;
+  padding-bottom: 10px;
+}
+/* line 49, ../sass/_items-section.scss */
+.items-section .row .item {
   flex: 1 46%;
   margin: 20px 20px 0 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 36, ../sass/_items-section.scss */
-.items-section .row .pair-item .big-item {
+/* line 56, ../sass/_items-section.scss */
+.items-section .row .big-item {
   flex: 2 96%;
   margin: 20px 20px 0 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+/* line 64, ../sass/_items-section.scss */
+.items-section .social-list {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+/* line 68, ../sass/_items-section.scss */
+.items-section .social-list li {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background: #737373;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 2;
+  transition: all .1s ease-in-out;
+}
+/* line 77, ../sass/_items-section.scss */
+.items-section .social-list li:hover {
+  background: #00c8c8;
+  color: #fff;
 }
 
 /* line 1, ../sass/_other-offers-section.scss */
@@ -374,28 +431,28 @@ footer .awards .social-list-block ul li {
   display: flex;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 section {
   padding: 30px 60px;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .upper-text {
   text-transform: uppercase;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .bold-text {
   font-weight: bold;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 a.btn-style {
   display: inline-block;
   padding: 10px 22px;
@@ -406,29 +463,29 @@ a.btn-style {
   color: #575153;
   transition: all .1s ease-in-out;
 }
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 a.btn-style:hover {
   background: #00c8c8;
   border-color: #00c8c8;
   color: #fff;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .active {
   color: #00c8c8;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 ul.nav-list {
   display: flex;
   font-weight: bold;
   font-size: .8rem;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 ul.nav-list li {
   margin-right: 25px;
 }
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 ul.nav-list li:hover {
   cursor: pointer;
 }
