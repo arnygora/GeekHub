@@ -38,9 +38,12 @@
       text-align: center;
       color: #727272;
       position: absolute;
-      bottom: -100px;
+      bottom: -95px;
       background: #fff;
       z-index: 100;
+      -webkit-box-shadow: 0 5px 11px 3px #868a8a;
+      -moz-box-shadow: 0 5px 11px 3px #868a8a;
+      box-shadow: 0 5px 11px 3px #868a8a;
       h4 {
         font-size: .8rem;
         padding-bottom: 10px;

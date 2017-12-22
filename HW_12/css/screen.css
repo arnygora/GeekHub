@@ -271,16 +271,19 @@ body {
   text-align: center;
   color: #727272;
   position: absolute;
-  bottom: -100px;
+  bottom: -95px;
   background: #fff;
   z-index: 100;
+  -webkit-box-shadow: 0 5px 11px 3px #868a8a;
+  -moz-box-shadow: 0 5px 11px 3px #868a8a;
+  box-shadow: 0 5px 11px 3px #868a8a;
 }
-/* line 44, ../sass/_items-section.scss */
+/* line 47, ../sass/_items-section.scss */
 .items-section .row .hide-block h4 {
   font-size: .8rem;
   padding-bottom: 10px;
 }
-/* line 49, ../sass/_items-section.scss */
+/* line 52, ../sass/_items-section.scss */
 .items-section .row .item {
   flex: 1 46%;
   margin: 20px 20px 0 0;
@@ -288,7 +291,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 56, ../sass/_items-section.scss */
+/* line 59, ../sass/_items-section.scss */
 .items-section .row .big-item {
   flex: 2 96%;
   margin: 20px 20px 0 0;
@@ -296,13 +299,13 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 64, ../sass/_items-section.scss */
+/* line 67, ../sass/_items-section.scss */
 .items-section .social-list {
   display: flex;
   margin-top: 10px;
   justify-content: center;
 }
-/* line 68, ../sass/_items-section.scss */
+/* line 71, ../sass/_items-section.scss */
 .items-section .social-list li {
   margin-right: 10px;
   width: 30px;
@@ -313,7 +316,7 @@ body {
   line-height: 2;
   transition: all .1s ease-in-out;
 }
-/* line 77, ../sass/_items-section.scss */
+/* line 80, ../sass/_items-section.scss */
 .items-section .social-list li:hover {
   background: #00c8c8;
   color: #fff;

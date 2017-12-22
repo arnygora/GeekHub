@@ -1,8 +1,9 @@
 $(document).ready(function() {
     $(".product-card").hover(function(){
-        $('.hide-block').show();
+        $(this).children('.hide-block').show(100);
+        $(this).toggleClass('box-shadow');
     },function(){
-        $('.hide-block').hide();
+        $(this).children('.hide-block').hide(100);
         $(this).toggleClass('box-shadow');
     });
 });
