@@ -1,20 +1,25 @@
 .items-section {
-  margin-top: 2rem;
+
   .items-div {
     border-top: 2px solid $grey-color;
     border-bottom: 2px solid $grey-color;
   }
   .secondary-nav {
     padding: 30px 0 0;
+    li a:hover {
+      color: $mint-color;
+    }
   }
   .items-div {
     //display: flex;
     //justify-content: center;
     //flex-wrap: wrap;
     //margin: 0 -20px 30px 0;
+    margin: 0 auto;
 
-    .product-card {
-      position: relative;
+    .item {
+      //position: relative;
+      padding: 10px 10px 5px;
     }
     .box-shadow {
       -webkit-box-shadow: 0 0 16px 3px #868a8a;
@@ -31,11 +36,11 @@
     }
     .hide-block {
       display: none;
-      padding: 10px 20px;
+      padding: 5px 0;
       text-align: center;
       color: #727272;
       position: absolute;
-      bottom: -95px;
+      bottom: -115px;
       background: #fff;
       z-index: 100;
       -webkit-box-shadow: 0 5px 11px 3px #868a8a;
@@ -43,7 +48,10 @@
       box-shadow: 0 5px 11px 3px #868a8a;
       h4 {
         font-size: .8rem;
-        padding-bottom: 10px;
+        //padding-bottom: 10px;
+      }
+      p {
+        margin: 0;
       }
     }
     .item {
@@ -63,7 +71,7 @@
   }
   .social-list {
     display: flex;
-    margin-top: 10px;
+    margin: 5px auto;
     justify-content: center;
     li {
       margin-right: 10px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HW_12</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -131,9 +132,9 @@
                </ul>
            </div>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="items-div">
-                        <div class="col-sm-3 item product-card">
+                <div class="items-div">
+                    <div class="row">
+                        <div class="col-10 col-md-6 col-lg-3 item">
                             <img src="img/item1.jpg" alt="ave closes">
                             <div class="hide-block">
                                 <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
@@ -144,8 +145,8 @@
                                     <li><span class="fa fa-compress"></span></li>
                                 </ul>
                             </div><!--hide-block-->
-                        </div><!--item product-card-->
-                        <div class="col-sm-3 item product-card">
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
                             <img src="img/item2.jpg" alt="ave closes">
                             <div class="hide-block">
                                 <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
@@ -156,8 +157,20 @@
                                     <li><span class="fa fa-compress"></span></li>
                                 </ul>
                             </div><!--hide-block-->
-                        </div><!--item product-card-->
-                        <div class="col-sm-3 item product-card">
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/womensLook.png" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
                             <img src="img/item4.jpg" alt="ave closes">
                             <div class="hide-block">
                                 <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
@@ -168,8 +181,8 @@
                                     <li><span class="fa fa-compress"></span></li>
                                 </ul>
                             </div><!--hide-block-->
-                        </div><!--big-item product-card-->
-                        <div class="col-sm-3 item product-card">
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
                             <img src="img/item3.jpg" alt="ave closes">
                             <div class="hide-block">
                                 <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
@@ -180,8 +193,8 @@
                                     <li><span class="fa fa-compress"></span></li>
                                 </ul>
                             </div><!--hide-block-->
-                        </div><!--big-item product-card-->
-                        <div class="col-sm-3 item product-card">
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
                             <img src="img/item5.jpg" alt="ave closes">
                             <div class="hide-block">
                                 <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
@@ -192,9 +205,93 @@
                                     <li><span class="fa fa-compress"></span></li>
                                 </ul>
                             </div><!--hide-block-->
-                        </div><!--item product-card-->
-                        <div class="col-sm-3 item product-card">
-                                <img src="img/item6.jpg" alt="ave closes">
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/item6.jpg" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                            </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/mensLook.png" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/item7.jpg" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/item8.jpg" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/womensLook.png" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                        <img src="img/item9.jpg" alt="ave closes">
+                        <div class="hide-block">
+                            <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <ul class="social-list">
+                                <li><span class="fa fa-shopping-cart"></span></li>
+                                <li><span class="fa fa-heart-o"></span></li>
+                                <li><span class="fa fa-compress"></span></li>
+                            </ul>
+                        </div><!--hide-block-->
+                    </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                            <img src="img/item11.jpg" alt="ave closes">
+                            <div class="hide-block">
+                                <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <ul class="social-list">
+                                    <li><span class="fa fa-shopping-cart"></span></li>
+                                    <li><span class="fa fa-heart-o"></span></li>
+                                    <li><span class="fa fa-compress"></span></li>
+                                </ul>
+                            </div><!--hide-block-->
+                        </div><!--item-->
+                        <div class="col-10 col-md-6 col-lg-3 item">
+                                <img src="img/item10.jpg" alt="ave closes">
                                 <div class="hide-block">
                                     <h4 class="upper-text bold-text">Lorem ipsum dolor sit</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -204,7 +301,7 @@
                                         <li><span class="fa fa-compress"></span></li>
                                     </ul>
                                 </div><!--hide-block-->
-                            </div><!--item product-card-->
+                            </div><!--item-->
                     </div>
                 </div>
             </div>

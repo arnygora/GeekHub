@@ -253,10 +253,6 @@ body {
   font-size: 2rem;
 }
 
-/* line 1, ../sass/_items-section.scss */
-.items-section {
-  margin-top: 2rem;
-}
 /* line 3, ../sass/_items-section.scss */
 .items-section .items-div {
   border-top: 2px solid #f8f8f8;
@@ -266,47 +262,58 @@ body {
 .items-section .secondary-nav {
   padding: 30px 0 0;
 }
-/* line 16, ../sass/_items-section.scss */
-.items-section .items-div .product-card {
-  position: relative;
+/* line 9, ../sass/_items-section.scss */
+.items-section .secondary-nav li a:hover {
+  color: #00c8c8;
 }
-/* line 19, ../sass/_items-section.scss */
+/* line 13, ../sass/_items-section.scss */
+.items-section .items-div {
+  margin: 0 auto;
+}
+/* line 20, ../sass/_items-section.scss */
+.items-section .items-div .item {
+  padding: 10px 10px 5px;
+}
+/* line 24, ../sass/_items-section.scss */
 .items-section .items-div .box-shadow {
   -webkit-box-shadow: 0 0 16px 3px #868a8a;
   -moz-box-shadow: 0 0 16px 3px #868a8a;
   box-shadow: 0 0 16px 3px #868a8a;
 }
-/* line 28, ../sass/_items-section.scss */
+/* line 33, ../sass/_items-section.scss */
 .items-section .items-div img {
   max-width: 100%;
   height: auto;
 }
-/* line 32, ../sass/_items-section.scss */
+/* line 37, ../sass/_items-section.scss */
 .items-section .items-div .hide-block {
   display: none;
-  padding: 10px 20px;
+  padding: 5px 0;
   text-align: center;
   color: #727272;
   position: absolute;
-  bottom: -95px;
+  bottom: -115px;
   background: #fff;
   z-index: 100;
   -webkit-box-shadow: 0 5px 11px 3px #868a8a;
   -moz-box-shadow: 0 5px 11px 3px #868a8a;
   box-shadow: 0 5px 11px 3px #868a8a;
 }
-/* line 44, ../sass/_items-section.scss */
+/* line 49, ../sass/_items-section.scss */
 .items-section .items-div .hide-block h4 {
   font-size: .8rem;
-  padding-bottom: 10px;
 }
-/* line 64, ../sass/_items-section.scss */
+/* line 53, ../sass/_items-section.scss */
+.items-section .items-div .hide-block p {
+  margin: 0;
+}
+/* line 72, ../sass/_items-section.scss */
 .items-section .social-list {
   display: flex;
-  margin-top: 10px;
+  margin: 5px auto;
   justify-content: center;
 }
-/* line 68, ../sass/_items-section.scss */
+/* line 76, ../sass/_items-section.scss */
 .items-section .social-list li {
   margin-right: 10px;
   width: 30px;
@@ -317,7 +324,7 @@ body {
   line-height: 2;
   transition: all .1s ease-in-out;
 }
-/* line 77, ../sass/_items-section.scss */
+/* line 85, ../sass/_items-section.scss */
 .items-section .social-list li:hover {
   background: #00c8c8;
   color: #fff;

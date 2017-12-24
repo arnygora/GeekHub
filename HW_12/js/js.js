@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".product-card").hover(function(){
+    $(".item").hover(function(){
         $(this).children('.hide-block').show(100);
         $(this).toggleClass('box-shadow');
     },function(){
@@ -7,14 +7,12 @@ $(document).ready(function() {
         $(this).toggleClass('box-shadow');
     });
 
-
     var container = $('.items-div');
-    $container.imagesLoaded(function () {
-        $container.masonry({
+    $(container).imagesLoaded(function () {
+        $(container).masonry({
             columnWidth: '.item',
             itemSelector: '.item'
         });
     });
-
 });
 
