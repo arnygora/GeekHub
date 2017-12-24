@@ -120,45 +120,49 @@ body {
   height: 76vh;
   background: #f8f8f8 url(../img/slider-photo1.png) no-repeat;
 }
-/* line 43, ../sass/_welcome-section.scss */
+@media only screen and (max-width: 968px) {
+  /* line 40, ../sass/_welcome-section.scss */
+  .welcome-section {
+    height: 100vh;
+    background-position: 42% 0;
+  }
+}
+/* line 47, ../sass/_welcome-section.scss */
 .welcome-section h1 {
   display: inline-block;
   font-size: 1.5rem;
 }
-/* line 46, ../sass/_welcome-section.scss */
+/* line 50, ../sass/_welcome-section.scss */
 .welcome-section h1:hover {
   text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
 }
-/* line 50, ../sass/_welcome-section.scss */
+/* line 54, ../sass/_welcome-section.scss */
 .welcome-section form {
   max-width: 300px;
   padding: 2px 4px;
   border: 1px solid #ccc;
 }
-/* line 54, ../sass/_welcome-section.scss */
+/* line 58, ../sass/_welcome-section.scss */
 .welcome-section form input {
   max-width: 93px;
   border: none;
   background: #f8f8f8;
 }
-/* line 60, ../sass/_welcome-section.scss */
+/* line 64, ../sass/_welcome-section.scss */
 .welcome-section .ave-name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  text-align: center;
 }
 @media only screen and (max-width: 968px) {
-  /* line 60, ../sass/_welcome-section.scss */
+  /* line 64, ../sass/_welcome-section.scss */
   .welcome-section .ave-name {
     display: block;
     text-align: right;
   }
 }
-/* line 68, ../sass/_welcome-section.scss */
+/* line 70, ../sass/_welcome-section.scss */
 .welcome-section .ave-name h2 {
   font-weight: 700;
   font-size: 17rem;
-  letter-spacing: 12rem;
   background-color: #000;
   color: transparent;
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
@@ -167,84 +171,96 @@ body {
   background-clip: text;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 68, ../sass/_welcome-section.scss */
+  /* line 70, ../sass/_welcome-section.scss */
   .welcome-section .ave-name h2 {
     font-size: 10rem;
   }
 }
 @media only screen and (max-width: 968px) {
-  /* line 68, ../sass/_welcome-section.scss */
+  /* line 70, ../sass/_welcome-section.scss */
   .welcome-section .ave-name h2 {
-    letter-spacing: 6rem;
     font-size: 10rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 68, ../sass/_welcome-section.scss */
+  /* line 70, ../sass/_welcome-section.scss */
   .welcome-section .ave-name h2 {
-    letter-spacing: 2rem;
     font-size: 5rem;
   }
 }
-/* line 92, ../sass/_welcome-section.scss */
-.welcome-section .ave-name a.btn-style {
-  margin-right: 13rem;
+/* line 88, ../sass/_welcome-section.scss */
+.welcome-section .ave-name h2 span {
+  letter-spacing: 10rem;
+}
+@media only screen and (max-width: 600px) {
+  /* line 88, ../sass/_welcome-section.scss */
+  .welcome-section .ave-name h2 span {
+    letter-spacing: 2rem;
+  }
+}
+@media only screen and (max-width: 968px) {
+  /* line 88, ../sass/_welcome-section.scss */
+  .welcome-section .ave-name h2 span {
+    letter-spacing: 6rem;
+  }
 }
 
-/* line 97, ../sass/_welcome-section.scss */
+/* line 100, ../sass/_welcome-section.scss */
 .main-nav {
   float: right;
-}
-/* line 99, ../sass/_welcome-section.scss */
-.main-nav nav {
   display: flex;
   align-items: center;
 }
-/* line 103, ../sass/_welcome-section.scss */
+/* line 104, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list {
+  display: flex;
+  align-items: center;
+}
+/* line 108, ../sass/_welcome-section.scss */
 .main-nav .hide-list {
   display: none;
   width: 300px;
   position: absolute;
-  top: 12px;
+  top: 18px;
   background: #fff;
   z-index: 1000;
   padding: 15px;
   left: 0;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.47);
 }
-/* line 114, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li {
+/* line 119, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li {
   position: relative;
   margin-right: 25px;
   transition: all .2s ease-out;
 }
-/* line 118, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li:hover > .hide-list {
+/* line 123, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li:hover > .hide-list {
   display: block;
 }
-/* line 121, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li .flex-div {
+/* line 126, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li .flex-div {
   display: flex;
   justify-content: space-around;
 }
-/* line 124, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li .flex-div span {
+/* line 129, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li .flex-div span {
   display: inline-block;
   padding-bottom: 10px;
 }
-/* line 128, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li .flex-div li {
+/* line 133, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li .flex-div li {
   padding-bottom: 15px;
   color: #737373;
   text-transform: none;
   transition: all .2s ease-out;
 }
-/* line 133, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li .flex-div li:hover {
+/* line 138, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li .flex-div li:hover {
   text-shadow: 11px 6px 1px #b9b8bb;
 }
-/* line 138, ../sass/_welcome-section.scss */
-.main-nav ul.nav-list li p {
+/* line 143, ../sass/_welcome-section.scss */
+.main-nav ul.main-nav-list li p {
   text-align: center;
   padding: 1.5rem;
   background: #000;
@@ -253,67 +269,69 @@ body {
   font-size: 2rem;
 }
 
-/* line 3, ../sass/_items-section.scss */
+/* line 2, ../sass/_items-section.scss */
 .items-section .items-div {
   border-top: 2px solid #f8f8f8;
   border-bottom: 2px solid #f8f8f8;
 }
-/* line 7, ../sass/_items-section.scss */
+/* line 6, ../sass/_items-section.scss */
 .items-section .secondary-nav {
   padding: 30px 0 0;
 }
-/* line 9, ../sass/_items-section.scss */
-.items-section .secondary-nav li a:hover {
+/* line 8, ../sass/_items-section.scss */
+.items-section .secondary-nav li:hover {
   color: #00c8c8;
 }
-/* line 13, ../sass/_items-section.scss */
+/* line 12, ../sass/_items-section.scss */
 .items-section .items-div {
   margin: 0 auto;
 }
-/* line 20, ../sass/_items-section.scss */
+/* line 14, ../sass/_items-section.scss */
 .items-section .items-div .item {
   padding: 10px 10px 5px;
 }
-/* line 24, ../sass/_items-section.scss */
+/* line 18, ../sass/_items-section.scss */
 .items-section .items-div .box-shadow {
   -webkit-box-shadow: 0 0 16px 3px #868a8a;
   -moz-box-shadow: 0 0 16px 3px #868a8a;
   box-shadow: 0 0 16px 3px #868a8a;
 }
-/* line 33, ../sass/_items-section.scss */
+/* line 23, ../sass/_items-section.scss */
 .items-section .items-div img {
   max-width: 100%;
   height: auto;
 }
-/* line 37, ../sass/_items-section.scss */
+/* line 27, ../sass/_items-section.scss */
 .items-section .items-div .hide-block {
-  display: none;
-  padding: 5px 0;
-  text-align: center;
-  color: #727272;
   position: absolute;
   bottom: -115px;
-  background: #fff;
+  left: 0;
+  display: none;
+  padding: 5px 0;
+  width: 100%;
   z-index: 100;
+  text-align: center;
+  color: #727272;
+  background: #fff;
   -webkit-box-shadow: 0 5px 11px 3px #868a8a;
   -moz-box-shadow: 0 5px 11px 3px #868a8a;
   box-shadow: 0 5px 11px 3px #868a8a;
 }
-/* line 49, ../sass/_items-section.scss */
+/* line 41, ../sass/_items-section.scss */
 .items-section .items-div .hide-block h4 {
   font-size: .8rem;
 }
-/* line 53, ../sass/_items-section.scss */
+/* line 44, ../sass/_items-section.scss */
 .items-section .items-div .hide-block p {
   margin: 0;
 }
-/* line 72, ../sass/_items-section.scss */
+/* line 49, ../sass/_items-section.scss */
 .items-section .social-list {
   display: flex;
   margin: 5px auto;
   justify-content: center;
 }
-/* line 76, ../sass/_items-section.scss */
+/* line 53, ../sass/_items-section.scss */
 .items-section .social-list li {
   margin-right: 10px;
   width: 30px;
@@ -324,7 +342,7 @@ body {
   line-height: 2;
   transition: all .1s ease-in-out;
 }
-/* line 85, ../sass/_items-section.scss */
+/* line 62, ../sass/_items-section.scss */
 .items-section .social-list li:hover {
   background: #00c8c8;
   color: #fff;
@@ -332,8 +350,6 @@ body {
 
 /* line 2, ../sass/_other-offers-section.scss */
 .other-offers-section .offers-wrap {
-  display: flex;
-  padding: 0;
   text-align: right;
 }
 /* line 6, ../sass/_other-offers-section.scss */
@@ -361,7 +377,6 @@ body {
 }
 /* line 24, ../sass/_other-offers-section.scss */
 .other-offers-section .offers-wrap .womens-lookbook {
-  margin: 0 20px;
   background: #f8f8f8 url("../img/womensLook.png") 0 -15% no-repeat;
 }
 /* line 28, ../sass/_other-offers-section.scss */
@@ -375,32 +390,19 @@ footer {
   padding: 20px 0;
   background: #f8f8f8;
 }
-/* line 5, ../sass/_footer.scss */
-footer .info-section {
-  display: flex;
-  justify-content: center;
-}
-/* line 8, ../sass/_footer.scss */
-footer .info-section h5 {
+/* line 6, ../sass/_footer.scss */
+footer .info-item h5 {
+  margin: 0 auto;
   padding-bottom: 10px;
+  font-size: 1rem;
   color: #575153;
 }
-/* line 12, ../sass/_footer.scss */
-footer .info-section ul ~ ul {
-  margin-left: 30px;
-}
 /* line 15, ../sass/_footer.scss */
-footer .info-section li {
+footer .info-item li {
   padding-bottom: 15px;
-}
-/* line 19, ../sass/_footer.scss */
-footer .awards {
-  display: flex;
-  justify-content: center;
 }
 /* line 22, ../sass/_footer.scss */
 footer .awards .award-block {
-  width: 28%;
   padding: 2rem;
   text-align: center;
   background: #333;
@@ -412,24 +414,29 @@ footer .awards .award-block p {
 }
 /* line 32, ../sass/_footer.scss */
 footer .awards .social-list-block {
-  width: 28%;
   margin-left: 15px;
   padding: 2rem;
   text-align: center;
   background: #00c8c8;
   color: #fff;
 }
-/* line 39, ../sass/_footer.scss */
+@media screen and (max-width: 968px) {
+  /* line 32, ../sass/_footer.scss */
+  footer .awards .social-list-block {
+    margin: 0;
+  }
+}
+/* line 42, ../sass/_footer.scss */
 footer .awards .social-list-block ul {
   display: flex;
   align-items: center;
 }
-/* line 42, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 footer .awards .social-list-block ul li {
   margin: auto;
 }
 
-/* line 49, ../sass/_footer.scss */
+/* line 52, ../sass/_footer.scss */
 .developinfo-block {
   display: flex;
   justify-content: space-around;
@@ -437,7 +444,7 @@ footer .awards .social-list-block ul li {
   background: #333;
   color: #fff;
 }
-/* line 55, ../sass/_footer.scss */
+/* line 58, ../sass/_footer.scss */
 .developinfo-block > div {
   display: flex;
 }
@@ -446,24 +453,30 @@ footer .awards .social-list-block ul li {
 section {
   padding: 30px 60px;
 }
+@media only screen and (max-width: 968px) {
+  /* line 16, ../sass/screen.scss */
+  section {
+    padding: 10px;
+  }
+}
 
-/* line 20, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .upper-text {
   text-transform: uppercase;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .bold-text {
   font-weight: bold;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 a.btn-style {
   display: inline-block;
   padding: 10px 22px;
@@ -473,30 +486,37 @@ a.btn-style {
   letter-spacing: 2px;
   color: #575153;
   transition: all .1s ease-in-out;
+  white-space: nowrap;
 }
-/* line 40, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 a.btn-style:hover {
   background: #00c8c8;
   border-color: #00c8c8;
   color: #fff;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .active {
   color: #00c8c8;
 }
 
-/* line 49, ../sass/screen.scss */
-ul.nav-list {
+/* line 53, ../sass/screen.scss */
+ul.nav-list, ul.main-nav-list {
   display: flex;
   font-weight: bold;
   font-size: .8rem;
 }
-/* line 53, ../sass/screen.scss */
-ul.nav-list li {
+/* line 57, ../sass/screen.scss */
+ul.nav-list li, ul.main-nav-list li {
   margin-right: 25px;
 }
-/* line 55, ../sass/screen.scss */
-ul.nav-list li:hover {
+@media only screen and (max-width: 968px) {
+  /* line 57, ../sass/screen.scss */
+  ul.nav-list li, ul.main-nav-list li {
+    margin-right: 20px;
+  }
+}
+/* line 62, ../sass/screen.scss */
+ul.nav-list li:hover, ul.main-nav-list li:hover {
   cursor: pointer;
 }

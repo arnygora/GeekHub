@@ -7,9 +7,31 @@ $(document).ready(function() {
         $(this).toggleClass('box-shadow');
     });
 
-    var container = $('.items-div');
-    $(container).imagesLoaded(function () {
-        $(container).masonry({
+    $('.items-div').isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows',
+        masonry: {
+            columnWidth: '.item',
+            itemSelector: '.item'
+        }
+    });
+
+    // Isotope click function
+      $('.nav-list li').click(function() {
+          $('.nav-list li').removeClass('active');
+          $(this).addClass('active');
+
+          let selector = $(this).attr('data-filter');
+          $('.items-div').isotope({
+              filter: selector
+          });
+          return false;
+      });
+
+      // MASONRY
+        let container = $('.items-div');
+            $(container).imagesLoaded(function () {
+            $(container).masonry({
             columnWidth: '.item',
             itemSelector: '.item'
         });
