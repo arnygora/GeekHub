@@ -30,26 +30,25 @@ body {
   .basket {
     margin-left: 50px;
     &:hover {
-      background: #00c8c8;
+      //margin: -13px 0 -12px 50px; зробить норм ховер ефект
+      //line-height: 2.5;
+      background: $mint-color;
       color: #fff;
     }
   }
 }
 .welcome-section {
-  height: 100vh;
+  height: 76vh;
   background: #f8f8f8 url(../img/slider-photo1.png) no-repeat;
+  @media only screen and (max-width: 968px) {
+    height: 100vh;
+    background-position: 42% 0;
+  }
   h1 {
     display: inline-block;
     font-size: 1.5rem;
     &:hover {
       text-shadow: 4px 2px 2px rgba(150, 150, 150, 0.77);
-    }
-  }
-  .main-nav {
-    float: right;
-    nav {
-      display: flex;
-      align-items: center;
     }
   }
   form {
@@ -62,15 +61,92 @@ body {
       background: $grey-color;
     }
   }
-  h2 {
-    margin-top: 10rem;
+  .ave-name {
     text-align: center;
-    font-weight: 700;
-    font-size: 17rem;
-    letter-spacing: 12rem;
-    color: #575153;
+    @media only screen and (max-width: 968px) {
+      display: block;
+      text-align: right;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 17rem;
+      background-color: #000;
+      color: transparent;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      @media only screen and (max-width: 1200px) {
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: 968px) {
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 5rem;
+      }
+      span {
+        letter-spacing: 10rem;
+        @media only screen and (max-width: 600px) {
+          letter-spacing: 2rem;
+        }
+        @media only screen and (max-width: 968px) {
+          letter-spacing: 6rem;
+        }
+      }
+    }
   }
-  a.btn-style {
-    float: right;
+}
+.main-nav {
+  float: right;
+  display: flex;
+  align-items: center;
+  ul.main-nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .hide-list {
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 18px;
+    background: #fff;
+    z-index: 1000;
+    padding: 15px;
+    left: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.47);
+  }
+  ul.main-nav-list li {
+    position: relative;
+    margin-right: 25px;
+    transition: all .2s ease-out;
+    &:hover > .hide-list {
+      display: block;
+    }
+    .flex-div {
+      display: flex;
+      justify-content: space-around;
+      span {
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+      li {
+        padding-bottom: 15px;
+        color: #737373;
+        text-transform: none;
+        transition: all .2s ease-out;
+        &:hover {
+          text-shadow: 11px 6px 1px #b9b8bb;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      padding: 1.5rem;
+      background: #000;
+      color: #fff;
+      line-height: 1.5;
+      font-size: 2rem;
+    }
   }
 }

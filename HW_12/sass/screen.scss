@@ -5,6 +5,7 @@
 
 $dark-color: #333;
 $grey-color: #f8f8f8;
+$mint-color: #00c8c8;
 
 @import "compass/reset";
 @import "welcome-section";
@@ -14,6 +15,9 @@ $grey-color: #f8f8f8;
 
 section {
   padding: 30px 60px;
+  @media only screen and (max-width: 968px) {
+    padding: 10px;
+  }
 }
 
 .upper-text {
@@ -36,6 +40,7 @@ a.btn-style {
   letter-spacing: 2px;
   color: #575153;
   transition: all .1s ease-in-out;
+  white-space: nowrap;
   &:hover {
     background: #00c8c8;
     border-color: #00c8c8;
@@ -43,14 +48,17 @@ a.btn-style {
   }
 }
 .active {
-  color: #00c8c8;
+  color: $mint-color;
 }
-ul.nav-list {
+ul.nav-list, ul.main-nav-list {
     display: flex;
     font-weight: bold;
     font-size: .8rem;
     li {
       margin-right: 25px;
+      @media only screen and (max-width: 968px) {
+        margin-right: 20px;
+      }
       &:hover {
         cursor: pointer;
       }
