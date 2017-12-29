@@ -56,8 +56,8 @@ section {
   width: 60px;
   height: 45px;
   position: relative;
-  top: 0;
-  right: 2em;
+  top: 10px;
+  left: 20px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -199,7 +199,7 @@ a.link-btn, .news-section .news-list a, .first-block a.red, .second-block a.red,
 
 /* line 142, ../sass/_welcome-section.scss */
 .welcome-section {
-  height: 100vh;
+  padding: 0;
   background: #ccc url(../img/hero-image.jpg) 50% 105px no-repeat;
   background-size: cover;
 }
@@ -210,7 +210,7 @@ a.link-btn, .news-section .news-list a, .first-block a.red, .second-block a.red,
     height: auto;
   }
 }
-/* line 153, ../sass/_welcome-section.scss */
+/* line 154, ../sass/_welcome-section.scss */
 .welcome-section header {
   display: flex;
   flex-flow: row wrap;
@@ -219,77 +219,77 @@ a.link-btn, .news-section .news-list a, .first-block a.red, .second-block a.red,
   padding-bottom: 28px;
 }
 @media only screen and (min-width: 769px) and (max-width: 899px) {
-  /* line 153, ../sass/_welcome-section.scss */
+  /* line 154, ../sass/_welcome-section.scss */
   .welcome-section header {
     justify-content: center;
   }
 }
-/* line 165, ../sass/_welcome-section.scss */
+/* line 166, ../sass/_welcome-section.scss */
 .welcome-section header h1 {
   font-family: "Roboto Bold";
   font-size: 2em;
 }
-/* line 168, ../sass/_welcome-section.scss */
+/* line 169, ../sass/_welcome-section.scss */
 .welcome-section header h1 span {
   display: block;
   font-family: "Roboto Regular";
   font-size: 0.5em;
   color: #dd4b2b;
 }
-/* line 175, ../sass/_welcome-section.scss */
+/* line 176, ../sass/_welcome-section.scss */
 .welcome-section header ul {
   display: flex;
 }
 @media only screen and (max-width: 768px) {
-  /* line 175, ../sass/_welcome-section.scss */
+  /* line 176, ../sass/_welcome-section.scss */
   .welcome-section header ul {
     display: none;
   }
 }
-/* line 179, ../sass/_welcome-section.scss */
+/* line 180, ../sass/_welcome-section.scss */
 .welcome-section header ul li {
   margin-right: 40px;
 }
 @media only screen and (max-width: 900px) {
-  /* line 179, ../sass/_welcome-section.scss */
+  /* line 180, ../sass/_welcome-section.scss */
   .welcome-section header ul li {
     margin-right: 10px;
   }
 }
-/* line 185, ../sass/_welcome-section.scss */
+/* line 186, ../sass/_welcome-section.scss */
 .welcome-section header ul li a {
   padding: 10px 20px;
   border-radius: 15px;
   color: #31353e;
 }
-/* line 196, ../sass/_welcome-section.scss */
+/* line 197, ../sass/_welcome-section.scss */
 .welcome-section h2 {
   padding: 70px 0;
   font-family: "Roboto Light";
   font-size: 3em;
   color: #fff;
 }
-/* line 201, ../sass/_welcome-section.scss */
+/* line 202, ../sass/_welcome-section.scss */
 .welcome-section h2 span {
   display: block;
   margin-top: 10px;
   font-family: "Roboto Bold";
   font-size: .5em;
 }
-/* line 208, ../sass/_welcome-section.scss */
+/* line 209, ../sass/_welcome-section.scss */
 .welcome-section .menu-list li img {
   width: 120px;
   border: 7px solid #edeff1;
   border-radius: 50%;
 }
-/* line 213, ../sass/_welcome-section.scss */
+/* line 214, ../sass/_welcome-section.scss */
 .welcome-section h4 {
   padding-top: 10px;
   font-family: "Roboto Bold";
   font-size: 1em;
   color: #edeff1;
 }
-/* line 219, ../sass/_welcome-section.scss */
+/* line 220, ../sass/_welcome-section.scss */
 .welcome-section p {
   font-family: "Roboto Light";
   font-size: .8em;

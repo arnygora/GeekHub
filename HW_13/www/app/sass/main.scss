@@ -1,0 +1,38 @@
+$orange-color: #f6961b;
+$blue-color: #03b6e7;
+@import 'Home_page/welcome-section';
+@import 'Home_page/about-section';
+@import 'Home_page/features-section';
+@import url('../css/normalize.css');
+
+section {
+  text-align: center;
+}
+.section-padding {
+  padding: 50px 0;
+}
+.upper-text {
+  text-transform: uppercase;
+}
+.active {
+ color: $orange-color;
+}
+a {
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+li {
+  list-style: none;
+}
+.btn-style {
+  display: inline-block;
+  padding: 5px 35px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  background: #16d428;
+  border-radius: 50px;
+}

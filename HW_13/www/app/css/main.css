@@ -1,0 +1,116 @@
+@import url("../css/normalize.css");
+.welcome-section {
+  background: url("../img/welcomeBg.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh; }
+
+.welcome-section .opacity-block {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); }
+
+.welcome-section header {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between; }
+
+.welcome-section header ul {
+  display: flex; }
+
+.welcome-section header ul li {
+  width: 90px;
+  margin-left: 7px;
+  white-space: nowrap;
+  transition: all 1s ease-out; }
+
+.welcome-section header ul li:hover a {
+  color: #f6961b;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: all .8s ease-out; }
+
+.welcome-section header .phone {
+  color: #fff; }
+
+.welcome-section header span {
+  padding: 0 10px;
+  color: #03b6e7; }
+
+.welcome-section .hero {
+  padding: 10rem 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff; }
+
+.welcome-section .hero ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.welcome-section .hero ul li {
+  width: 200px;
+  padding: 4rem 0;
+  margin: 2rem;
+  background: #03b6e7;
+  transition: all .15s ease-in-out; }
+
+.welcome-section .hero ul li:hover {
+  transform: scale(1.1);
+  background: #f6961b; }
+
+.about-section .header {
+  margin: 0 auto; }
+
+.about-section .partners {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 50px;
+  padding: 50px 0 0;
+  border-top: 1px solid #898989; }
+
+.features-section {
+  background: #e7eff1; }
+
+.features-section .features-block {
+  display: flex; }
+
+.features-section .features-block .logo {
+  display: flex;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 17px 0px #66636d;
+  background: #fff; }
+
+section {
+  text-align: center; }
+
+.section-padding {
+  padding: 50px 0; }
+
+.upper-text {
+  text-transform: uppercase; }
+
+.active {
+  color: #f6961b; }
+
+a {
+  color: #fff; }
+
+a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+li {
+  list-style: none; }
+
+.btn-style {
+  display: inline-block;
+  padding: 5px 35px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  background: #16d428;
+  border-radius: 50px; }
