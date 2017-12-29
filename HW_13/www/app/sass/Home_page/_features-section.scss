@@ -1,9 +1,22 @@
 .features-section {
   background: #e7eff1;
+  ul {
+    padding: 0;
+  }
+  .left {
+    text-align: right;
+  }
+  .right {
+    text-align: left;
+  }
   .features-block {
     display: flex;
+    align-items: center;
+    img {
+      padding: 0 15px;
+    }
+  }
     .logo {
-      display: flex;
       margin: auto;
       padding: 2rem;
       border-radius: 50%;
@@ -12,4 +25,3 @@
       background: #fff;
     }
   }
-}

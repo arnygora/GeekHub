@@ -73,11 +73,23 @@
 .features-section {
   background: #e7eff1; }
 
-.features-section .features-block {
-  display: flex; }
+.features-section ul {
+  padding: 0; }
 
-.features-section .features-block .logo {
+.features-section .left {
+  text-align: right; }
+
+.features-section .right {
+  text-align: left; }
+
+.features-section .features-block {
   display: flex;
+  align-items: center; }
+
+.features-section .features-block img {
+  padding: 0 15px; }
+
+.features-section .logo {
   margin: auto;
   padding: 2rem;
   border-radius: 50%;
