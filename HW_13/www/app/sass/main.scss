@@ -1,8 +1,15 @@
 $orange-color: #f6961b;
 $blue-color: #03b6e7;
+$green-color: #16d428;
+
 @import 'Home_page/welcome-section';
 @import 'Home_page/about-section';
 @import 'Home_page/features-section';
+@import 'Home_page/project-section';
+@import 'Home_page/services-section';
+@import 'Home_page/testimonials-section';
+@import 'Home_page/ourBlog-section';
+@import 'Home_page/quickContact-block';
 @import url('../css/normalize.css');
 
 section {

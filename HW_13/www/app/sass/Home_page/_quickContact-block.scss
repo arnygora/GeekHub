@@ -1,0 +1,9 @@
+.quick-contact {
+  text-align: center;
+  [class*='col'] {
+    border: 1px solid #c9c6d0;
+    &:nth-child(even) {
+      margin: 10px;
+    }
+  }
+}
