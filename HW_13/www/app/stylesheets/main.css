@@ -1,0 +1,303 @@
+@import url("../css/normalize.css");
+/* line 1, ../sass/Home_page/_welcome-section.scss */
+.welcome-section {
+  background: url("../img/welcomeBg.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+}
+/* line 6, ../sass/Home_page/_welcome-section.scss */
+.welcome-section .opacity-block {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+/* line 10, ../sass/Home_page/_welcome-section.scss */
+.welcome-section header {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+/* line 15, ../sass/Home_page/_welcome-section.scss */
+.welcome-section header ul {
+  display: flex;
+}
+/* line 17, ../sass/Home_page/_welcome-section.scss */
+.welcome-section header ul li {
+  width: 90px;
+  margin-left: 7px;
+  white-space: nowrap;
+  transition: all 1s ease-out;
+}
+/* line 22, ../sass/Home_page/_welcome-section.scss */
+.welcome-section header ul li:hover a {
+  color: #f6961b;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: all .8s ease-out;
+}
+/* line 30, ../sass/Home_page/_welcome-section.scss */
+.welcome-section header .phone {
+  color: #fff;
+}
+/* line 33, ../sass/Home_page/_welcome-section.scss */
+.welcome-section header span {
+  padding: 0 10px;
+  color: #03b6e7;
+}
+/* line 38, ../sass/Home_page/_welcome-section.scss */
+.welcome-section .hero {
+  padding: 5rem 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+/* line 43, ../sass/Home_page/_welcome-section.scss */
+.welcome-section .hero ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* line 47, ../sass/Home_page/_welcome-section.scss */
+.welcome-section .hero ul li {
+  width: 200px;
+  padding: 4rem 0;
+  margin: 2rem;
+  background: #03b6e7;
+  transition: all .15s ease-in-out;
+}
+/* line 53, ../sass/Home_page/_welcome-section.scss */
+.welcome-section .hero ul li:hover {
+  transform: scale(1.1);
+  background: #f6961b;
+}
+
+/* line 2, ../sass/Home_page/_about-section.scss */
+.about-section .header {
+  margin: 0 auto;
+}
+/* line 5, ../sass/Home_page/_about-section.scss */
+.about-section .partners {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 50px;
+  padding: 50px 0 0;
+  border-top: 1px solid #898989;
+}
+
+/* line 1, ../sass/Home_page/_features-section.scss */
+.features-section {
+  padding-top: 50px;
+  background: #e7eff1;
+}
+/* line 4, ../sass/Home_page/_features-section.scss */
+.features-section ul {
+  padding: 0;
+}
+/* line 7, ../sass/Home_page/_features-section.scss */
+.features-section .left {
+  text-align: right;
+}
+/* line 10, ../sass/Home_page/_features-section.scss */
+.features-section .right {
+  text-align: left;
+}
+/* line 13, ../sass/Home_page/_features-section.scss */
+.features-section .features-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+/* line 17, ../sass/Home_page/_features-section.scss */
+.features-section .features-block p {
+  margin: 0;
+}
+/* line 20, ../sass/Home_page/_features-section.scss */
+.features-section .features-block img {
+  padding: 0 15px;
+  align-self: flex-start;
+}
+/* line 25, ../sass/Home_page/_features-section.scss */
+.features-section .logo {
+  margin: auto;
+  padding: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 17px 0 #66636d;
+  background: #fff;
+}
+/* line 33, ../sass/Home_page/_features-section.scss */
+.features-section .boost-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  background: #565d5d;
+}
+/* line 40, ../sass/Home_page/_features-section.scss */
+.features-section .boost-block a {
+  margin: 0;
+}
+
+/* line 2, ../sass/Home_page/_project-section.scss */
+.project-section h3 {
+  margin-bottom: 40px;
+}
+/* line 5, ../sass/Home_page/_project-section.scss */
+.project-section div img {
+  width: 100%;
+  max-height: 260px;
+}
+/* line 9, ../sass/Home_page/_project-section.scss */
+.project-section .project-description {
+  height: 130px;
+  padding: 20px 10px;
+  text-align: left;
+  border: 1px solid #c9c9c9;
+}
+/* line 14, ../sass/Home_page/_project-section.scss */
+.project-section .project-description:hover {
+  background: #f6961b;
+  color: #fff;
+  border-color: #f6961b;
+}
+
+/* line 1, ../sass/Home_page/_services-section.scss */
+.services-section {
+  background: #fffaf3;
+}
+/* line 3, ../sass/Home_page/_services-section.scss */
+.services-section h3 {
+  margin-bottom: 40px;
+}
+/* line 6, ../sass/Home_page/_services-section.scss */
+.services-section img {
+  width: 43px;
+  height: 63px;
+  padding-bottom: 20px;
+}
+/* line 11, ../sass/Home_page/_services-section.scss */
+.services-section div[class*='col'] {
+  margin-bottom: 30px;
+  text-align: left;
+}
+/* line 14, ../sass/Home_page/_services-section.scss */
+.services-section div[class*='col'] p {
+  color: #898989;
+}
+
+/* line 1, ../sass/Home_page/_testimonials-section.scss */
+.testimonials-section {
+  text-align: center;
+  color: #fff;
+  background: #03b6e7;
+}
+/* line 5, ../sass/Home_page/_testimonials-section.scss */
+.testimonials-section ul {
+  padding: 0;
+}
+/* line 7, ../sass/Home_page/_testimonials-section.scss */
+.testimonials-section ul li {
+  display: inline-block;
+}
+/* line 9, ../sass/Home_page/_testimonials-section.scss */
+.testimonials-section ul li img {
+  border-radius: 50%;
+}
+
+/* line 1, ../sass/Home_page/_ourBlog-section.scss */
+.ourBlog-section {
+  background: #e7eff1;
+}
+/* line 3, ../sass/Home_page/_ourBlog-section.scss */
+.ourBlog-section .picture {
+  height: 315px;
+  width: 100%;
+  background: url("../img/home/blog-pic.jpg") 50% 0 no-repeat;
+}
+/* line 8, ../sass/Home_page/_ourBlog-section.scss */
+.ourBlog-section [class*='col'] {
+  display: flex;
+  margin: 50px 0;
+  padding: 0;
+  text-align: left;
+  border-top: 2px solid #16d428;
+}
+/* line 14, ../sass/Home_page/_ourBlog-section.scss */
+.ourBlog-section [class*='col'] ~ div {
+  border-top: 2px solid #f6961b;
+}
+/* line 18, ../sass/Home_page/_ourBlog-section.scss */
+.ourBlog-section .blog-description {
+  padding: 30px;
+  background: #fff;
+}
+/* line 21, ../sass/Home_page/_ourBlog-section.scss */
+.ourBlog-section .blog-description.gradient {
+  background-image: -webkit-gradient(linear, right bottom, left bottom, color-stop(0, #C9C9C9), color-stop(0.15, #FFFFFF));
+  background-image: -o-linear-gradient(right, #C9C9C9 0%, #FFFFFF 15%);
+  background-image: -moz-linear-gradient(right, #C9C9C9 0%, #FFFFFF 15%);
+  background-image: -webkit-linear-gradient(right, #C9C9C9 0%, #FFFFFF 15%);
+  background-image: -ms-linear-gradient(right, #C9C9C9 0%, #FFFFFF 15%);
+  background-image: linear-gradient(to right, #C9C9C9 0%, #FFFFFF 15%);
+}
+
+/* line 1, ../sass/Home_page/_quickContact-block.scss */
+.quick-contact {
+  text-align: center;
+}
+/* line 3, ../sass/Home_page/_quickContact-block.scss */
+.quick-contact [class*='col'] {
+  border: 1px solid #c9c6d0;
+}
+/* line 5, ../sass/Home_page/_quickContact-block.scss */
+.quick-contact [class*='col']:nth-child(even) {
+  margin: 10px;
+}
+
+/* line 15, ../sass/main.scss */
+section {
+  text-align: center;
+}
+
+/* line 18, ../sass/main.scss */
+.section-padding {
+  padding: 50px 0;
+}
+
+/* line 21, ../sass/main.scss */
+.upper-text {
+  text-transform: uppercase;
+}
+
+/* line 24, ../sass/main.scss */
+.active {
+  color: #f6961b;
+}
+
+/* line 27, ../sass/main.scss */
+a {
+  color: #fff;
+}
+/* line 29, ../sass/main.scss */
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 34, ../sass/main.scss */
+li {
+  list-style: none;
+}
+
+/* line 37, ../sass/main.scss */
+.btn-style {
+  display: inline-block;
+  padding: 5px 35px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  background: #16d428;
+  border-radius: 50px;
+}
