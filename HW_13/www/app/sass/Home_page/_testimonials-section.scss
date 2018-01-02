@@ -11,4 +11,16 @@
       }
     }
   }
+  p.upper-text {
+    margin-bottom: 0;
+    font-weight: 700;
+    &:before {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 20px;
+      margin: 30px auto;
+      background: #fff;
+    }
+  }
 }

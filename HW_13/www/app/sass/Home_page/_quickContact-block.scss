@@ -1,9 +1,23 @@
 .quick-contact {
   text-align: center;
-  [class*='col'] {
+  //[class*='col']
+  .inner-border {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: left;
     border: 1px solid #c9c6d0;
-    &:nth-child(even) {
-      margin: 10px;
+    img {
+      float: left;
+    }
+    div {
+      margin-left: 20px;
+      overflow: hidden;
+    }
+    p {
+      margin: 0;
+      font-weight: 700;
     }
   }
 }
