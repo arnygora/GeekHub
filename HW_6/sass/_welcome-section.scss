@@ -140,7 +140,8 @@ a.link-btn {
 }			
 
 .welcome-section {
-	height: 100vh;
+	padding: 0;
+	// height: 100vh;
 	background: #ccc url(../img/hero-image.jpg) 50% 105px no-repeat;
 	background-size: cover;
 	//background-attachment: fixed; }

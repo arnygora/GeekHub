@@ -11,7 +11,7 @@ setInterval(function() {
 
 $(".cite-block > div:gt(0)").hide();
 
-setInterval(function() {
+let interval = setInterval(function() {
     $('.cite-block > div:first')
         .fadeOut(10)
         .next()

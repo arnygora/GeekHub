@@ -1,0 +1,38 @@
+.project-section {
+  h3 {
+    margin-bottom: 40px;
+  }
+  div img {
+    width: 100%;
+    max-height: 260px;
+  }
+  .project-description {
+    height: 130px;
+    padding: 20px 10px;
+    text-align: left;
+    border: 1px solid #c9c9c9; 
+    transition: all .2s ease-out;   
+  }
+  .banking-block,
+  .estate-block {
+    a {
+      position: absolute;
+      padding: 5px 15px;
+      border: 2px solid $orange-color;
+      border-radius: 30px;
+      color: #000;
+      font-weight: 800;
+      transition: all .2s ease-out;
+      &:hover {
+        color: #fff;
+        background-color: $orange-color;
+      }
+    }
+  }
+  .banking-block:hover .project-description,
+  .estate-block:hover .project-description {
+      background: $orange-color;
+      color: #fff;
+      border-color: $orange-color;
+  }
+}
