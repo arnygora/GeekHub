@@ -1,0 +1,31 @@
+.about-us-section {
+  .description {
+    text-align: left;
+  }
+  form {
+    padding: 30px 20px 0;
+    background: $blue-color;
+    color: #fff;
+    h5 {
+      padding-bottom: 20px;
+    }
+    input, textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #fff;
+      resize: none;
+      &::placeholder {
+        padding: 25px 0;
+        color: #fff;
+      }
+    }
+  }
+  button {
+    border: none;
+    margin: 35px 0;
+    color: #fff;
+    padding: 15px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}

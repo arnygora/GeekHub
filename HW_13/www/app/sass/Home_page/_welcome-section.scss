@@ -1,45 +1,12 @@
-.welcome-section {
-  background: url("../img/welcomeBg.jpg") 50% 0 no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 90vh;
-  .opacity-block {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-  }
-  header {
-    display: flex;
-    width: 100%;
-    align-items: baseline;
-    justify-content: space-between;
-    ul {
-      display: flex;
-      li {
-        width: 90px;
-        margin-left: 7px;
-        white-space: nowrap;
-        transition: all 1s ease-out;
-        &:hover a {
-          color: $orange-color;
-          letter-spacing: 3px;
-          font-weight: bold;
-          transition: all .8s ease-out;
-        }
-      }
-    }
-    .phone {
-      color: #fff;
-    }
-    span {
-      padding: 0 10px;
-      color: $blue-color;
-    }
-  }
+
   .hero {
     padding: 10rem 0 0 0;
     margin: 0 auto;
     text-align: center;
     color: #fff;
+    @media only screen and (max-width: 968px) {
+      padding-top: 5rem;
+    }
     ul {
       display: flex;
       flex-flow: row wrap;
@@ -57,4 +24,3 @@
       }
     }
   }
-}

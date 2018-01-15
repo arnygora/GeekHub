@@ -4,31 +4,49 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>HW_13</title>
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
-	<!--<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
-		<section class="welcome-section">
+		<section class="welcome-section main-page">
 			<div class="opacity-block">
+				<div class="hide-block">
+	                <ul class="hide-list upper-text">
+	                    <li><a href="404.html">home</a></li>
+	                    <li><a href="about_us.html">about us</a></li>
+	                    <li><a href="blog_masonry_2.html">industry</a></li>
+	                    <li><a href="blog_masonry_post_2.html">services</a></li>
+	                    <li><a href="Career_2.html">pages</a></li>
+	                    <li><a href="index.html">contact us</a></li>
+	                </ul>
+            	</div>
 				<div class="container">
 					<div class="row">
 						<header>
 							<div class="main-logo"><h1><a href="#"><img src="img/home/mainlogo.png" alt=""></a></h1></div>
-							<nav class="main-nav">
-								<ul class="upper-text">
+							<nav>
+								<ul class="main-nav upper-text">
 									<li><a class="active" href="#0">home</a></li>
-									<li><a href="#0">about us</a></li>
-									<li><a href="#0">industry</a></li>
-									<li><a href="#0">services</a></li>
-									<li><a href="#0">pages</a></li>
-									<li><a href="#0">contact us</a></li>
+									<li><a href="about_us.html">about us</a></li>
+									<li><a href="blog_masonry_2.html">industry</a></li>
+									<li><a href="Career_2.html">services</a></li>
+									<li><a href="blog_masonry_post_2.html">pages</a></li>
+									<li><a href="404.html">contact us</a></li>
+									<li class="text-light"><span class="fa fa-phone fa-lg"></span> +91 6598 6548 847 <span class="fa fa-envelope-open-o fa-lg"></li>
 								</ul>
 							</nav>
-							<div class="phone"><span class="fa fa-phone fa-lg"></span> +91 6598 6548 847 <span class="fa fa-envelope-open-o fa-lg"></span></div>
+							<div id="nav-icon">
+	                            <span></span>
+	                            <span></span>
+	                            <span></span>
+	                            <span></span>
+	                            <span></span>
+	                            <span></span>
+                        	</div>
 						</header>
 						<div class="hero upper-text">
 							<p>we are leading consulting company</p>
@@ -119,23 +137,24 @@
 				<h3 class="upper-text">projects</h3>
 				<div class="row mb-5">
 					<div class="col-12 col-md-4">
-						<div class="banking-block"><img src="img/home/banking.jpg" alt="banking"></div>
-						<div class="project-description">
-							<h4 class="upper-text">project heading</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</div>
+						<div class="banking-block"><a class="upper-text m-4" href="#0">banking</a><img src="img/home/banking.jpg" alt="banking">
+							<div class="project-description">
+								<h4 class="upper-text">project heading</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</div>	
 					</div>
 					<div class="col-12 col-md-8">
-						<div class="estate-block"><img src="img/home/estate.jpg" alt="estate"></div>
-						<div class="project-description">
-							<h4 class="upper-text">project heading</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="estate-block"><a href="#0" class="upper-text m-4">business</a><img src="img/home/estate.jpg" alt="estate">
+							<div class="project-description">
+								<h4 class="upper-text">project heading</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<a href="#0" class="btn-style">full projects</a>
 			</div>
-
 		</section><!--project-section-->
 		<section class="services-section section-padding">
 			<div class="container">
@@ -171,7 +190,6 @@
 					<p class="upper-text">john snow</p>
 					<span>Designation</span>
 				</div>
-
 			</ul>
 		</section><!--testimonials-section-->
 		<section class="ourBlog-section section-padding">
@@ -278,5 +296,6 @@
 			</div><!--container-->
 		</footer>
 	</div>
+	<script src="js/icon.js"></script>
 </body>
 </html>

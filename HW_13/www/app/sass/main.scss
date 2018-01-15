@@ -3,6 +3,7 @@ $blue-color: #03b6e7;
 $green-color: #16d428;
 
 @import 'Home_page/welcome-section';
+@import 'Home_page/small-screen_nav';
 @import 'Home_page/about-section';
 @import 'Home_page/features-section';
 @import 'Home_page/project-section';
@@ -10,11 +11,71 @@ $green-color: #16d428;
 @import 'Home_page/testimonials-section';
 @import 'Home_page/ourBlog-section';
 @import 'Home_page/quickContact-block';
+@import "About-us_page/about-section";
+@import "Blog_page/blog-masonry";
+@import "Blog_page/blog-post";
+@import "Career_page/career-page";
+@import '404.scss';
 @import "footer";
 @import url('../css/normalize.css');
 
 section {
   text-align: center;
+}
+.welcome-section {
+  background: #fff url("../img/welcomeBg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .opacity-block {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+  }
+header {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  @media only screen and (max-width: 1400px) {
+      justify-content: space-around;
+    }
+  @media only screen and (max-width: 1270px) {
+    justify-content: flex-start;
+  }
+  @media only screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
+  ul.main-nav {
+    display: flex;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    } 
+    li {
+      width: 90px;
+      margin-left: 7px;
+      white-space: nowrap;
+      transition: all 1s ease-out;
+      @media only screen and (max-width: 1270px) {
+        margin-left: 0;
+      }
+      &:hover a {
+        color: $orange-color;
+        letter-spacing: 3px;
+        font-weight: bold;
+        transition: all .3s ease-out;
+      }
+    }
+  }
+  span {
+    padding: 0 10px;
+    color: $blue-color;
+    }
+  }
+  h3 {
+      padding: 5rem 0;
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: #fff;
+    }
 }
 .section-padding {
   padding: 50px 0;
