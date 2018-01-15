@@ -8,6 +8,7 @@ gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sass())
+		//.pipe(autoprefixer())
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({stream: true}))
 });
