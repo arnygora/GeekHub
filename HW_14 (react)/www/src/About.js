@@ -1,5 +1,4 @@
 import React from 'react';
-import Testimonials from './Testimonials';
 
 class About extends React.Component {
     render() {
@@ -68,7 +67,6 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Testimonials />
             </div>
         );
     }

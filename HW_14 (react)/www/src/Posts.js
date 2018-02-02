@@ -1,12 +1,9 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 class Posts extends React.Component {
     render() {
         return(
             <div>
-                <Header/>
                 <section className="section-padding blog-container">
                     <div className="container">
                         <div className="row text-left">
@@ -98,7 +95,6 @@ class Posts extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         );
     }

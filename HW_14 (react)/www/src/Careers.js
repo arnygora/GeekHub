@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import Testimonials from './Testimonials';
 import Footer from './Footer';
 
@@ -7,7 +6,6 @@ class Careers extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
                 <section className="jobs-section section-padding">
                     <div className="container">
                         <h3 className="upper-text text-left">new jobs</h3>
