@@ -340,9 +340,10 @@
   padding-bottom: 20px; }
 
 .about-us-section form input, .about-us-section form textarea {
-  background: transparent;
   border: none;
   border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
   resize: none; }
 
 .about-us-section form input::placeholder, .about-us-section form textarea::placeholder {

@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Merkury</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,12 +18,14 @@
                    <a href="">Login</a>
                </div>
            </div>
-           <form action="">
-               <p>Welcome <span class="colorWord">back!</span></p>
-               <input type="text" placeholder="Username">
-               <input type="password" placeholder="Password">
-               <button type="button">Enter</button>
-           </form>
+           <div class="wrapForm">
+               <form method="get" action="home.html">
+                   <p>Welcome <span class="colorWord">back!</span></p>
+                   <span class="far fa-user fa-2x"><input data-user type="text" placeholder="Username" /></span>
+                   <span class="fas fa-lock fa-2x"><input data-pass type="password" maxlength="12" placeholder="Password" /></span>
+                   <button type="submit">Enter</button>
+               </form>
+           </div>
        </div>
     </div>
 </body>

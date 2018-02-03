@@ -11,16 +11,11 @@ class App extends React.Component {
         const article = <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci est expedita</h3>
         return (
             <div className="App">
-                {article}
                 <Header>
                     {article}
                 </Header>
-                <Testimonials>
-                    {article}
-                </Testimonials>
-                <Footer>
-                    {article}
-                </Footer>
+                <Testimonials />
+                <Footer />
             </div>
         );
     }
