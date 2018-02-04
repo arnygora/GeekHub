@@ -18,17 +18,17 @@
                         <div class="logo"><img src="img/logo.png" alt="d" /></div>
                         <nav>
                             <ul class="mainNav">
-                                <li><span class="fas fa-home"><a href="/">Home</a></span></li>
-                                <li><span class="fas fa-bars"><a href="/">Workflow</a></span></li>
-                                <li><span class="fas fa-chart-line"><a href="/">Statistics</a></span></li>
-                                <li><span class="far fa-calendar-alt"><a href="/">Calendar</a></span></li>
-                                <li><span class="far fa-user"><a href="/">Users</a></span></li>
-                                <li><span class="fas fa-cog"><a href="/">Settings</a></span></li>
+                                <a href="/"><li><span class="fas fa-home"><span class="smallScreen">Home</span></span></li></a>
+                                <a href="/"><li><span class="fas fa-bars"><span class="smallScreen">Workflow</span></span></li></a>
+                                <a href="/"><li><span class="fas fa-chart-line"><span class="smallScreen">Statistics</span></span></li></a>
+                                <a href="/"><li><span class="far fa-calendar-alt"><span class="smallScreen">Calendar</span></span></li></a>
+                                <a href="/"><li><span class="far fa-user"><span class="smallScreen">Users</span></span></li></a>
+                                <a href="/"><li><span class="fas fa-cog"><span class="smallScreen">Settings</span></span></li></a>
                             </ul>
                         </nav>
                     </aside>
                 </div>
-                <div class="col-10 p-0" >
+                <div class="col-10 mainContent p-0" >
                     <header class="d-flex justify-content-between pr-3">
                         <div class="d-flex align-items-center">
                             <div id="nav-icon">
@@ -45,13 +45,13 @@
                             <a href="/">+ Add project</a>
                             <span class="fas fa-envelope ml-4"></span>
                             <span class="fas fa-bell ml-4"></span>
-                            <div class="profileImg ml-4"></div>
+                        <div class="profileImg ml-4"></div>
                         </div>
                     </header>
-                    <section class="mainContent">
+                    <section>
                         <p>Hello Anthony</p>
                         <div class="row activity m-0">
-                            <div class="col-5 p-2">
+                            <div class="col-12 col-md-5 p-2">
                                 <div class="sales">
                                     <div class="d-flex align-items-center justify-content-between p-3">
                                         <p class="m-0">Your Sales</p>
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-7 p-2"">
+                            <div class="col-12 col-md-7 p-2">
                                 <div class="period">
                                     <div class="d-flex align-items-center justify-content-between p-3">
                                         <p class="m-0">Report</p>
@@ -85,41 +85,48 @@
                                     </div>
                                     <div><img src="img/sales.jpg" alt="ef" /></div>
                                 </div>
-                        </div>
-                    </section>
-                    <div class="row m-0 mainContent">
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Tasks</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Messages</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Activity</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="row mt-4">
+                                <div class="col-12 col-md-4 mb-3">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Tasks<span class="bg-info counter float-right">5</span><span class="bg-danger counter float-right">2</span></li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="bg-info counter float-left">N</span>Dapibus ac facilisis ins</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="bg-info counter float-left">F</span>Vestibulum at eros</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="bg-info counter float-left">N</span>Vestibulum at eros</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="bg-info counter float-left">F</span>Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-3">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Messages<span class="bg-info counter float-right">2</span></li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto"></span>Dapibus ac facilisis in</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto"></span>Vestibulum at eros</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto"></span>Vestibulum at eros</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto"></span>Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mb-3">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Activity<span class="bg-info counter float-right">10</span></li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto2"></span>Dapibus ac facilisis in</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto2"></span>Vestibulum at eros</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto2"></span>Vestibulum at eros</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="userPhoto2"></span>Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <script src="js/icon.js"></script>
 </body>
 </html>

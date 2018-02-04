@@ -3,6 +3,21 @@
 }
 .navy {
   background: $dark-blue;
+  transition: all .5s ease-out;
+}
+.mainNav .smallScreen {
+  font-family: Light;
+  color: #fff;
+  @media only screen and (max-width: 964px) {
+    display: none;
+  }
+}
+.mainNav [class*="fa-"] {
+  @media only screen and (max-width: 964px) {
+    display: block;
+    transform: scale(1.5);
+    text-align: center;
+  }
 }
 aside {
   background: $dark-blue;
@@ -15,6 +30,7 @@ aside {
     }
   }
 li {
+  display: block;
   border-left: 8px solid transparent;
   border-bottom: 1px solid #000;
   &:hover {
@@ -27,11 +43,13 @@ li {
     color: $blue-color;
   }
   a {
-    padding-left: 10px;
+    display: block;
     color: #fff;
   }
 }
 header {
+  display: flex;
+  flex-flow: row wrap;
   padding: 10px 20px;
   border-bottom: 1px solid $grey-color;
   a {
@@ -41,10 +59,10 @@ header {
     background: $blue-color;
   }
   .profileImg {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: url("../img/profileHeaderImg.jpg") 57% 18% no-repeat;
+    background: url("../img/profileHeaderImg.jpg") 63% 12% no-repeat;
   }
 
   #nav-icon {
@@ -140,7 +158,7 @@ header {
     border: none;
   }
 }
-.mainContent {
+section {
   padding: 30px 20px;
   background: #f6f7fa;
   p {
@@ -170,4 +188,23 @@ header {
     padding: 10px 15px;
     border-radius: 30px;
   }
+}
+
+.list-group .counter {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.3;
+  color: #fff;
+}
+.list-group .userPhoto {
+  @extend .counter;
+  background: url("../img/userPhoto.jpg") 64% 1% no-repeat;
+}
+.list-group .userPhoto2 {
+  @extend .counter;
+  background: url("../img/userPhoto2.jpg") 56% 18% no-repeat;
 }
