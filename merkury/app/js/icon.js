@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $('#nav-icon').click(function(){
-        $(".navy").hide("slow");
-        $(".navy").show("slow");
+        $(".navy").toggleClass("hidden-block");
         $(this).toggleClass('open');
     });
 });
-
