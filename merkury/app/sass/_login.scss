@@ -2,7 +2,6 @@ body, a {
   font-family: Medium;
   font-size: 16px;
 }
-
 .wrapper {
   display: flex;
   height: 100vh;
@@ -15,12 +14,17 @@ body, a {
   margin: auto;
   .header {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 0 20px;
     background: $dark-blue;
+    @media only screen and (max-width: 605px) {
+      justify-content: center;
+    }
     .logo {
-      width: 250px;
+      max-width: 250px;
+      width: 100%;
       height: 70px;
       padding-bottom: 20px;
       background: url("../img/logo.png") 0 0 no-repeat;
