@@ -8,8 +8,8 @@ class AuthorizationPage extends Component {
                    <div className="header">
                        <div className="logo"></div>
                        <div className="loginLinks">
-                           <a href="">Register</a>
-                           <a href="">Login</a>
+                           <a href="#0">Register</a>
+                           <a href="#0">Login</a>
                        </div>
                    </div>
                    <div className="wrapForm">
