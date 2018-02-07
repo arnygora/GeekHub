@@ -64,6 +64,7 @@
     display: -o-flex;
     display: flex;
     margin-top: 30px;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
   }

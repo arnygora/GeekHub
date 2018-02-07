@@ -23,6 +23,11 @@
         color: #fff;
       }
     }
+    textarea, input {
+      @media only screen and (max-width: 964px) {
+        width: 100%;
+      }
+    }
   }
   button {
     border: none;

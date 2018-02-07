@@ -353,6 +353,10 @@
   padding: 25px 0;
   color: #fff; }
 
+@media only screen and (max-width: 964px) {
+  .about-us-section form textarea, .about-us-section form input {
+    width: 100%; } }
+
 .about-us-section button {
   border: none;
   margin: 35px 0;
@@ -436,6 +440,10 @@
 .blog-feedback .blog-post-form form textarea {
   display: block; }
 
+@media only screen and (max-width: 964px) {
+  .blog-feedback .blog-post-form form textarea {
+    width: 100%; } }
+
 .blog-feedback .blog-post-form form input, .blog-feedback .blog-post-form form textarea {
   padding-bottom: 10px;
   overflow: hidden;
@@ -518,6 +526,7 @@
   display: -o-flex;
   display: flex;
   margin-top: 30px;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center; }
 

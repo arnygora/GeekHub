@@ -46,7 +46,10 @@
     }
     textarea {
       display: block;
-    }
+        @media only screen and (max-width: 964px) {
+          width: 100%;
+        }
+      }
     input, textarea {
       padding-bottom: 10px;
       overflow: hidden;
@@ -67,10 +70,9 @@
     padding: 15px 30px;
     font-weight: bold;
     letter-spacing: 2px;
+    }
   }
-
 }
-  }
 
   
  
