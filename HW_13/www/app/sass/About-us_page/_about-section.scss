@@ -1,6 +1,10 @@
 .about-us-section {
   .description {
     text-align: left;
+    iframe {
+      width: 100%;
+      min-height: 300px;
+    }
   }
   form {
     padding: 30px 20px 0;

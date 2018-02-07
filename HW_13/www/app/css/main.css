@@ -331,6 +331,10 @@
 .about-us-section .description {
   text-align: left; }
 
+.about-us-section .description iframe {
+  width: 100%;
+  min-height: 300px; }
+
 .about-us-section form {
   padding: 30px 20px 0;
   background: #03b6e7;
