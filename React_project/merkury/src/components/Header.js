@@ -40,7 +40,7 @@ class Header extends Component {
                                     <div className="profileImg ml-4"></div>
                                 </div>
                             </header>
-                            <Main/>
+                            {this.props.children}
                         </div>
                     </div>
                 </div>

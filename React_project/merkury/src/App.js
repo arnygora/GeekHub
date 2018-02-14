@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import AuthorizationPage from "./components/AuthorizationPage";
+import Home from "./components/Home";
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        {/*<AuthorizationPage/>*/}
+        <Header>
+            {<Home />}
+      </Header>
+
+
 
       </div>
     );
