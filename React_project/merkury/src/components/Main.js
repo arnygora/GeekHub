@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { Route } from 'react-router-dom';
 
 //components
-import Home from './components/Home';
-import Workflow from "./components/Workflow";
-import Statistic from "./components/Statistic";
+import Home from './Home';
+import Workflow from './Workflow';
+import Statistic from './Statistic';
 
 class Main extends React.Component {
     render() {

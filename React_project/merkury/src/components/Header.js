@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Main from "../Main";
+import Main from './Main';
 
 class Header extends Component {
     render() {
+        // console.log('pages', this.props.pages);
         return (
             <div className="wrapp">
                 <div className="container-fluid">
@@ -40,7 +41,11 @@ class Header extends Component {
                                     <div className="profileImg ml-4"></div>
                                 </div>
                             </header>
+                            {/*{this.props.pages.map((item, index) =>*/}
+                                {/*<a href={item.link} key={index}>{item.label}</a>*/}
+                            {/*)}*/}
                             {this.props.children}
+                            <Main />
                         </div>
                     </div>
                 </div>
