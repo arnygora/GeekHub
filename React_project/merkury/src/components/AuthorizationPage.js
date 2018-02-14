@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class AuthorizationPage extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
 
         this.state = {
             username: '',
@@ -12,11 +12,16 @@ class AuthorizationPage extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log('user- ', this.state.username, 'pass- ', this.state.password);
+        localStorage.setItem("user", JSON.stringify(this.state.username));
+        localStorage.setItem("pass", JSON.stringify(this.state.password));
 
-        let user = localStorage.getItem('username');
-        localStorage.setItem("password", JSON.stringify(this.state.password));
-
-        alert('Hello, mister ' + this.state.username.toLocaleUpperCase());
+        let user= JSON.parse(localStorage.getItem("user"));
+        console.log(user, this.state.username);
+        if(user === this.state.username) {
+            console.log('you must log in');
+        } else {
+            console.log('error ! ! ! !');
+        }
     };
     handleChange = (e) => {
         let name = e.target.name;
