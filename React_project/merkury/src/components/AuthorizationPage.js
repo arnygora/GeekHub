@@ -5,15 +5,23 @@ class AuthorizationPage extends Component {
         super(props);
 
         this.state = {
-            username: ''
+            username: '',
+            password: ''
         }
     }
     handleSubmit = (e) => {
         e.preventDefault();
+        console.log('user- ', this.state.username, 'pass- ', this.state.password);
+
+        let user = localStorage.getItem('username');
+        localStorage.setItem("password", JSON.stringify(this.state.password));
+
+        alert('Hello, mister ' + this.state.username.toLocaleUpperCase());
     };
     handleChange = (e) => {
+        let name = e.target.name;
         this.setState({
-            username: e.target.value
+            [name]: e.target.value
         })
     };
 
@@ -33,10 +41,10 @@ class AuthorizationPage extends Component {
                        <form onSubmit={this.handleSubmit}>
                            <p>Welcome <span className="colorWord">back!</span></p>
                            <span className="far fa-user fa-2x">
-                               <input data-user value={this.state.username} type="text" placeholder="Username" onChange={this.handleChange}/>
+                               <input name='username' value={this.state.username} onChange={this.handleChange} type="text" placeholder="Username" required />
                            </span>
                            <span className="fas fa-lock fa-2x">
-                               <input data-pass type="password" maxLength="12" placeholder="Password" />
+                               <input name='password' value={this.state.password} onChange={this.handleChange} type="password" placeholder="Password" maxLength="12" required />
                            </span>
                            <button >Enter</button>
                        </form>
