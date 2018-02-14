@@ -5,8 +5,6 @@ import Dropdown from './Dropdown';
 
 class Home extends React.Component {
     render() {
-
-
         const list = [
             {   _id: 'buss',
                 title: 'business consultation',
@@ -23,7 +21,6 @@ class Home extends React.Component {
         ];
         return (
             <div>
-
                 <section className="about-section section-padding">
                     <div className="container">
                         <div className="row">
