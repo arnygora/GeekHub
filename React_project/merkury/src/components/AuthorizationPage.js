@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 
 class AuthorizationPage extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            username: ''
+        }
+    }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.textInput);
     };
+    handleChange = (e) => {
+        this.setState({
+            username: e.target.value
+        })
+    };
+
     render() {
+        console.log(this.state.username);
         return (
            <div className="wrapper">
                <div className="registerForm">
@@ -20,7 +33,7 @@ class AuthorizationPage extends Component {
                        <form onSubmit={this.handleSubmit}>
                            <p>Welcome <span className="colorWord">back!</span></p>
                            <span className="far fa-user fa-2x">
-                               <input data-user type="text" placeholder="Username" ref={(input) => this.textInput = input}/>
+                               <input data-user value={this.state.username} type="text" placeholder="Username" onChange={this.handleChange}/>
                            </span>
                            <span className="fas fa-lock fa-2x">
                                <input data-pass type="password" maxLength="12" placeholder="Password" />
