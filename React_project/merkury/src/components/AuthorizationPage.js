@@ -17,11 +17,7 @@ class AuthorizationPage extends Component {
 
         let user= JSON.parse(localStorage.getItem("user"));
         console.log(user, this.state.username);
-        if(user === this.state.username) {
-            console.log('you must log in');
-        } else {
-            console.log('error ! ! ! !');
-        }
+        user === this.state.username ? console.log('you must log in') : console.log('error ! ! ! !');
     };
     handleChange = (e) => {
         let name = e.target.name;
