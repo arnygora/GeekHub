@@ -9,6 +9,7 @@ import Calendar from './Calendar';
 import Users from './Users';
 import Settings from './Settings';
 import AuthorizationPage from './AuthorizationPage';
+import NotFoundPage from "./NotFoundPage";
 
 class App extends React.Component {
     render() {
@@ -23,6 +24,7 @@ class App extends React.Component {
                     <PrivateLayout exact path="/settings" component={Settings}/>
 
                     <Route exact path="/authorizationPage" component={AuthorizationPage}/>
+                    <Route component={NotFoundPage}/>
 
                 </Switch>
             </Router>

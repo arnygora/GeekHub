@@ -339,3 +339,30 @@ section select {
 
 .list-group .userPhoto2 {
   background: url("../img/userPhoto2.jpg") 56% 18% no-repeat; }
+
+.error-block {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center; }
+
+.error-block .error-block_text {
+  padding: 0 50px; }
+
+.error-block .error-block_text p {
+  font: 900 7rem Arial, sans-serif;
+  color: #48c5ec; }
+
+.error-block .vertical-line {
+  height: 300px;
+  border: 1px solid #bdbdbd; }
+
+.error-block .error-block_description {
+  padding: 0 50px; }
+
+.error-block .error-block_description p.upper-text {
+  font-weight: 700;
+  color: #000; }
+
+.error-block .error-block_description p {
+  color: #7e7e7e; }
