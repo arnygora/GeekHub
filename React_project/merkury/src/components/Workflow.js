@@ -7,7 +7,7 @@ class Workflow extends Component {
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-4">
                         <p>To Do <span className="text-secondary">(6)</span>
-                            <span className="fas fa-angle-right text-secondary float-right"><a href="#0"></a></span>
+                            <a href="#0"><span className="fas fa-angle-right text-secondary float-right"></span></a>
                         </p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item border mb-2">
@@ -48,7 +48,7 @@ class Workflow extends Component {
                     </div>
                     <div className="col-12 col-md-10 col-lg-4 mx-auto">
                         <p>Completed <span className="text-secondary">(4)</span>
-                            <span className="fas fa-angle-right text-secondary float-right"><a href="#0"></a></span>
+                            <a href="#0"><span className="fas fa-angle-right text-secondary float-right"></span></a>
                         </p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item border mb-2">
