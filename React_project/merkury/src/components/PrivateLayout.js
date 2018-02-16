@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-const DefaultLayout = ({component: Component, ...rest}) => {
+const PrivateLayout = ({component: Component, ...rest}) => {
+
     return (
         <Route {...rest} render={matchProps => {
-            console.log(localStorage.getItem('user') === 'user');
-            if (localStorage.getItem('user') === 'exist') {
+            console.log(localStorage.getItem('check'));
+            if (JSON.parse(localStorage.getItem('check')) === true) {
                 return (
                     <Component {...matchProps} />
                 );
@@ -17,4 +18,4 @@ const DefaultLayout = ({component: Component, ...rest}) => {
     )
 };
 
-export default DefaultLayout;
+export default PrivateLayout;

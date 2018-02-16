@@ -4,4 +4,7 @@ $(document).ready(function(){
         $(".mainContent").toggleClass("col-12");
         $(this).toggleClass('open');
     });
+    $('.click').click(function () {
+        $('.hoverBlock').toggleClass("hidden");
+    })
 });

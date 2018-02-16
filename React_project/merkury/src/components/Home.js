@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Header from './Header';
 
 class Home extends Component {
+
     render() {
+        // TODO let userValue = JSON.parse(localStorage.getItem("user").toUpperCase())
         return (
             <div>
                 <Header>
                 <section>
-                    <p>Hello Anthony</p>
+                    <p>Hello, dfdfe</p>
                     <div className="row activity m-0">
                         <div className="col-12 col-md-5 p-2">
                             <div className="sales">

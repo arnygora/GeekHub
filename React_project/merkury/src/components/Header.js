@@ -39,7 +39,17 @@ class Header extends Component {
                                     <a href="/">+ Add project</a>
                                     <span className="fas fa-envelope ml-4"></span>
                                     <span className="fas fa-bell ml-4"></span>
-                                    <div className="profileImg ml-4"></div>
+                                    <span className="fas fa-angle-double-down ml-4 click"></span>
+                                    <div className="profileImg ml-2">
+                                        <div className="hoverBlock">
+                                            <ul>
+                                                <li><a href="">Link 1</a></li>
+                                                <li><a href="">Link 2</a></li>
+                                                <li><a href="">Link 3</a></li>
+                                                <li><a href="">Log out</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </header>
                             {this.props.children}
