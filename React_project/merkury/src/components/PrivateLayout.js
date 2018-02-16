@@ -11,7 +11,7 @@ const DefaultLayout = ({component: Component, ...rest}) => {
                 );
             }
             else {
-                return <Redirect to="/" />
+                return <Redirect to="./AuthorizationPage" />
             }
         }} />
     )

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class Home extends Component {
     render() {
         return (
-            <div className="wrapp">
+            <div>
+                <Header>
                 <section>
                     <p>Hello Anthony</p>
                     <div className="row activity m-0">
@@ -79,6 +81,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
+                </Header>
             </div>
         );
     }

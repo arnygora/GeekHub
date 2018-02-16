@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Main from './Main';
 
 class Header extends Component {
     render() {
-        // console.log('pages', this.props.pages);
         return (
             <div className="wrapp">
                 <div className="container-fluid">
@@ -14,9 +12,12 @@ class Header extends Component {
                                 <div className="logo"><img src="img/logo.png" alt="d" /></div>
                                 <nav>
                                     <ul className="mainNav">
-                                        <li><Link to="/home"><span className="fas fa-home"><span className="smallScreen">Home</span></span></Link></li>
+                                        <li><Link to="/"><span className="fas fa-home"><span className="smallScreen">Home</span></span></Link></li>
                                         <li><Link to="/workflow"><span className="fas fa-bars"><span className="smallScreen">Workflow</span></span></Link></li>
                                         <li><Link to="/statistics"><span className="fas fa-chart-line"><span className="smallScreen">Statistics</span></span></Link></li>
+                                        <li><Link to="/calendar"><span className="fas fa-calendar-alt"><span className="smallScreen">Calendar</span></span></Link></li>
+                                        <li><Link to="/users"><span className="fas fa-user"><span className="smallScreen">Users</span></span></Link></li>
+                                        <li><Link to="/settings"><span className="fas fa-cog"><span className="smallScreen">Settings</span></span></Link></li>
                                     </ul>
                                 </nav>
                             </aside>
@@ -41,11 +42,7 @@ class Header extends Component {
                                     <div className="profileImg ml-4"></div>
                                 </div>
                             </header>
-                            {/*{this.props.pages.map((item, index) =>*/}
-                                {/*<a href={item.link} key={index}>{item.label}</a>*/}
-                            {/*)}*/}
                             {this.props.children}
-                            <Main />
                         </div>
                     </div>
                 </div>
