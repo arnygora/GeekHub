@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Route, Redirect} from "react-router-dom";
 
 class AuthorizationPage extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
+            loading: true,
             username: '',
             password: ''
         }
@@ -42,7 +44,20 @@ class AuthorizationPage extends Component {
         })
     };
     render() {
+        const {component: Component, ...rest} = this.props;
         return (
+            <div>
+                <Route {...rest} render={() => {
+                    if (this.state.loading) {
+                        return <div>Loading</div>
+                    }
+                    if (this.state.check) {
+                        return <Component />
+                    } else {
+                        return <Redirect to="./Home" />
+                    }
+                }} />
+
             <div className="wrapper">
                 <div className="registerForm">
                     <div className="header">
@@ -66,6 +81,7 @@ class AuthorizationPage extends Component {
                     </div>
                 </div>
             </div>
+        </div>
         );
     }
 }
