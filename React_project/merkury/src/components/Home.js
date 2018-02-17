@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class Home extends Component {
+
     render() {
+        let userValue = localStorage.getItem("user")
         return (
-            <div className="wrapp">
+            <div>
+                <Header>
                 <section>
-                    <p>Hello Anthony</p>
+                    <p>Hello, {userValue}</p>
                     <div className="row activity m-0">
                         <div className="col-12 col-md-5 p-2">
                             <div className="sales">
-                                <div className="d-flex align-items-center justify-content-between p-3">
+                                <div className="d-flex align-items-center justify-content-between flex-wrap p-3">
                                     <p className="m-0">Your Sales</p>
                                     <select name="salesPeriod" id="sales">
                                         <option value="year">Period: Last Year</option>
@@ -31,7 +35,7 @@ class Home extends Component {
                         </div>
                         <div className="col-12 col-md-7 p-2">
                             <div className="period">
-                                <div className="d-flex align-items-center justify-content-between p-3">
+                                <div className="d-flex align-items-center justify-content-between flex-wrap p-3">
                                     <p className="m-0">Report</p>
                                     <select title="sel" name="salesPeriod" id="report">
                                         <option value="year">Period: Last Year</option>
@@ -79,6 +83,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
+                </Header>
             </div>
         );
     }

@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+    handleClick = () => {
+        let { history } = this.props;
+        localStorage.removeItem('check');
+        history.push('./AuthorizationPage')
+    };
     render() {
         return (
             <div className="wrapp">
@@ -12,9 +17,12 @@ class Header extends Component {
                                 <div className="logo"><img src="img/logo.png" alt="d" /></div>
                                 <nav>
                                     <ul className="mainNav">
-                                        <li><Link to="/home"><span className="fas fa-home"><span className="smallScreen">Home</span></span></Link></li>
+                                        <li><Link to="/"><span className="fas fa-home"><span className="smallScreen">Home</span></span></Link></li>
                                         <li><Link to="/workflow"><span className="fas fa-bars"><span className="smallScreen">Workflow</span></span></Link></li>
                                         <li><Link to="/statistics"><span className="fas fa-chart-line"><span className="smallScreen">Statistics</span></span></Link></li>
+                                        <li><Link to="/calendar"><span className="fas fa-calendar-alt"><span className="smallScreen">Calendar</span></span></Link></li>
+                                        <li><Link to="/users"><span className="fas fa-user"><span className="smallScreen">Users</span></span></Link></li>
+                                        <li><Link to="/settings"><span className="fas fa-cog"><span className="smallScreen">Settings</span></span></Link></li>
                                     </ul>
                                 </nav>
                             </aside>
@@ -36,7 +44,17 @@ class Header extends Component {
                                     <a href="/">+ Add project</a>
                                     <span className="fas fa-envelope ml-4"></span>
                                     <span className="fas fa-bell ml-4"></span>
-                                    <div className="profileImg ml-4"></div>
+                                    <span className="fas fa-angle-double-down ml-4 click"></span>
+                                    <div className="profileImg ml-2">
+                                        <div className="hoverBlock">
+                                            <ul>
+                                                <li><a href="">Link 1</a></li>
+                                                <li><a href="">Link 2</a></li>
+                                                <li><a href="">Link 3</a></li>
+                                                <li><a href="" onClick={this.handleClick}>Log out</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </header>
                             {this.props.children}
