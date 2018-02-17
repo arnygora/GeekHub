@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+    handleClick = () => {
+        let { history } = this.props;
+        localStorage.removeItem('check');
+        history.push('./AuthorizationPage')
+    };
     render() {
         return (
             <div className="wrapp">
@@ -46,7 +51,7 @@ class Header extends Component {
                                                 <li><a href="">Link 1</a></li>
                                                 <li><a href="">Link 2</a></li>
                                                 <li><a href="">Link 3</a></li>
-                                                <li><a href="">Log out</a></li>
+                                                <li><a href="" onClick={this.handleClick}>Log out</a></li>
                                             </ul>
                                         </div>
                                     </div>

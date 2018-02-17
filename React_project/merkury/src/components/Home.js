@@ -4,12 +4,12 @@ import Header from './Header';
 class Home extends Component {
 
     render() {
-        // TODO let userValue = JSON.parse(localStorage.getItem("user").toUpperCase())
+        let userValue = localStorage.getItem("user")
         return (
             <div>
                 <Header>
                 <section>
-                    <p>Hello, dfdfe</p>
+                    <p>Hello, {userValue}</p>
                     <div className="row activity m-0">
                         <div className="col-12 col-md-5 p-2">
                             <div className="sales">

@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Redirect} from "react-router-dom";
 
-class AuthorizationPage extends Component {
+class AuthorizationPage extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             loading: true,
-            username: '',
-            password: ''
         }
     }
     loginFunc(login, pass) {
@@ -27,7 +25,7 @@ class AuthorizationPage extends Component {
                 localStorage.setItem('check', true);
                 this.setState({
                     loading: false,
-                    check: res.check,
+                    check: false,
                 })
             });
     };
@@ -37,24 +35,19 @@ class AuthorizationPage extends Component {
         localStorage.setItem("user", JSON.stringify(this.state.username));
         this.loginFunc(this.state.username, this.state.password);
     };
-    handleChange = (e) => {
-        let name = e.target.name;
-        this.setState({
-            [name]: e.target.value
-        })
-    };
+
     render() {
         const {component: Component, ...rest} = this.props;
         return (
             <div>
-                <Route {...rest} render={() => {
+                <Route {...rest} render={(matchProps) => {
                     if (this.state.loading) {
-                        return <div>Loading</div>
+                        return <div></div>
                     }
                     if (this.state.check) {
                         return <Component />
                     } else {
-                        return <Redirect to="./Home" />
+                        return <Redirect to="./" />
                     }
                 }} />
 
@@ -71,10 +64,10 @@ class AuthorizationPage extends Component {
                         <form onSubmit={this.handleSubmit}>
                             <p>Welcome <span className="colorWord">back!</span></p>
                             <span className="far fa-user fa-2x">
-                               <input name='username' value={this.state.username} onChange={this.handleChange} type="text" placeholder="Username" required />
+                               <input name='username' value={this.state.username} type="text" placeholder="Username" required />
                            </span>
                             <span className="fas fa-lock fa-2x">
-                               <input name='password' value={this.state.password} onChange={this.handleChange} type="password" placeholder="Password" maxLength="12" required />
+                               <input name='password' value={this.state.password} type="password" placeholder="Password" maxLength="12" required />
                            </span>
                             <button >Enter</button>
                         </form>

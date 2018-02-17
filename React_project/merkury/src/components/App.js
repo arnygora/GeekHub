@@ -9,9 +9,10 @@ import Calendar from './Calendar';
 import Users from './Users';
 import Settings from './Settings';
 import AuthorizationPage from './AuthorizationPage';
-import NotFoundPage from "./NotFoundPage";
+import NotFoundPage from './NotFoundPage';
 
 class App extends React.Component {
+
     render() {
         return (
             <Router>
