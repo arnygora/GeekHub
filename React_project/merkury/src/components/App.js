@@ -25,7 +25,6 @@ class App extends React.Component {
 
                     <Route exact path="/authorizationPage" component={AuthorizationPage}/>
                     <Route component={NotFoundPage}/>
-
                 </Switch>
             </Router>
         );
