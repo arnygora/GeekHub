@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+    constructor(){
+        super();
+    }
+    handleToggle = () => {
+      const el = findDOMNode(this.refs.toggle);
+      $(el).removeClass('hoverBlock');
+    };
+
     handleClick = () => {
         let { history } = this.props;
         localStorage.removeItem('check');
@@ -44,9 +54,9 @@ class Header extends Component {
                                     <a href="/">+ Add project</a>
                                     <span className="fas fa-envelope ml-4"></span>
                                     <span className="fas fa-bell ml-4"></span>
-                                    <span className="fas fa-angle-double-down ml-4 click"></span>
+                                    <span className="fas fa-angle-double-down ml-4 click" ref="toggle"></span>
                                     <div className="profileImg ml-2">
-                                        <div className="hoverBlock">
+                                        <div onClick={this.handleToggle} className="hoverBlock">
                                             <ul>
                                                 <li><a href="">Link 1</a></li>
                                                 <li><a href="">Link 2</a></li>
