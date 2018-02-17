@@ -23,6 +23,10 @@ class AuthorizationPage extends Component {
             .then(res => {
                 console.log(res);
                 localStorage.setItem('check', true);
+                this.setState({
+                    loading: false,
+                    check: res.check,
+                })
             });
     };
     handleSubmit = (e) => {
@@ -37,9 +41,7 @@ class AuthorizationPage extends Component {
             [name]: e.target.value
         })
     };
-
     render() {
-        console.log(this.state.username);
         return (
             <div className="wrapper">
                 <div className="registerForm">
