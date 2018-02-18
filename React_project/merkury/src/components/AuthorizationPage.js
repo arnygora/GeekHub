@@ -79,7 +79,7 @@ class AuthorizationPage extends React.Component {
                                <input name='username' value={this.state.username} onChange={this.handleChange} type="text" placeholder="Username" required />
                            </span>
                                 <span className="fas fa-lock fa-2x">
-                               <input name='password' value={this.state.password} onChange={this.handleChange} type="password" placeholder="Password" maxLength="12" required />
+                               <input name='password' value={this.state.password} onChange={this.handleChange} type="text" placeholder="Password" maxLength="12" required />
                            </span>
                                 <button >Enter</button>
                             </form>
