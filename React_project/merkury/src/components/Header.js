@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+    componentDidMount(){
+        $(document).ready(function(){
+            $('#nav-icon').click(function(){
+                $(".navy").toggleClass("hidden-block");
+                $(".mainContent").toggleClass("col-12");
+                $(this).toggleClass('open');
+            });
+            $('.click').click(function () {
+                $('.hoverBlock').toggleClass("hidden");
+            })
+        });
+    };
     handleClick = () => {
         let { history } = this.props;
         localStorage.removeItem('check');

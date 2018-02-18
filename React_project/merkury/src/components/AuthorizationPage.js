@@ -51,30 +51,30 @@ class AuthorizationPage extends React.Component {
                     }
                 }} />
 
-            <div className="wrapper">
-                <div className="registerForm">
-                    <div className="header">
-                        <div className="logo"></div>
-                        <div className="loginLinks">
-                            <a href="#0">Register</a>
-                            <a href="#0">Login</a>
+                <div className="wrapper">
+                    <div className="registerForm">
+                        <div className="header">
+                            <div className="logo"></div>
+                            <div className="loginLinks">
+                                <a href="#0">Register</a>
+                                <a href="#0">Login</a>
+                            </div>
                         </div>
-                    </div>
-                    <div className="wrapForm">
-                        <form onSubmit={this.handleSubmit}>
-                            <p>Welcome <span className="colorWord">back!</span></p>
-                            <span className="far fa-user fa-2x">
+                        <div className="wrapForm">
+                            <form onSubmit={this.handleSubmit}>
+                                <p>Welcome <span className="colorWord">back!</span></p>
+                                <span className="far fa-user fa-2x">
                                <input name='username' value={this.state.username} type="text" placeholder="Username" required />
                            </span>
-                            <span className="fas fa-lock fa-2x">
+                                <span className="fas fa-lock fa-2x">
                                <input name='password' value={this.state.password} type="password" placeholder="Password" maxLength="12" required />
                            </span>
-                            <button >Enter</button>
-                        </form>
+                                <button >Enter</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         );
     }
 }
