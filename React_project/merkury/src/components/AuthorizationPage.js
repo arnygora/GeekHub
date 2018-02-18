@@ -11,10 +11,10 @@ class AuthorizationPage extends React.Component {
             loading: true
         }
     }
-    loginFunc(login, pass) {
+    loginFunc() {
         let data = {
-            login: this.state.username.value,
-            pass: this.state.password.value
+            login: this.state.username,
+            pass: this.state.password
         };
         fetch('/api/user', {
             headers: {
@@ -28,7 +28,12 @@ class AuthorizationPage extends React.Component {
             })
             .then(res => {
                 console.log(res);
-                localStorage.setItem('check', true);
+                if (res.check === "exist" ) {
+
+                    localStorage.setItem('check', true);
+                } else {
+
+                }
                 this.setState({
                     loading: false,
                     check: false,
@@ -39,7 +44,7 @@ class AuthorizationPage extends React.Component {
         e.preventDefault();
         console.log('user- ', this.state.username, 'pass- ', this.state.password);
         localStorage.setItem("user", JSON.stringify(this.state.username));
-        this.loginFunc(this.state.username, this.state.password);
+        this.loginFunc();
     };
     handleChange = (e) => {
       let name = e.target.name;

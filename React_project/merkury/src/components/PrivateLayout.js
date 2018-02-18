@@ -12,7 +12,7 @@ const PrivateLayout = ({component: Component, ...rest}) => {
                 );
             }
             else {
-                return <Redirect to="./AuthorizationPage" />
+                return <Redirect to="./login" />
             }
         }} />
     )

@@ -7,7 +7,7 @@ class Home extends Component {
         let userValue = localStorage.getItem("user")
         return (
             <div>
-                <Header>
+                <Header history={this.props.history} >
                 <section>
                     <p>Hello, {userValue}</p>
                     <div className="row activity m-0">
