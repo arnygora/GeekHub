@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const App = express();
 
 const userExist = {
-    login: 'Anthony',
-    pass: 'Man'
+    login: 'admin',
+    pass: 'admin'
 };
 
 App.use(bodyParser.json());
