@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
