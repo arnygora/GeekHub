@@ -165,6 +165,7 @@ body, a, a:hover {
 }
 
 .navy {
+  min-height: 100vh;
   background: #0e1a35;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out; }
@@ -183,9 +184,6 @@ body, a, a:hover {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
     text-align: center; } }
-
-aside {
-  background: #0e1a35; }
 
 aside .logo {
   padding: 6px;
