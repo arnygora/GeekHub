@@ -29,7 +29,6 @@ class AuthorizationPage extends React.Component {
             .then(res => {
                 console.log(res);
                 if (res.check === "exist" ) {
-
                     localStorage.setItem('check', true);
                 } else {
 
