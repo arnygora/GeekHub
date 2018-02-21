@@ -6,7 +6,6 @@ class Select extends Component {
         console.log(e.target.value);
     };
     render() {
-
         return (
             <select name="sel" id="sales" onChange={this.onChange}>
                 {this.props.data.map((item, index) => {

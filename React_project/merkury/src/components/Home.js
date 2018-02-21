@@ -6,10 +6,13 @@ import ReactHighcharts from "react-highcharts";
 
 //config
 import SalesChart from "../config/pieChart.config";
-import ReportGraph from "../config/graphChart.config";
+import basicConfig from "../config/graphChart.config";
+import homeChartConfig from "../config/homeChart.config";
+
 
 class Home extends Component {
     render() {
+        let homeChart = Object.assign ({}, basicConfig, homeChartConfig);
         let dataSelect = ["Period: Last week", "Period: Last month", "Period: Last year"];
         let userValue = JSON.parse(localStorage.getItem("user"));
         return (
@@ -38,7 +41,7 @@ class Home extends Component {
                                         <Select data={dataSelect}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts config = {ReportGraph}></ReactHighcharts>
+                                    <ReactHighcharts  config = {homeChart}></ReactHighcharts>
                                 </Box>
                             </div>
                         </div>
