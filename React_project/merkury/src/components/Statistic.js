@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Box from "./atoms/Box";
+import ReactHighcharts from "react-highcharts";
+
+//config
+import SalesChart from "../config/pieChart.config";
+import ReportGraph from "../config/graphChart.config";
 
 class Statistic extends Component {
     render() {
@@ -11,17 +17,19 @@ class Statistic extends Component {
                     <div className="row activity">
                         <div className="col-12 col-md-5">
                             <div className="sales border">
-                                <img src="img/viewStatistic.jpg" alt="dc" />
+
                             </div>
                         </div>
                         <div className="col-12 col-md-7">
                             <div className="period border">
-                                <div className="d-flex justify-content-between pt-3">
-                                    <p className="text-secondary pl-4">Active users</p>
-                                    <p className="pr-4"><a href="#0"><span className="fas fa-pencil-alt text-secondary p-2 rounded-circle border"></span></a>
+                                <Box>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <h3>Active users</h3>
+                                        <p className="pr-4"><a href="#0"><span className="fas fa-pencil-alt text-secondary p-2 rounded-circle border"></span></a>
                                         <a href="#0"><span className="fas fa-trash-alt text-secondary ml-3 p-2 rounded-circle border"></span></a></p>
-                                </div>
-                                <img src="img/userStatistic.jpg" alt="dc" />
+                                    </div>
+                                    <ReactHighcharts config = {ReportGraph}></ReactHighcharts>
+                                </Box>
                             </div>
                         </div>
                     </div>

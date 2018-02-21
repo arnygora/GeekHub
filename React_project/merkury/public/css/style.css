@@ -321,24 +321,8 @@ section {
 section p {
   font-size: 1.5em; }
 
-section .sales, section .period {
-  max-height: 370px;
-  height: 100%;
-  background: #fff;
-  border: 1px solid #8c99b4; }
-
-section .sales img.circleImg, section .period img.circleImg {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7); }
-
-section .activity img {
-  width: 100%; }
-
-section .activity .description {
-  list-style: disc; }
-
 section select {
-  padding: 10px 15px;
+  padding: 8px 8px;
   border-radius: 30px; }
 
 .list-group .counter, .list-group .userPhoto, .list-group .userPhoto2 {

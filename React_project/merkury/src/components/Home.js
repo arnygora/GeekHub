@@ -1,49 +1,45 @@
-import React, { Component } from 'react';
-import Header from './Header';
+import React, { Component } from "react";
+import Header from "./Header";
+import Box from "./atoms/Box";
+import Select from "./atoms/Select";
+import ReactHighcharts from "react-highcharts";
+
+//config
+import SalesChart from "../config/pieChart.config";
+import ReportGraph from "../config/graphChart.config";
 
 class Home extends Component {
-
     render() {
-        let userValue = localStorage.getItem("user")
+        let dataSelect = ["Period: Last week", "Period: Last month", "Period: Last year"];
+        let userValue = JSON.parse(localStorage.getItem("user"));
         return (
             <div>
                 <Header history={this.props.history} >
                 <section>
-                    <p>Hello, {userValue}</p>
+                    <p>Hello, {userValue}!</p>
                     <div className="row activity m-0">
                         <div className="col-12 col-md-5 p-2">
                             <div className="sales">
-                                <div className="d-flex align-items-center justify-content-between flex-wrap p-3">
-                                    <p className="m-0">Your Sales</p>
-                                    <select name="salesPeriod" id="sales">
-                                        <option value="year">Period: Last Year</option>
-                                        <option value="month">Period: Last Month</option>
-                                        <option value="week">Period: Last Week</option>
-                                    </select>
-                                </div>
-                                <div className="d-flex align-items-center m-0">
-                                    <div><img className="circleImg" src="img/report.jpg" alt="f" /></div>
-                                    <ul className="description">
-                                        <li>Websites</li>
-                                        <li>Logo</li>
-                                        <li>Social Media</li>
-                                        <li>Adwords</li>
-                                        <li>E-Commerce</li>
-                                    </ul>
-                                </div>
+                                <Box>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <h3>Your Sales</h3>
+                                        <Select data={dataSelect}>
+                                        </Select>
+                                    </div>
+                                    <ReactHighcharts config = {SalesChart}></ReactHighcharts>
+                                </Box>
                             </div>
                         </div>
                         <div className="col-12 col-md-7 p-2">
                             <div className="period">
-                                <div className="d-flex align-items-center justify-content-between flex-wrap p-3">
-                                    <p className="m-0">Report</p>
-                                    <select title="sel" name="salesPeriod" id="report">
-                                        <option value="year">Period: Last Year</option>
-                                        <option value="month">Period: Last Month</option>
-                                        <option value="week">Period: Last Week</option>
-                                    </select>
-                                </div>
-                                <div><img src="img/sales.jpg" alt="ef" /></div>
+                                <Box>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <h3>Report</h3>
+                                        <Select data={dataSelect}>
+                                        </Select>
+                                    </div>
+                                    <ReactHighcharts config = {ReportGraph}></ReactHighcharts>
+                                </Box>
                             </div>
                         </div>
                     </div>

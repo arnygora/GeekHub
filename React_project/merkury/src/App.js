@@ -12,7 +12,6 @@ import AuthorizationPage from './components/AuthorizationPage';
 import NotFoundPage from './components/NotFoundPage';
 
 class App extends React.Component {
-
     render() {
         return (
             <Router>
@@ -31,5 +30,4 @@ class App extends React.Component {
         );
     }
 }
-
 export default App;
