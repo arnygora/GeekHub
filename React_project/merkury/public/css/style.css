@@ -165,7 +165,14 @@ body, a, a:hover {
 }
 
 .navy {
-  background: #0e1a35;
+  min-height: 100vh;
+  /*background: #0e1a35;*/
+  background: -moz-linear-gradient(0deg, rgba(14,26,53,1) 0%, rgba(5,193,255,1) 50%, rgba(0,51,51,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(14,26,53,1)), color-stop(50%, rgba(5,193,255,1)), color-stop(100%, rgba(0,51,51,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, rgba(14,26,53,1) 0%, rgba(5,193,255,1) 50%, rgba(0,51,51,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, rgba(14,26,53,1) 0%, rgba(5,193,255,1) 50%, rgba(0,51,51,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, rgba(14,26,53,1) 0%, rgba(5,193,255,1) 50%, rgba(0,51,51,1) 100%); /* ie10+ */
+  background: linear-gradient(90deg, rgba(14,26,53,1) 0%, rgba(5,193,255,1) 50%, rgba(0,51,51,1) 100%);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out; }
 
@@ -184,9 +191,6 @@ body, a, a:hover {
             transform: scale(1.5);
     text-align: center; } }
 
-aside {
-  background: #0e1a35; }
-
 aside .logo {
   padding: 6px;
   border-bottom: 1px solid #000; }
@@ -203,7 +207,7 @@ aside li {
 
 aside li:hover {
   border-color: #5584ff;
-  background: #122143; }
+  background: #12214370; }
 
 aside span {
   padding: 1.5em;
@@ -323,24 +327,8 @@ section {
 section p {
   font-size: 1.5em; }
 
-section .sales, section .period {
-  max-height: 370px;
-  height: 100%;
-  background: #fff;
-  border: 1px solid #8c99b4; }
-
-section .sales img.circleImg, section .period img.circleImg {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7); }
-
-section .activity img {
-  width: 100%; }
-
-section .activity .description {
-  list-style: disc; }
-
 section select {
-  padding: 10px 15px;
+  padding: 8px 8px;
   border-radius: 30px; }
 
 .list-group .counter, .list-group .userPhoto, .list-group .userPhoto2 {

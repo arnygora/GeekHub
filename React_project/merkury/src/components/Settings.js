@@ -8,7 +8,6 @@ class Settings extends Component {
                 <Header>
                     <section>
                         <p>Settings</p>
-
                     </section>
                 </Header>
             </div>

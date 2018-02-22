@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
@@ -17,9 +16,8 @@ class Header extends Component {
         });
     };
     handleClick = () => {
-        let { history } = this.props;
         localStorage.removeItem('check');
-        history.push('./AuthorizationPage')
+        this.props.history.push('./login')
     };
     render() {
         return (

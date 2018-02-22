@@ -6,23 +6,33 @@ class AuthorizationPage extends React.Component {
         super(props);
 
         this.state = {
-            loading: true,
+            username: "",
+            password: "",
+            loading: true
         }
     }
-    loginFunc(login, pass) {
+    loginFunc() {
+        let data = {
+            login: this.state.username,
+            pass: this.state.password
+        };
         fetch('/api/user', {
             headers: {
                 'Content-type': 'application/json'
             },
             method: 'post',
-            body: JSON.stringify({login: login, pass: pass})
+            body: JSON.stringify(data)
         })
             .then(res => {
                 return res.json()
             })
             .then(res => {
                 console.log(res);
-                localStorage.setItem('check', true);
+                if (res.check === "exist" ) {
+                    localStorage.setItem('check', true);
+                } else {
+
+                }
                 this.setState({
                     loading: false,
                     check: false,
@@ -33,7 +43,13 @@ class AuthorizationPage extends React.Component {
         e.preventDefault();
         console.log('user- ', this.state.username, 'pass- ', this.state.password);
         localStorage.setItem("user", JSON.stringify(this.state.username));
-        this.loginFunc(this.state.username, this.state.password);
+        this.loginFunc();
+    };
+    handleChange = (e) => {
+      let name = e.target.name;
+      this.setState({
+          [name]: e.target.value
+      })
     };
 
     render() {
@@ -64,10 +80,10 @@ class AuthorizationPage extends React.Component {
                             <form onSubmit={this.handleSubmit}>
                                 <p>Welcome <span className="colorWord">back!</span></p>
                                 <span className="far fa-user fa-2x">
-                               <input name='username' value={this.state.username} type="text" placeholder="Username" required />
+                               <input name='username' value={this.state.username} onChange={this.handleChange} type="text" placeholder="Username" required />
                            </span>
                                 <span className="fas fa-lock fa-2x">
-                               <input name='password' value={this.state.password} type="password" placeholder="Password" maxLength="12" required />
+                               <input name='password' value={this.state.password} onChange={this.handleChange} type="text" placeholder="Password" maxLength="12" required />
                            </span>
                                 <button >Enter</button>
                             </form>
