@@ -4,7 +4,6 @@ import Box from "./atoms/Box";
 import ReactHighcharts from "react-highcharts";
 
 //config
-
 import basicConfig from "../config/graphChart.config";
 import statisticsChart from "../config/statisticsChart.config";
 

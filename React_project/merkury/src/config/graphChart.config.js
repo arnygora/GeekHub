@@ -1,4 +1,4 @@
-const basicConfig = {
+const graphReport = {
     chart: {
         type: 'spline',
         inverted: false,
@@ -50,6 +50,6 @@ const basicConfig = {
     }],
 };
 
-export default basicConfig;
+export default graphReport;
 
 

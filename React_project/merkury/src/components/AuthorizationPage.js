@@ -51,7 +51,6 @@ class AuthorizationPage extends React.Component {
           [name]: e.target.value
       })
     };
-
     render() {
         const {component: Component, ...rest} = this.props;
         return (
