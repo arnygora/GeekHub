@@ -26,7 +26,7 @@ class Home extends Component {
                                         <Select data={dataSelect}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts config = {SalesChart} ref={a => this.pieSales = a}></ReactHighcharts>
+                                    <ReactHighcharts config = {SalesChart} ref={(chart) => this.SalesPie = chart}></ReactHighcharts>
                                 </Box>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ class Home extends Component {
                                         <Select data={dataSelect}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts  config = {graphReport} ref={a => this.splineReport = a}></ReactHighcharts>
+                                    <ReactHighcharts  config = {graphReport} ref={(chart) => this.SplineReport = chart}></ReactHighcharts>
                                 </Box>
                             </div>
                         </div>
