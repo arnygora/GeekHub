@@ -6,13 +6,10 @@ import ReactHighcharts from "react-highcharts";
 
 //config
 import SalesChart from "../config/pieChart.config";
-import basicConfig from "../config/graphChart.config";
-import homeChartConfig from "../config/homeChart.config";
-
+import graphReport from "../config/graphChart.config";
 
 class Home extends Component {
     render() {
-        let homeChart = Object.assign ({}, basicConfig, homeChartConfig);
         let dataSelect = ["Period: Last week", "Period: Last month", "Period: Last year"];
         let userValue = JSON.parse(localStorage.getItem("user"));
         return (
@@ -29,7 +26,7 @@ class Home extends Component {
                                         <Select data={dataSelect}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts config = {SalesChart}></ReactHighcharts>
+                                    <ReactHighcharts config = {SalesChart} ref={(chart) => this.SalesPie = chart}></ReactHighcharts>
                                 </Box>
                             </div>
                         </div>
@@ -41,7 +38,7 @@ class Home extends Component {
                                         <Select data={dataSelect}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts  config = {homeChart}></ReactHighcharts>
+                                    <ReactHighcharts  config = {graphReport} ref={(chart) => this.SplineReport = chart}></ReactHighcharts>
                                 </Box>
                             </div>
                         </div>
