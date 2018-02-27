@@ -7,7 +7,6 @@ class Select extends Component {
 
             let lastWeek = [['Massive', 6], ['Attack', 3], ['Window', 9], ['Media', 9], ['Center', 9]];
             let chart = this.salesPie.getChart();
-
             chart.series[0].setData(lastWeek, true);
 
         };

@@ -22,7 +22,6 @@ class App extends React.Component {
                     <PrivateLayout exact path="/calendar" component={Calendar}/>
                     <PrivateLayout exact path="/users" component={Users}/>
                     <PrivateLayout exact path="/settings" component={Settings}/>
-
                     <Route exact path="/login" component={AuthorizationPage}/>
                     <Route component={NotFoundPage}/>
                 </Switch>
