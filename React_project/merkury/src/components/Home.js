@@ -6,9 +6,16 @@ import ReactHighcharts from "react-highcharts";
 
 //config
 import SalesChart from "../config/pieChart.config";
-import graphReport from "../config/graphChart.config";
+// import ReportChart from "../config/graphChart.config";
 
 class Home extends Component {
+
+    filterReportsChart = () => {
+            let lastWeek = [['Massive', 6], ['Attack', 3], ['Window', 9], ['Media', 9], ['Center', 9]];
+            let chart = this.saleChart.getChart();
+            chart.series[0].setData(lastWeek, true);
+        };
+
     render() {
         let dataSelect = ["Period: Last week", "Period: Last month", "Period: Last year"];
         let userValue = JSON.parse(localStorage.getItem("user"));
@@ -23,10 +30,10 @@ class Home extends Component {
                                 <Box>
                                     <div className="d-flex justify-content-between align-items-center">
                                         <h3>Your Sales</h3>
-                                        <Select data={dataSelect}>
+                                        <Select data={dataSelect} onChangeSelect={this.filterReportsChart}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts config = {SalesChart} ref={(chart) => this.SalesPie = chart}></ReactHighcharts>
+                                    <ReactHighcharts config = {SalesChart} ref={(chart) => this.saleChart = chart}></ReactHighcharts>
                                 </Box>
                             </div>
                         </div>
@@ -38,7 +45,7 @@ class Home extends Component {
                                         <Select data={dataSelect}>
                                         </Select>
                                     </div>
-                                    <ReactHighcharts  config = {graphReport} ref={(chart) => this.SplineReport = chart}></ReactHighcharts>
+                                    {/*<ReactHighcharts config = {ReportChart} ref={(chart) => this.reportChart = chart}></ReactHighcharts>*/}
                                 </Box>
                             </div>
                         </div>
